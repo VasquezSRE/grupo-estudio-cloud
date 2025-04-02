@@ -194,7 +194,7 @@ Una startup que necesita servidores para alojar su sitio web y su base de datos,
 
 2️⃣ **Plataforma como Servicio (PaaS)** 🏗️
 
-📌** Definición:**
+📌**Definición:**
 Proporciona un entorno de desarrollo y ejecución en la nube donde los desarrolladores pueden crear, probar y desplegar aplicaciones sin preocuparse por la gestión de la infraestructura subyacente.
 
 📍 **Ejemplo:**
@@ -214,7 +214,7 @@ Proporciona un entorno de desarrollo y ejecución en la nube donde los desarroll
 🛠️ **Caso de uso:**
 Un equipo de desarrollo que quiere desplegar rápidamente una aplicación web sin preocuparse por configurar servidores o bases de datos.
 
-3️⃣** Software como Servicio (SaaS)** ☁️
+3️⃣**Software como Servicio (SaaS)** ☁️
 
 📌 **Definición:**
 Ofrece aplicaciones completas listas para usar a través de Internet, sin necesidad de instalación ni mantenimiento por parte del usuario.
@@ -282,7 +282,7 @@ AWS divide su marco de buenas prácticas en 6 pilares fundamentales:
 💡 **Pregunta:**
 ¿Cómo manejan la seguridad en sus cuentas personales? ¿Usan contraseñas fuertes y autenticación de dos factores? 🔑
 
-3️⃣** Fiabilidad**⚡
+3️⃣**Fiabilidad**⚡
 📌 **¿Qué significa?**
 - Diseñar sistemas que puedan recuperarse de fallos automáticamente.
 - Implementar arquitecturas altamente disponibles.
@@ -294,7 +294,7 @@ AWS divide su marco de buenas prácticas en 6 pilares fundamentales:
 💡 **Pregunta:**
 ¿Alguna vez han usado un servicio que se cayó y no pudieron acceder? Imaginen si eso pasa con un banco o una tienda en línea.
 
-4️⃣** Eficiencia de Rendimiento** 🚀
+4️⃣**Eficiencia de Rendimiento** 🚀
 📌 **¿Qué significa?**
 - Optimizar el uso de recursos para un mejor rendimiento.
 - Elegir el tipo de instancia y base de datos adecuados.
@@ -303,7 +303,7 @@ AWS divide su marco de buenas prácticas en 6 pilares fundamentales:
 - Migrar una base de datos tradicional a Amazon Aurora para mayor rendimiento y menor costo.
 - Uso de AWS Lambda para ejecutar código sin gestionar servidores.
 
-**💡 Pregunta:**
+💡 **Pregunta:**
 ¿Han notado cómo algunas apps cargan más rápido que otras? Muchas veces esto se debe a una arquitectura bien optimizada.
 
 5️⃣ **Optimización de Costos** 💰
