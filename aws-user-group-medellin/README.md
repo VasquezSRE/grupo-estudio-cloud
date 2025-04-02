@@ -20,13 +20,19 @@
 Antes de la computación en la nube, las empresas que querían desarrollar y lanzar aplicaciones tenían que construir y mantener su propia infraestructura de TI. Esto implicaba:
 
 1️⃣ **Adquirir servidores físicos:** Las empresas debían comprar hardware costoso y calcular con antelación la capacidad que necesitarían, sin posibilidad de ajustarla dinámicamente.
+
 2️⃣ **Gestionar un data center:** Esto incluía alquilar o comprar un espacio físico, pagar electricidad, refrigeración, y contratar personal para mantener los servidores.
+
 3️⃣ **Largos tiempos de implementación:** Desde la compra del hardware hasta su configuración podían pasar meses antes de que una aplicación estuviera lista para producción.
+
 4️⃣ **Escalabilidad complicada:** Si una empresa crecía y necesitaba más capacidad, debía comprar nuevos servidores, lo que tomaba tiempo y requería una gran inversión.
+
 5️⃣ **Monitoreo y mantenimiento 24/7:** Equipos de TI debían vigilar constantemente la infraestructura para evitar caídas y resolver problemas.
+
 6️⃣ **Planificación del desastre:** Si un servidor fallaba o ocurría un desastre natural, las empresas debían tener planes de recuperación costosos y poco eficientes.
 
 **Ejemplo: Un problema real**
+
 🔹 Historia de una startup en los 2000:
 Imagina que una startup en el año 2000 quiere lanzar una aplicación web. Primero, debe estimar cuántos usuarios tendrá en el primer año, comprar servidores acorde a esa estimación (con el riesgo de quedarse corto o gastar de más), contratar personal de TI para instalar y configurar los servidores, pagar por electricidad y refrigeración, y crear un sistema de respaldo en caso de fallas.
 
@@ -36,8 +42,11 @@ Imagina que una startup en el año 2000 quiere lanzar una aplicación web. Prime
 - Los desarrolladores pasan más tiempo lidiando con infraestructura que innovando en el producto.
 
 ### La necesidad de una nueva solución:
+
 🔹 Para muchas empresas, la infraestructura tradicional era costosa, inflexible y difícil de manejar.
+
 🔹 No todas las compañías podían permitirse comprar y mantener un data center.
+
 🔹 La tecnología avanzaba rápido, pero los negocios se quedaban atrás debido a las limitaciones de su infraestructura.
 
 💡 **Transición hacia la nube:**
@@ -51,83 +60,118 @@ Aquí es donde nace la idea de la computación en la nube: una solución que per
 Estas son las cinco propiedades esenciales que definen la nube:
 
 1️⃣ **On-demand self-service:** Los usuarios pueden aprovisionar recursos sin intervención humana.
+
 2️⃣ **Broad network access:** Acceso a los recursos desde cualquier lugar a través de la red.
+
 3️⃣ **Multi-tenancy & Resource pooling:** La infraestructura es compartida entre múltiples clientes de manera segura.
+
 4️⃣ **Rapid elasticity & Scalability:** Capacidad de escalar los recursos automáticamente según la demanda.
+
 5️⃣ **Measured service:** El uso de los recursos se mide y se cobra de manera precisa.
 
 ### Principales ventajas de la nube:
 Estos beneficios explican por qué la nube ha transformado la industria:
+
 1️⃣  **Trade capital expense for variable expense( Cambie los gastos de capital por gastos variables):** Se eliminan los gastos de capital en hardware y centros de datos.
+
 2️⃣  **Stop spending money running and maintaining data centers (Detenga el gasto en centros de datos):**  Costos de mantenimiento y administración
+
 3️⃣ **Benefit from massive economies of scale (Benefíciese de las economías de escala):** Más clientes, más AWS, más infrastructura, más rebajas, precios reducidos
+
 4️⃣ **Stop guessing capacity( Deje de adivinar la capacidad):** Capacidad insuficiente, sobre aprovisonamiento
+
 5️⃣  **Increase speed and agility( Aumente la velocidad y la agilidad ):** Se pueden desarrollar y desplegar aplicaciones más rápido
+
 6️⃣**Go global in minutes(Globalícese en minutos):** Se pueden lanzar aplicaciones en múltiples regiones en minutos
 
 ### Problemas resueltos con la nube:
 La nube soluciona muchas de las limitaciones de los modelos tradicionales:
 
 🔹 **Flexibilidad:** Permite cambiar tipos y tamaños de recursos según la necesidad.
+
 🔹 **Eficiencia de costos:** Se paga solo por lo que se usa.
+
 🔹 **Escalabilidad:** Se pueden manejar cargas de trabajo variables con facilidad.
+
 🔹 **Elasticidad:** Se pueden agregar o reducir recursos automáticamente según la demanda.
+
 🔹 **Alta disponibilidad y tolerancia a fallos:** Las aplicaciones pueden ejecutarse en múltiples centros de datos.
+
 🔹 **Mayor agilidad:** Se acelera el desarrollo, prueba y despliegue de aplicaciones.
 
 ### Modelos de implementación en la nube
 Existen tres formas principales de implementar infraestructura y aplicaciones en la nube:
 
-1️⃣** Nube Privada (On-Premises o en instalaciones locales)**
+1️⃣**Nube Privada (On-Premises o en instalaciones locales)**
+
 📌 **Definición:** La infraestructura es utilizada exclusivamente por una sola organización y se gestiona en su propio centro de datos. Puede usar tecnologías de virtualización y automatización, pero sigue siendo propiedad de la empresa.
 
 📍 **Ejemplo:**
 Un banco que necesita controlar todos sus datos por regulación decide construir su propio centro de datos con servidores privados y firewalls internos.
 
 📌 **Ventajas:**
+
 ✔️ Mayor control sobre seguridad y datos.
+
 ✔️ Cumple con regulaciones estrictas (bancos, gobiernos, salud).
+
 ✔️ Mejor rendimiento en entornos sensibles a la latencia.
 
 📌 **Desventajas:**
+
 ❌ Costos elevados de infraestructura y mantenimiento.
+
 ❌ Escalabilidad limitada (agregar servidores físicos es lento y costoso).
+
 ❌ Menos flexibilidad frente a cambios de demanda.
 
 2️⃣ **Nube Pública**
+
 📌 **Definición:** Infraestructura y servicios ofrecidos por proveedores de nube como AWS, Google Cloud y Azure. Los recursos son compartidos entre múltiples clientes, aunque cada uno tiene su propio entorno seguro.
 
 📍 **Ejemplo:**
 Una startup lanza una aplicación en AWS, utilizando instancias EC2, bases de datos en RDS y almacenamiento en S3 sin comprar hardware propio.
 
 📌 **Ventajas:**
+
 ✔️ Bajo costo inicial y modelo de pago por uso.
+
 ✔️ Alta escalabilidad y flexibilidad.
+
 ✔️ Rápida implementación y acceso a tecnologías avanzadas.
 
 📌 **Desventajas:**
+
 ❌ Menos control sobre la infraestructura.
+
 ❌ Requiere estrategias de seguridad bien configuradas.
 
 3️⃣ **Nube Híbrida**
+
 📌 **Definición:** Combina infraestructura local con servicios en la nube, permitiendo que los datos y aplicaciones se muevan entre ambas según la necesidad.
 
 📍 **Ejemplo:**
 Una empresa de retail mantiene sus datos financieros en su propio data center (por seguridad) pero usa la nube para su página web y análisis de datos en tiempo real.
 
 📌 **Ventajas:**
+
 ✔️ Balance entre control, seguridad y escalabilidad.
+
 ✔️ Permite aprovechar la nube sin perder inversiones previas en data centers.
+
 ✔️ Se adapta a regulaciones donde ciertos datos no pueden estar en la nube pública.
 
 📌 **Desventajas:**
+
 ❌ Puede ser compleja de administrar.
+
 ❌ Puede generar costos adicionales si no se gestiona bien la conexión entre ambos entornos.
 
 ### Modelos de Servicio en la Nube
 Los servicios en la nube se dividen en tres modelos principales:
 
 1️⃣ **Infraestructura como Servicio (IaaS)** 🖥️
+
 📌 **Definición:**
 Proporciona acceso a recursos básicos de infraestructura como servidores, almacenamiento y redes. El usuario tiene control sobre el sistema operativo y las aplicaciones, pero no sobre el hardware subyacente.
 
@@ -149,6 +193,7 @@ Proporciona acceso a recursos básicos de infraestructura como servidores, almac
 Una startup que necesita servidores para alojar su sitio web y su base de datos, pero no quiere comprar ni mantener hardware físico.
 
 2️⃣ **Plataforma como Servicio (PaaS)** 🏗️
+
 📌** Definición:**
 Proporciona un entorno de desarrollo y ejecución en la nube donde los desarrolladores pueden crear, probar y desplegar aplicaciones sin preocuparse por la gestión de la infraestructura subyacente.
 
@@ -170,6 +215,7 @@ Proporciona un entorno de desarrollo y ejecución en la nube donde los desarroll
 Un equipo de desarrollo que quiere desplegar rápidamente una aplicación web sin preocuparse por configurar servidores o bases de datos.
 
 3️⃣** Software como Servicio (SaaS)** ☁️
+
 📌 **Definición:**
 Ofrece aplicaciones completas listas para usar a través de Internet, sin necesidad de instalación ni mantenimiento por parte del usuario.
 
@@ -194,8 +240,11 @@ Una empresa que necesita una plataforma de correo electrónico sin preocuparse p
 Una ubicación física que almacena servidores físicos y equipos de hardware relacionados. Contiene la infraestructura informática que requieren los sistemas de TI, como servidores, unidades de almacenamiento y equipos de red. Es la instalación física que almacena los datos digitales de cualquier empresa.
 
 ### AWS es un conjunto de centros de datos:
+
 **36 regiones:** Cada región de AWS consta de al menos 3 zonas de disponibilidad aisladas y físicamente separadas.
+
 **114 zonas de disponibilidad:** Grupo de uno o más centros de datos con alimentación, redes y conectividad redundantes en una región de AWS.
+
 **Más de 600 edge locations:** Puntos de presencia que se utilizan para alojar datos en caché. Más de 600 edge locations.
 Estos puntos de presencia permiten a Amazon CloudFront entregar datos, contenido, aplicaciones y API de forma segura a clientes de todo el mundo con baja latencia y altas velocidades de transferencia, todo ello dentro de un entorno amigable para los desarrolladores.
 
