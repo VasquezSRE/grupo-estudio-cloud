@@ -5,7 +5,7 @@
 > - [Redes sociales de la comunidad AWS User Group Medellín](https://linktr.ee/awsugmed "Redes sociales de la comunidad AWS User Group Medellín")
 > - [Link de la charla en Yotube](https://www.youtube.com/watch?v=HhPGckLLDWY "Link de la charla en Yotube")
 > - [LinkedIn de Santiago Bedoya](https://www.linkedin.com/in/santiago-bedoya-diaz/ "LinkedIn de Santiago Bedoya")
-> - [Enlace a las diapositivas para descargar]([https://www.linkedin.com/in/santiago-bedoya-diaz/](https://www.canva.com/design/DAGjKBw1ub4/QgyUPHykg_TzFbxDarUdYw/edit?utm_content=DAGjKBw1ub4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) "Enlace a las diapositivas para descargar")
+> - [Enlace a las diapositivas para descargar](https://www.canva.com/design/DAGjKBw1ub4/QgyUPHykg_TzFbxDarUdYw/edit?utm_content=DAGjKBw1ub4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton "Enlace a las diapositivas para descargar")
 
 ## Contenido de la charla:
 - Conceptos de computación en la nube
