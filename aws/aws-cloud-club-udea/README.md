@@ -78,23 +78,16 @@ Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde 
 ## 📂 Estructura del repositorio
 
 aws-cloud-club-udea/
-├── labs-portfolio/
-├── charlas/
-├── workshops/
-├── materiales/
-└── README.md
 
-aws-cloud-club-udea/
-│
-├── labs-portfolio/          # Laboratorios prácticos (10 semanas)
-│   ├── lab-01/              # Hoja de vida en la nube
-│   ├── lab-02/              # Despliegue con EC2, ASG y ELB
-│   └── ...
-│
-├── charlas/                 # Charlas con invitados y comunidad
-├── workshops/               # Talleres técnicos especiales
-├── eventos/                 # Registro de actividades y documentación
-└── README.md                # Información general del club
+├── labs-portfolio/
+
+├── charlas/
+
+├── workshops/
+
+├── materiales/
+
+└── README.md
 
 ---
 
@@ -114,6 +107,7 @@ Desde desplegar una web personal, hasta construir APIs serverless, contenedores 
 ## 🤝 ¿Cómo participar?
 
 🔗 Únete a nuestra comunidad Web3ForU-AWSCloudClub: [Grupo WhatsApp](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)
+
 📘 Repositorio principal: [`web3foru/grupo-estudio-cloud`](https://github.com/Santiago1023/grupo-estudio-cloud)
 
 ---
