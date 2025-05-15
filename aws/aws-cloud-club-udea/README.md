@@ -1,12 +1,12 @@
 # ☁️ AWS Cloud Club UdeA (Universidad de Antioquia)
 
-Bienvenido al repositorio oficial del **AWS Cloud Club UdeA**, una iniciativa estudiantil para aprender computación en la nube, construir proyectos reales y desarrollar habilidades técnicas con propósito.
+Bienvenido al **AWS Cloud Club UdeA**, un espacio creado para aprender Cloud Computing con propósito, construir proyectos reales y desarrollar un perfil profesional sólido mientras conectamos con personas apasionadas por la tecnología.
 
 ---
 
 ## 🌐 ¿Qué es AWS Cloud Club?
 
-**AWS Cloud Clubs** son comunidades estudiantiles alrededor del mundo que promueven el aprendizaje de computación en la nube, especialmente con los servicios de Amazon Web Services (AWS). Estos clubes están liderados por estudiantes conocidos como **Cloud Captains**, apoyados directamente por el equipo de AWS.
+**AWS Cloud Clubs** son comunidades estudiantiles alrededor de todo el mundo que promueven el aprendizaje de computación en la nube, especialmente con los servicios de Amazon Web Services (AWS). Estos clubes están liderados por estudiantes conocidos como **Cloud Captains**, apoyados directamente por el equipo de AWS.
 
 ---
 
@@ -22,12 +22,17 @@ Bienvenido al repositorio oficial del **AWS Cloud Club UdeA**, una iniciativa es
 
 ## 🤝 ¿Qué es el core team?
 
-El **core team** es el grupo organizador que apoya al capitán. Este equipo colabora en la logística de eventos, difusión, y liderazgo. Es la semilla para formar futuros capitanes.
+El core team está conformado por estudiantes de la universidad que apoyan en la organización y crecimiento del club.
 
-### ¿Quién puede ser parte?
+## ¿Quién puede ser parte?
+- Estudiantes de cualquier semestre o carrera con entusiasmo por aprender y ayudar.
+- Personas comprometidas, con liderazgo y ganas de crear comunidad.
 
-- Estudiantes de cualquier semestre o carrera
-- Personas con entusiasmo, compromiso y ganas de crecer
+## Responsabilidades:
+- Planificación y logística de eventos.
+- Difusión, promoción y crecimiento del club.
+- Apoyo en la ejecución de talleres, charlas y retos.
+- Crecimiento profesional y preparación para ser futuros capitanes.
 
 ---
 
@@ -43,28 +48,30 @@ El **core team** es el grupo organizador que apoya al capitán. Este equipo cola
 
 ---
 
-## 📆 Primer evento: ¡Bienvenida!
+## 👨‍🏫 Equipo extendido y mentores
+Contamos con el valioso acompañamiento de egresados que han sido parte activa de la comunidad Web3ForU y ahora apoyan al Cloud Club como mentores:
 
-📍 **Lugar:** Telemática - Universidad de Antioquia  
-📅 **Fecha:** Viernes 16 de mayo  
-🕒 **Hora:** 2:00 p.m. - 4:00 p.m.
+[**Santiago Sánchez**](https://www.linkedin.com/in/santiagoasz/ "**Santiago Sánchez**")
+Egresado de Ingeniería de Sistemas - UdeA. Miembro clave de Web3ForU. Hoy guía a los participantes del club con su experiencia en la industria tech.
 
-### Agenda:
-- Introducción al AWS Cloud Club
-- Explicación del programa
-- Presentación de la **serie de 10 laboratorios**
-- Convocatoria al core team
-- Introducción a la nube y a AWS
+[**Andrés Quintero**](https://www.linkedin.com/in/andresqb198/ "**Andrés Quintero**")
+Egresado de Ingeniería de Sistemas - UdeA. Participante desde los inicios de Web3ForU y mentor activo en la evolución del Cloud Club.
+
+🙌 Nos inspiran con su ejemplo y nos apoyan a construir un camino profesional con visión y propósito.
 
 ---
 
-## 💻 ¿Qué haremos?
+## 🚀 ¿Por qué unirte?
 
-- Aprenderemos **conceptos fundamentales** de cloud computing
-- Construiremos **proyectos reales** (sitios web, APIs, bases de datos)
-- Desarrollaremos un **portafolio práctico**
-- Aplicaremos **DevOps y buenas prácticas de arquitectura**
-- Cultivaremos el **mindset profesional** para la industria
+Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde ya tu camino profesional con el respaldo de una comunidad global.
+
+- Aprenderás conceptos clave de computación en la nube.
+- Construirás proyectos reales con servicios de AWS.
+- Crearás un portafolio técnico para tu hoja de vida.
+- Desarrollarás habilidades de DevOps y arquitectura cloud.
+- Conectarás con una comunidad activa de aprendizaje.
+
+💡 Aquí no solo aprendes tecnología, sino también mindset, colaboración y liderazgo.
 
 ---
 
@@ -77,38 +84,47 @@ aws-cloud-club-udea/
 ├── materiales/
 └── README.md
 
-
----
-
-## 🚀 ¿Por qué unirte?
-
-Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde ya tu camino profesional con el respaldo de una comunidad global.
+aws-cloud-club-udea/
+│
+├── labs-portfolio/          # Laboratorios prácticos (10 semanas)
+│   ├── lab-01/              # Hoja de vida en la nube
+│   ├── lab-02/              # Despliegue con EC2, ASG y ELB
+│   └── ...
+│
+├── charlas/                 # Charlas con invitados y comunidad
+├── workshops/               # Talleres técnicos especiales
+├── eventos/                 # Registro de actividades y documentación
+└── README.md                # Información general del club
 
 ---
 
 ## 🛠️ Requisitos
 
-- Cuenta de AWS (Free Tier)
+- Tener una cuenta de AWS (Free Tier)
 - Git y GitHub
-- Ganas de aprender y aportar
+- Ganas de aprender y aportar 💪
+
+---
+## 📅 Primer reto: ¡10 semanas, 10 laboratorios!
+🧪 En este primer ciclo, realizaremos 10 laboratorios donde cada semana construiremos un proyecto práctico.
+Desde desplegar una web personal, hasta construir APIs serverless, contenedores y pipelines CI/CD.
 
 ---
 
-## 📬 Contacto
+## 🤝 ¿Cómo participar?
 
-- Capitán: [Santiago Bedoya Díaz](https://www.linkedin.com/in/santiago-bedoya-diaz/)
+🔗 Únete a nuestra comunidad Web3ForU-AWSCloudClub: [Grupo WhatsApp](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)
+📘 Repositorio principal: [`web3foru/grupo-estudio-cloud`](https://github.com/Santiago1023/grupo-estudio-cloud)
 
 ---
 
 ## ✨ Misión
 
-Aprender cloud **con propósito**, construir **proyectos útiles** y formar **profesionales íntegros** que aporten al desarrollo tecnológico de sus comunidades.
+Crear una **comunidad** donde podamos **aprender**, **equivocarnos**, **construir juntos** y **crecer** como profesionales íntegros.
 
 > “No son los resultados lo que vale la pena, es el camino que recorres para llegar a ellos.” 🚀
 
 ---
+## 📬 Contacto
 
-## 🤝 Únete
-
-🔗 Comunidad Web3ForU: [Grupo WhatsApp](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)  
-📘 Repositorio principal: [`web3foru/grupo-estudio-cloud`](https://github.com/Santiago1023/grupo-estudio-cloud)
+- AWS Cloud Club Captain: [Santiago Bedoya Díaz](https://www.linkedin.com/in/santiago-bedoya-diaz/)
