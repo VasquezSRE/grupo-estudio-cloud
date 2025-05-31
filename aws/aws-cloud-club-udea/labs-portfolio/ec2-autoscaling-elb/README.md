@@ -15,7 +15,7 @@ The architecture of the application is described below:
 - The users can type on browser http://your-dns-alb  and can view the application. (Note: the application is not running for costs).
 - Underneath the application has a load balancer that can balance the load in a target group builded with minimun 1 instance, 2 desired, and maximum 3.
 
-![architecture-ec2-asg-alb](../../images/architecture-ec2-asg-alb.png)
+![architecture-ec2-asg-alb](../images/architecture-ec2-asg-alb.png)
 
 ### What we Learned
 - Create a VPC
@@ -28,8 +28,8 @@ The architecture of the application is described below:
 - Create an Auto Scaling Group
 
 ### The results of learning:
-![ec2-asg-elb1.jpg](../../images/ec2-asg-elb1.jpg.png)
-![ec2-asg-elb2](../../images/ec2-asg-elb2.png)
+![ec2-asg-elb1.jpg](../images/ec2-asg-elb1.jpg)
+![ec2-asg-elb2.jpg](../images/ec2-asg-elb2.jpg)
 
 ### Resources
 [Recordings](https://ingenia.udea.edu.co/zoom/meeting/92110146294 "Recordings")
