@@ -28,8 +28,8 @@ The architecture of the application is described below:
 - Create an Auto Scaling Group
 
 ### The results of learning:
-![ec2-asg-elb1.jpg](../images/ec2-asg-elb1.jpg)
-![ec2-asg-elb2.jpg](../images/ec2-asg-elb2.jpg)
+![ec2-asg-elb1.jpg](../images/ec2-asg-elb1.JPG)
+![ec2-asg-elb2.jpg](../images/ec2-asg-elb2.JPG)
 
 ### Resources
 [Recordings](https://ingenia.udea.edu.co/zoom/meeting/92110146294 "Recordings")
