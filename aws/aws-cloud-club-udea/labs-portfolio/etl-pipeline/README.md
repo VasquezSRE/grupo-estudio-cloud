@@ -25,6 +25,7 @@ The architecture of the application is below:
 - Create a Glue etl job
 - Query with Athena
 
+You can follow the medium blog to deploy your ETL pipeline
 
 ### Resources
 
