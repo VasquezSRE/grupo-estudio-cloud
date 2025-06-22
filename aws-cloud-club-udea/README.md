@@ -99,19 +99,20 @@ Desde desplegar una web personal, hasta construir APIs serverless, contenedores 
 
 ---
 
-## 🤝 ¿Cómo participar?
-
-🔗 Únete a nuestra comunidad Web3ForU-AWSCloudClub: [Grupo WhatsApp](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)
-
-📘 Repositorio principal: [`web3foru/grupo-estudio-cloud`](https://github.com/Santiago1023/grupo-estudio-cloud)
-
----
-
 ## ✨ Misión
 
 Crear una **comunidad** donde podamos **aprender**, **equivocarnos**, **construir juntos** y **crecer** como profesionales íntegros.
 
 > “No son los resultados lo que vale la pena, es el camino que recorres para llegar a ellos.” 🚀
+
+---
+## 🔗 Únete y Conecta
+
+📅 Meetup del Club: [`AWS Cloud Club UdeA en Meetup`](https://www.meetup.com/aws-cloud-club-at-universidad-de-antioquia/)
+
+💬 Grupo de WhatsApp: [Unirse al grupo](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)
+
+▶️ Canal de YouTube: [Ver sesiones y grabaciones](https://www.youtube.com/@AWSCloudClubUdeA)
 
 ---
 ## 📬 Contacto
