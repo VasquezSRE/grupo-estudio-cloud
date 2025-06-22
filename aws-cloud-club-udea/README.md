@@ -75,11 +75,14 @@ Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde 
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Estructura del Repositorio
 
-- [`aws-cloud-practitioner/`](./aws-cloud-practitioner): Guía de preparación para el exame de AWS Cloud Practitioner
-- [`charlas/`](./charlas): Sesiones con speakers invitados.
-- [`labs-portfolio/`](./labs-portfolio): Laboratorios prácticos semanales.
+| Carpeta        | Descripción |
+|----------------|-------------|
+| [`aws-cloud-practitioner/`](./aws-cloud-practitioner)   | Guía de preparación para el exame de AWS Cloud Practitioner |
+| [`charlas/`](./charlas) | Sesiones con speakers invitados |
+| [`labs-portfolio/`](./labs-portfolio) |  Laboratorios prácticos semanales |
+| [`materiales/`](./materiales) | Materiales o recursos adicionales acerca de aws |
 
 ---
 
