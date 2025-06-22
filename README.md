@@ -21,17 +21,11 @@ Nuestra misión es **formar una comunidad sólida** para estudiantes y entusiast
 
 ---
 
-## ☁️ AWS Cloud Club UdeA
-
-Este repositorio forma parte del [AWS Cloud Club UdeA](https://github.com/Santiago1023/grupo-estudio-cloud/tree/main/aws/aws-cloud-club-udea), un grupo oficial de AWS liderado por estudiantes que busca **acercar a la comunidad universitaria al mundo de la computación en la nube** mediante laboratorios prácticos, talleres y eventos colaborativos.
-
----
-
 ## 👥 Miembros del Grupo
 
 | Nombre              | Rol                            | Perfil |
 |---------------------|---------------------------------|--------|
-| Santiago Bedoya Díaz | Capitán AWS Cloud Club · Estudiante UdeA | [LinkedIn](https://www.linkedin.com/in/santiago-bedoya-diaz-42a23024a/) |
+| Santiago Bedoya Díaz | Capitán AWS Cloud Club · Estudiante UdeA | [LinkedIn](https://www.linkedin.com/in/santiago-bedoya-diaz/) |
 | Santiago Sánchez     | Egresado · Mentor               | [LinkedIn](https://www.linkedin.com/in/santiagoasz/) |
 | Andrés Quintero      | Egresado · Mentor               | [LinkedIn](https://www.linkedin.com/in/andresqb198/) |
 
