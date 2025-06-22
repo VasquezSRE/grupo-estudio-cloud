@@ -17,11 +17,11 @@ Aquí no solo desarrollamos habilidades técnicas, sino también construimos com
 | Semana | Laboratorio | Tema | Servicios AWS / Herramientas |
 |--------|-------------|------|------------------------------|
 | 1 | [Introducción a la Nube y a AWS](./welcome-intro-cloud/) | Fundamentos de Cloud y AWS | AWS intro |
-| 2 | [Hoja de vida en la nube](./welcome-intro-cloud/) | Portafolio web desplegado en nube | S3, CloudFront, Route53 |
+| 2 | Hoja de vida en la nube| Portafolio web desplegado en nube | S3, CloudFront, Route53 |
 | 3 | [Escalabilidad y Balanceo en la nube](./ec2-autoscaling-elb/) | Despliegue de una aplicación resiliente y con alta disponibilidad | EC2, Auto Scaling Group, ELB |
 | 4 | [ETL pipeline](./etl-pipeline/) | Proceso de ingestión y almacenamiento de datos | S3, Glue, Athena |
-| 5 | [Networking y VPC](./welcome-intro-cloud/) | Conecta tus recursos de forma segura y escalable | VPC, subnets, IGW, Route Tables |
-| 6 | [Serverless Backend](./welcome-intro-cloud/sesion1.pdf) | Despliegue de aplicaciones serverless | API Gateway, Lambda, DynamoDB |
+| 5 | Networking y VPC | Conecta tus recursos de forma segura y escalable | VPC, subnets, IGW, Route Tables |
+| 6 | Serverless Backend | Despliegue de aplicaciones serverless | API Gateway, Lambda, DynamoDB |
 | 7 | [Contenedores en AWS](./containers-ecs/) | Uso de contenedores con ECR y ECS | Docker, ECS Fargate |
 | 8 | CI/CD básico | Implementación de un pipeline CI/CD | GitHub Actions, S3 |
 | 9 | Observabilidad en la nube| Configuración de logs, métricas, dashboards y alarmas| CloudWatch |
