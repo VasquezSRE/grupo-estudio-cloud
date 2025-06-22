@@ -93,11 +93,6 @@ Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde 
 - Ganas de aprender y aportar 💪
 
 ---
-## 📅 Primer reto: ¡10 semanas, 10 laboratorios!
-🧪 En este primer ciclo, realizaremos 10 laboratorios donde cada semana construiremos un proyecto práctico.
-Desde desplegar una web personal, hasta construir APIs serverless, contenedores y pipelines CI/CD.
-
----
 
 ## ✨ Misión
 
