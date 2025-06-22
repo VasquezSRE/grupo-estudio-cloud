@@ -16,7 +16,7 @@ Nuestra misión es **formar una comunidad sólida** para estudiantes y entusiast
 
 | Carpeta        | Descripción |
 |----------------|-------------|
-| [`aws/`](./aws)     | Espacio dedicado al **AWS Cloud Club UdeA**. Encontrarás laboratorios, charlas con invitados, workshops, guías para certificaciones y más. |
+| [`aws-cloud-club-udea/`](./aws-cloud-club-udea)     | Espacio dedicado al **AWS Cloud Club UdeA**. Encontrarás laboratorios, charlas con invitados, workshops, guías para certificaciones y más. |
 | [`devops/`](./devops) | Documentación de charlas y materiales sobre herramientas y prácticas DevOps (CI/CD, contenedores, automatización, etc). |
 
 ---

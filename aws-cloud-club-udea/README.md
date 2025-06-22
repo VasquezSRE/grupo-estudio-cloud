@@ -77,17 +77,9 @@ Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde 
 
 ## 📂 Estructura del repositorio
 
-aws-cloud-club-udea/
-
-├── labs-portfolio/
-
-├── charlas/
-
-├── workshops/
-
-├── materiales/
-
-└── README.md
+- [`aws-cloud-practitioner/`](./aws-cloud-practitioner): Guía de preparación para el exame de AWS Cloud Practitioner
+- [`charlas/`](./charlas): Sesiones con speakers invitados.
+- [`labs-portfolio/`](./labs-portfolio): Laboratorios prácticos semanales.
 
 ---
 
