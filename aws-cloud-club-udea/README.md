@@ -75,19 +75,14 @@ Porque aprenderás haciendo, crecerás con otros, y estarás construyendo desde 
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Estructura del Repositorio
 
-aws-cloud-club-udea/
-
-├── labs-portfolio/
-
-├── charlas/
-
-├── workshops/
-
-├── materiales/
-
-└── README.md
+| Carpeta        | Descripción |
+|----------------|-------------|
+| [`aws-cloud-practitioner/`](./aws-cloud-practitioner)   | Guía de preparación para el exame de AWS Cloud Practitioner |
+| [`charlas/`](./charlas) | Sesiones con speakers invitados |
+| [`labs-portfolio/`](./labs-portfolio) |  Laboratorios prácticos semanales |
+| [`materiales/`](./materiales) | Materiales o recursos adicionales acerca de aws |
 
 ---
 
@@ -98,25 +93,21 @@ aws-cloud-club-udea/
 - Ganas de aprender y aportar 💪
 
 ---
-## 📅 Primer reto: ¡10 semanas, 10 laboratorios!
-🧪 En este primer ciclo, realizaremos 10 laboratorios donde cada semana construiremos un proyecto práctico.
-Desde desplegar una web personal, hasta construir APIs serverless, contenedores y pipelines CI/CD.
-
----
-
-## 🤝 ¿Cómo participar?
-
-🔗 Únete a nuestra comunidad Web3ForU-AWSCloudClub: [Grupo WhatsApp](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)
-
-📘 Repositorio principal: [`web3foru/grupo-estudio-cloud`](https://github.com/Santiago1023/grupo-estudio-cloud)
-
----
 
 ## ✨ Misión
 
 Crear una **comunidad** donde podamos **aprender**, **equivocarnos**, **construir juntos** y **crecer** como profesionales íntegros.
 
 > “No son los resultados lo que vale la pena, es el camino que recorres para llegar a ellos.” 🚀
+
+---
+## 🔗 Únete y Conecta
+
+📅 Meetup del Club: [`AWS Cloud Club UdeA en Meetup`](https://www.meetup.com/aws-cloud-club-at-universidad-de-antioquia/)
+
+💬 Grupo de WhatsApp: [Unirse al grupo](https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH)
+
+▶️ Canal de YouTube: [Ver sesiones y grabaciones](https://www.youtube.com/@AWSCloudClubUdeA)
 
 ---
 ## 📬 Contacto
