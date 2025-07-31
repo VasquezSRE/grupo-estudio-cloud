@@ -1,0 +1,975 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Tracks from '../components/Tracks.astro';
+import Speakers from '../components/Speakers.astro';
+---
+
+<Layout title="AWS Student Community Day - Universidad de Antioquia">
+  <Header />
+  <main>
+    <Hero />
+    <About />
+    <Tracks />
+    <Speakers />
+    
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">
+            <i class="fas fa-handshake"></i>
+            <span>Our Sponsors</span>
+          </div>
+          
+          <h2 class="section-title">
+            Powered by <span class="gradient-text">Amazing Partners</span>
+          </h2>
+          
+          <p class="section-description">
+            We're grateful to our sponsors who make this event possible and support 
+            the growth of the cloud computing community.
+          </p>
+        </div>
+        
+        <div class="sponsors-grid">
+          <div class="sponsor-tier">
+            <h3>Platinum Sponsor</h3>
+            <div class="sponsor-logos platinum">
+              <div class="sponsor-card">
+                <img src="/logo-amarillo.png" alt="AWS" />
+                <h4>Amazon Web Services</h4>
+                <p>Leading cloud platform providing the infrastructure for this event</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sponsor-tier">
+            <h3>Gold Sponsors</h3>
+            <div class="sponsor-logos gold">
+              <div class="sponsor-card">
+                <img src="/imagen-fuente-udea.jpg" alt="Universidad de Antioquia" />
+                <h4>Universidad de Antioquia</h4>
+                <p>Hosting venue and academic partner</p>
+              </div>
+              <div class="sponsor-card">
+                <div class="sponsor-placeholder">
+                  <i class="fas fa-building"></i>
+                  <span>Your Company Here</span>
+                </div>
+                <h4>Become a Sponsor</h4>
+                <p>Join us in supporting the next generation of cloud professionals</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sponsor-tier">
+            <h3>Community Partners</h3>
+            <div class="sponsor-logos community">
+              <div class="partner-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub Student Pack</span>
+              </div>
+              <div class="partner-item">
+                <i class="fab fa-docker"></i>
+                <span>Docker Community</span>
+              </div>
+              <div class="partner-item">
+                <i class="fas fa-cloud"></i>
+                <span>Cloud Native Foundation</span>
+              </div>
+              <div class="partner-item">
+                <i class="fab fa-dev"></i>
+                <span>Dev Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sponsor-cta">
+          <h3>Interested in Sponsoring?</h3>
+          <p>Help us make this event even better and reach more students</p>
+          <a href="mailto:sponsors@awscloudclub.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            Become a Sponsor
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Location Section -->
+    <section id="location" class="location">
+      <div class="container">
+        <div class="location-content">
+          <div class="location-info">
+            <div class="section-badge">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Event Location</span>
+            </div>
+            
+            <h2 class="section-title text-left">
+              Find Us at <span class="gradient-text">UdeA</span>
+            </h2>
+            
+            <div class="venue-details">
+              <div class="venue-item">
+                <i class="fas fa-building"></i>
+                <div>
+                  <strong>Universidad de Antioquia</strong>
+                  <span>Auditorio Principal</span>
+                </div>
+              </div>
+              
+              <div class="venue-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Address</strong>
+                  <span>Calle 70 No. 52-21, Medellín, Colombia</span>
+                </div>
+              </div>
+              
+              <div class="venue-item">
+                <i class="fas fa-parking"></i>
+                <div>
+                  <strong>Parking</strong>
+                  <span>Free parking available on campus</span>
+                </div>
+              </div>
+              
+              <div class="venue-item">
+                <i class="fas fa-bus"></i>
+                <div>
+                  <strong>Public Transport</strong>
+                  <span>Metro: Universidad station (5 min walk)</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Universidad+de+Antioquia+Medellin" target="_blank" class="btn btn-primary">
+                <i class="fas fa-directions"></i>
+                Get Directions
+              </a>
+              <a href="#register" class="btn btn-secondary">
+                <i class="fas fa-ticket-alt"></i>
+                Register Now
+              </a>
+            </div>
+          </div>
+          
+          <div class="location-map">
+            <div id="map" class="map-container">
+              <!-- Map will be loaded here -->
+            </div>
+            <div class="map-overlay">
+              <div class="map-info">
+                <h4>Universidad de Antioquia</h4>
+                <p>Auditorio Principal</p>
+                <span>Septiembre, 2025 • 9:00 AM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Registration Section -->
+    <section id="register" class="register">
+      <div class="container">
+        <div class="register-content">
+          <div class="register-info">
+            <h2>Ready to Join Us?</h2>
+            <p>
+              Don't miss this incredible opportunity to learn, network, and grow your cloud skills. 
+              Registration is completely free, but seats are limited!
+            </p>
+            
+            <div class="register-benefits">
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Free admission to all tracks and workshops</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Lunch and refreshments included</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Certificate of participation</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Networking opportunities</span>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>AWS swag and resources</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="register-form">
+            <div class="form-card">
+              <h3>Register Now</h3>
+              <p>Secure your spot at AWS Student Community Day</p>
+              
+              <form class="registration-form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                
+                <div class="form-group">
+                  <label for="university">University/Organization</label>
+                  <input type="text" id="university" name="university" required />
+                </div>
+                
+                <div class="form-group">
+                  <label for="track">Preferred Track</label>
+                  <select id="track" name="track" required>
+                    <option value="">Select a track</option>
+                    <option value="fundamentals">Cloud Fundamentals</option>
+                    <option value="devops">DevOps & Automation</option>
+                    <option value="aiml">AI/ML & Data</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="experience">Experience Level</label>
+                  <select id="experience" name="experience" required>
+                    <option value="">Select your level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                  </select>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" required />
+                    <span class="checkmark"></span>
+                    I agree to the <a href="#" target="_blank">Terms and Conditions</a>
+                  </label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    Subscribe to AWS Cloud Club updates
+                  </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">
+                  <i class="fas fa-ticket-alt"></i>
+                  Complete Registration
+                </button>
+              </form>
+              
+              <div class="form-footer">
+                <p>Registration closes on Septiembre 10, 2025 or when capacity is reached.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="/logo-blanco.png" alt="AWS Cloud Club" />
+            <div class="brand-text">
+              <span class="brand-title">AWS Cloud Club</span>
+              <span class="brand-subtitle">Universidad de Antioquia</span>
+            </div>
+          </div>
+          <p>Empowering students to build the future with cloud technologies.</p>
+          
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Event</h4>
+            <ul>
+              <li><a href="#about">About SCD</a></li>
+              <li><a href="#tracks">Tracks</a></li>
+              <li><a href="#speakers">Speakers</a></li>
+              <li><a href="#location">Location</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Join Club</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">AWS Free Tier</a></li>
+              <li><a href="#">Certification</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-group">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:info@awscloudclub.com">info@awscloudclub.com</a></li>
+              <li><a href="mailto:sponsors@awscloudclub.com">Sponsorship</a></li>
+              <li><a href="mailto:speakers@awscloudclub.com">Speakers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 AWS Cloud Club Universidad de Antioquia. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Code of Conduct</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  /* Sponsors Section */
+  .sponsors {
+    background: var(--aws-gray-light);
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    color: var(--aws-dark);
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    line-height: 1.6;
+  }
+
+  .sponsors-grid {
+    margin-bottom: 4rem;
+  }
+
+  .sponsor-tier {
+    margin-bottom: 3rem;
+  }
+
+  .sponsor-tier h3 {
+    text-align: center;
+    color: var(--aws-navy);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .sponsor-logos {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .sponsor-logos.platinum {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .sponsor-logos.gold {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .sponsor-logos.community {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .sponsor-card {
+    background: var(--aws-white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--aws-gray-light);
+  }
+
+  .sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .sponsor-card img {
+    max-width: 150px;
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  .sponsor-placeholder {
+    width: 150px;
+    height: 80px;
+    background: var(--aws-gray-light);
+    border: 2px dashed var(--aws-gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: var(--aws-gray);
+  }
+
+  .sponsor-placeholder i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sponsor-card h4 {
+    color: var(--aws-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .sponsor-card p {
+    color: var(--aws-dark);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .partner-item {
+    background: var(--aws-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .partner-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .partner-item i {
+    font-size: 1.5rem;
+    color: var(--aws-blue);
+  }
+
+  .partner-item span {
+    font-weight: 600;
+    color: var(--aws-navy);
+  }
+
+  .sponsor-cta {
+    text-align: center;
+    padding: 3rem;
+    background: var(--gradient-primary);
+    border-radius: 16px;
+    color: var(--aws-white);
+  }
+
+  .sponsor-cta h3 {
+    color: var(--aws-white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .sponsor-cta p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+  }
+
+  /* Location Section */
+  .location {
+    background: var(--aws-white);
+  }
+
+  .location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .venue-details {
+    margin-bottom: 3rem;
+  }
+
+  .venue-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--aws-gray-light);
+    border-radius: 8px;
+    border-left: 4px solid var(--aws-orange);
+  }
+
+  .venue-item i {
+    color: var(--aws-blue);
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .venue-item div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .venue-item strong {
+    color: var(--aws-navy);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .venue-item span {
+    color: var(--aws-dark);
+    font-size: 0.9rem;
+  }
+
+  .location-actions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: var(--aws-gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map-container::before {
+    content: 'Interactive map will load here';
+    color: var(--aws-gray);
+    font-size: 1.1rem;
+  }
+
+  .map-overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+  }
+
+  .map-info h4 {
+    color: var(--aws-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .map-info p {
+    color: var(--aws-dark);
+    margin-bottom: 0.25rem;
+  }
+
+  .map-info span {
+    color: var(--aws-orange);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  /* Register Section */
+  .register {
+    background: var(--gradient-hero);
+    color: var(--aws-white);
+  }
+
+  .register-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  .register-info h2 {
+    color: var(--aws-white);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .register-info p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .register-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .benefit-item i {
+    color: var(--aws-orange);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .form-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+
+  .form-card h3 {
+    color: var(--aws-white);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-card > p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+  }
+
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    color: var(--aws-white);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--aws-white);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--aws-orange);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .checkbox-group {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    display: none;
+  }
+
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: var(--aws-orange);
+    border-color: var(--aws-orange);
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    color: var(--aws-white);
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .checkbox-label a {
+    color: var(--aws-orange);
+    text-decoration: underline;
+  }
+
+  .form-footer {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .form-footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  /* Footer */
+  .footer {
+    background: var(--aws-navy);
+    color: var(--aws-white);
+    padding: 4rem 0 2rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--aws-white);
+    line-height: 1;
+  }
+
+  .brand-subtitle {
+    font-size: 0.8rem;
+    color: var(--aws-orange);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-brand p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--aws-white);
+    transition: all 0.3s ease;
+  }
+
+  .social-links a:hover {
+    background: var(--aws-orange);
+    transform: translateY(-2px);
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .link-group h4 {
+    color: var(--aws-orange);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .link-group ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .link-group li {
+    margin-bottom: 0.5rem;
+  }
+
+  .link-group a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+  }
+
+  .link-group a:hover {
+    color: var(--aws-orange);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer-legal a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .footer-legal a:hover {
+    color: var(--aws-orange);
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .sponsor-logos.gold {
+      grid-template-columns: 1fr;
+    }
+
+    .sponsor-logos.community {
+      grid-template-columns: 1fr;
+    }
+
+    .location-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .location-actions {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .register-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .footer-links {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .footer-legal {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-links {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .partner-item {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    .venue-item {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  }
+</style>
