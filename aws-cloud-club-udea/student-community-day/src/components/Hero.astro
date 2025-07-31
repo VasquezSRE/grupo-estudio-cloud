@@ -1,5 +1,7 @@
 ---
-// Hero component for AWS Student Community Day
+import { getCurrentLanguage, t } from '../i18n/utils';
+
+const lang = getCurrentLanguage(Astro.url);
 ---
 
 <section id="home" class="hero">
@@ -12,62 +14,60 @@
     <div class="hero-content">
       <div class="hero-badge">
         <i class="fas fa-calendar-alt"></i>
-        <span>Septiembre, 2025 • Lugar por definir</span>
+        <span>{t(lang, 'hero.badge')}</span>
       </div>
       
       <h1 class="hero-title">
-        AWS Student
-        <span class="gradient-text">Community Day</span>
+        {t(lang, 'hero.title')}
+        <span class="gradient-text">{t(lang, 'hero.titleHighlight')}</span>
       </h1>
       
       <p class="hero-description">
-        Join us for a full day of learning, networking, and innovation! Discover the latest 
-        AWS technologies through hands-on workshops, inspiring talks, and connect with 
-        fellow cloud enthusiasts.
+        {t(lang, 'hero.description')}
       </p>
       
       <div class="hero-stats">
         <div class="stat-item">
           <div class="stat-number">3</div>
-          <div class="stat-label">Learning Tracks</div>
+          <div class="stat-label">{t(lang, 'hero.stats.tracks')}</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">8+</div>
-          <div class="stat-label">Expert Speakers</div>
+          <div class="stat-label">{t(lang, 'hero.stats.speakers')}</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">200+</div>
-          <div class="stat-label">Attendees</div>
+          <div class="stat-label">{t(lang, 'hero.stats.attendees')}</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">Free</div>
-          <div class="stat-label">Registration</div>
+          <div class="stat-number">{lang === 'es' ? 'Gratis' : 'Free'}</div>
+          <div class="stat-label">{t(lang, 'hero.stats.registration')}</div>
         </div>
       </div>
       
       <div class="hero-actions">
         <a href="#register" class="btn btn-primary btn-large">
           <i class="fas fa-ticket-alt"></i>
-          Register Now
+          {t(lang, 'hero.buttons.register')}
         </a>
         <a href="#about" class="btn btn-outline btn-large">
           <i class="fas fa-info-circle"></i>
-          Learn More
+          {t(lang, 'hero.buttons.learnMore')}
         </a>
       </div>
       
       <div class="hero-info">
         <div class="info-item">
           <i class="fas fa-clock"></i>
-          <span>9:00 AM - 6:00 PM</span>
+          <span>{t(lang, 'hero.info.time')}</span>
         </div>
         <div class="info-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span>Auditorio Principal, UdeA</span>
+          <span>{t(lang, 'hero.info.location')}</span>
         </div>
         <div class="info-item">
           <i class="fas fa-users"></i>
-          <span>Students & Professionals Welcome</span>
+          <span>{t(lang, 'hero.info.audience')}</span>
         </div>
       </div>
     </div>
@@ -76,15 +76,15 @@
       <div class="hero-image">
         <div class="floating-card card-1">
           <i class="fab fa-aws"></i>
-          <span>Cloud Computing</span>
+          <span>{t(lang, 'hero.cards.cloud')}</span>
         </div>
         <div class="floating-card card-2">
           <i class="fas fa-code"></i>
-          <span>Hands-on Labs</span>
+          <span>{t(lang, 'hero.cards.labs')}</span>
         </div>
         <div class="floating-card card-3">
           <i class="fas fa-network-wired"></i>
-          <span>Networking</span>
+          <span>{t(lang, 'hero.cards.networking')}</span>
         </div>
         <div class="hero-illustration">
           <div class="cloud-icon">

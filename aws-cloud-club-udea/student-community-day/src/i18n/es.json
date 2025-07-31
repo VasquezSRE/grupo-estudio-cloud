@@ -57,6 +57,20 @@
       "exploreTracks": "Explorar Tracks",
       "meetSpeakers": "Conocer Speakers"
     },
+    "card": {
+      "freeEvent": "Evento Gratuito",
+      "date": "Fecha",
+      "time": "Hora",
+      "venue": "Lugar",
+      "capacity": "Capacidad",
+      "attendees": "Asistentes",
+      "highlights": {
+        "tracks": "3 Tracks de Aprendizaje",
+        "speakers": "Speakers Expertos",
+        "labs": "Laboratorios Prácticos",
+        "networking": "Networking"
+      }
+    },
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Evento Gratuito",
@@ -181,6 +195,50 @@
     "title": "Aprende de",
     "titleHighlight": "Líderes de la Industria",
     "description": "Nuestros speakers son expertos de AWS, profesionales de la industria y líderes de pensamiento que compartirán su conocimiento y experiencia contigo.",
+    "speaker1": {
+      "name": "Carlos Rodriguez",
+      "title": "Arquitecto Senior de Soluciones",
+      "company": "Amazon Web Services",
+      "bio": "Carlos tiene más de 8 años de experiencia en arquitectura en la nube y ha ayudado a cientos de empresas a migrar a AWS. Se especializa en arquitecturas serverless y prácticas de DevOps.",
+      "topics": {
+        "serverless": "Serverless",
+        "devops": "DevOps",
+        "migration": "Migración"
+      }
+    },
+    "speaker2": {
+      "name": "María González",
+      "title": "Científica de Datos Senior",
+      "company": "TechCorp",
+      "bio": "María es una experta en machine learning con experiencia en la implementación de soluciones de IA a gran escala usando servicios de AWS como SageMaker y Bedrock.",
+      "topics": {
+        "ml": "Machine Learning",
+        "ai": "Inteligencia Artificial",
+        "data": "Análisis de Datos"
+      }
+    },
+    "speaker3": {
+      "name": "David Kim",
+      "title": "Especialista en Seguridad en la Nube",
+      "company": "SecureCloud Inc.",
+      "bio": "David se enfoca en seguridad en la nube y cumplimiento normativo. Ha diseñado marcos de seguridad para organizaciones Fortune 500 y es un AWS Security Specialty certificado.",
+      "topics": {
+        "security": "Seguridad",
+        "compliance": "Cumplimiento",
+        "governance": "Gobernanza"
+      }
+    },
+    "speaker4": {
+      "name": "Ana Silva",
+      "title": "Ingeniera DevOps Principal",
+      "company": "CloudNative Solutions",
+      "bio": "Ana es una experta en containerización y orquestación. Lidera iniciativas de transformación digital y tiene amplia experiencia con Kubernetes y servicios de contenedores de AWS.",
+      "topics": {
+        "containers": "Contenedores",
+        "kubernetes": "Kubernetes",
+        "microservices": "Microservicios"
+      }
+    },
     "cta": {
       "title": "¿Quieres ser Speaker?",
       "description": "Siempre estamos buscando speakers apasionados para compartir su conocimiento con nuestra comunidad.",
