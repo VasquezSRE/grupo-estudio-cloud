@@ -1,5 +1,8 @@
 ---
-// Header component for AWS Student Community Day
+import { getCurrentLanguage, t } from '../i18n/utils';
+import LanguageSelector from './LanguageSelector.astro';
+
+const lang = getCurrentLanguage(Astro.url);
 ---
 
 <header class="header">
@@ -19,29 +22,30 @@
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link">{t(lang, 'nav.home')}</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About SCD</a>
+              <a href="#about" class="nav-link">{t(lang, 'nav.about')}</a>
             </li>
             <li class="nav-item">
-              <a href="#tracks" class="nav-link">Tracks</a>
+              <a href="#tracks" class="nav-link">{t(lang, 'nav.tracks')}</a>
             </li>
             <li class="nav-item">
-              <a href="#speakers" class="nav-link">Speakers</a>
+              <a href="#speakers" class="nav-link">{t(lang, 'nav.speakers')}</a>
             </li>
             <li class="nav-item">
-              <a href="#sponsors" class="nav-link">Sponsors</a>
+              <a href="#sponsors" class="nav-link">{t(lang, 'nav.sponsors')}</a>
             </li>
             <li class="nav-item">
-              <a href="#location" class="nav-link">Location</a>
+              <a href="#location" class="nav-link">{t(lang, 'nav.location')}</a>
             </li>
           </ul>
           
           <div class="nav-actions">
+            <LanguageSelector />
             <a href="#register" class="btn btn-primary">
               <i class="fas fa-ticket-alt"></i>
-              Register Now
+              {t(lang, 'nav.register')}
             </a>
           </div>
         </div>
@@ -242,6 +246,8 @@
       width: 100%;
       justify-content: center;
       margin-top: 1rem;
+      flex-direction: column;
+      gap: 1rem;
     }
 
     .brand-text {

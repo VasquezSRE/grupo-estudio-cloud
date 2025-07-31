@@ -1,0 +1,566 @@
+---
+import { getCurrentLanguage, t } from '../i18n/utils';
+
+const lang = getCurrentLanguage(Astro.url);
+---
+
+<section id="tracks" class="tracks">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-badge">
+        <i class="fas fa-route"></i>
+        <span>{t(lang, 'tracks.badge')}</span>
+      </div>
+      
+      <h2 class="section-title">
+        {t(lang, 'tracks.title')} <span class="gradient-text">{t(lang, 'tracks.titleHighlight')}</span>
+      </h2>
+      
+      <p class="section-description">
+        {t(lang, 'tracks.description')}
+      </p>
+    </div>
+    
+    <div class="tracks-grid">
+      <!-- Track 1: Cloud Fundamentals -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon track-icon-blue">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="track-info">
+            <h3>{t(lang, 'tracks.track1.title')}</h3>
+            <span class="track-level">{t(lang, 'tracks.track1.level')}</span>
+          </div>
+          <div class="track-badge">
+            <span class="badge badge-primary">{t(lang, 'tracks.track1.badge')}</span>
+          </div>
+        </div>
+        
+        <p class="track-description">
+          {t(lang, 'tracks.track1.description')}
+        </p>
+        
+        <div class="track-workshops">
+          <h4>{t(lang, 'tracks.track1.workshops')}</h4>
+          <div class="workshop-list">
+            <div class="workshop-item">
+              <i class="fas fa-play-circle"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track1.items.intro.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.intro.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-server"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track1.items.ec2.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.ec2.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-database"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track1.items.storage.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.storage.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track1.items.security.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.security.description')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="track-footer">
+          <div class="track-stats">
+            <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track1.duration')}</span>
+            <span><i class="fas fa-users"></i> {t(lang, 'tracks.track1.seats')}</span>
+          </div>
+          <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track1.button')}</a>
+        </div>
+      </div>
+      
+      <!-- Track 2: DevOps & Automation -->
+      <div class="track-card featured">
+        <div class="track-header">
+          <div class="track-icon track-icon-purple">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="track-info">
+            <h3>{t(lang, 'tracks.track2.title')}</h3>
+            <span class="track-level">{t(lang, 'tracks.track2.level')}</span>
+          </div>
+          <div class="track-badge">
+            <span class="badge badge-purple">{t(lang, 'tracks.track2.badge')}</span>
+          </div>
+        </div>
+        
+        <p class="track-description">
+          {t(lang, 'tracks.track2.description')}
+        </p>
+        
+        <div class="track-workshops">
+          <h4>{t(lang, 'tracks.track2.workshops')}</h4>
+          <div class="workshop-list">
+            <div class="workshop-item">
+              <i class="fas fa-code-branch"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track2.items.cicd.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.cicd.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-layer-group"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track2.items.iac.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.iac.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-docker"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track2.items.containers.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.containers.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track2.items.monitoring.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.monitoring.description')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="track-footer">
+          <div class="track-stats">
+            <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track2.duration')}</span>
+            <span><i class="fas fa-users"></i> {t(lang, 'tracks.track2.seats')}</span>
+          </div>
+          <a href="#register" class="btn btn-primary">{t(lang, 'tracks.track2.button')}</a>
+        </div>
+      </div>
+      
+      <!-- Track 3: AI/ML & Data -->
+      <div class="track-card">
+        <div class="track-header">
+          <div class="track-icon track-icon-green">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="track-info">
+            <h3>{t(lang, 'tracks.track3.title')}</h3>
+            <span class="track-level">{t(lang, 'tracks.track3.level')}</span>
+          </div>
+          <div class="track-badge">
+            <span class="badge badge-success">{t(lang, 'tracks.track3.badge')}</span>
+          </div>
+        </div>
+        
+        <p class="track-description">
+          {t(lang, 'tracks.track3.description')}
+        </p>
+        
+        <div class="track-workshops">
+          <h4>{t(lang, 'tracks.track3.workshops')}</h4>
+          <div class="workshop-list">
+            <div class="workshop-item">
+              <i class="fas fa-robot"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track3.items.sagemaker.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.sagemaker.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-eye"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track3.items.vision.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.vision.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-comments"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track3.items.nlp.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.nlp.description')}</span>
+              </div>
+            </div>
+            
+            <div class="workshop-item">
+              <i class="fas fa-chart-bar"></i>
+              <div>
+                <strong>{t(lang, 'tracks.track3.items.analytics.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.analytics.description')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="track-footer">
+          <div class="track-stats">
+            <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track3.duration')}</span>
+            <span><i class="fas fa-users"></i> {t(lang, 'tracks.track3.seats')}</span>
+          </div>
+          <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track3.button')}</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tracks-info">
+      <div class="info-card">
+        <i class="fas fa-info-circle"></i>
+        <div>
+          <h4>{t(lang, 'tracks.info.selection.title')}</h4>
+          <p>{t(lang, 'tracks.info.selection.description')}</p>
+        </div>
+      </div>
+      
+      <div class="info-card">
+        <i class="fas fa-laptop-code"></i>
+        <div>
+          <h4>{t(lang, 'tracks.info.bring.title')}</h4>
+          <p>{t(lang, 'tracks.info.bring.description')}</p>
+        </div>
+      </div>
+      
+      <div class="info-card">
+        <i class="fas fa-certificate"></i>
+        <div>
+          <h4>{t(lang, 'tracks.info.certificates.title')}</h4>
+          <p>{t(lang, 'tracks.info.certificates.description')}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tracks {
+    background: var(--aws-gray-light);
+    position: relative;
+  }
+
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--aws-white);
+    border: 1px solid var(--aws-gray);
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--aws-blue);
+  }
+
+  .section-badge i {
+    color: var(--aws-orange);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--aws-blue) 0%, var(--aws-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+    color: var(--aws-dark);
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    line-height: 1.6;
+  }
+
+  .tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .track-card {
+    background: var(--aws-white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--aws-gray-light);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .track-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .track-card.featured {
+    border: 2px solid var(--aws-orange);
+    transform: scale(1.02);
+  }
+
+  .track-card.featured::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--aws-orange);
+    color: var(--aws-white);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-bottom-left-radius: 8px;
+  }
+
+  .track-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .track-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--aws-white);
+    flex-shrink: 0;
+  }
+
+  .track-icon-blue {
+    background: var(--gradient-primary);
+  }
+
+  .track-icon-purple {
+    background: var(--gradient-accent);
+  }
+
+  .track-icon-green {
+    background: linear-gradient(135deg, var(--aws-green) 0%, var(--aws-teal) 100%);
+  }
+
+  .track-info {
+    flex: 1;
+  }
+
+  .track-info h3 {
+    font-size: 1.4rem;
+    color: var(--aws-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .track-level {
+    font-size: 0.9rem;
+    color: var(--aws-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .track-badge {
+    flex-shrink: 0;
+  }
+
+  .track-description {
+    color: var(--aws-dark);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .track-workshops h4 {
+    font-size: 1.1rem;
+    color: var(--aws-navy);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .track-workshops h4::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: var(--aws-orange);
+    border-radius: 2px;
+  }
+
+  .workshop-list {
+    margin-bottom: 2rem;
+  }
+
+  .workshop-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--aws-gray-light);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .workshop-item:hover {
+    background: rgba(32, 116, 213, 0.05);
+    transform: translateX(5px);
+  }
+
+  .workshop-item i {
+    color: var(--aws-blue);
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .workshop-item div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workshop-item strong {
+    color: var(--aws-navy);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .workshop-item span {
+    color: var(--aws-dark);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .track-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--aws-gray-light);
+  }
+
+  .track-stats {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .track-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--aws-dark);
+  }
+
+  .track-stats i {
+    color: var(--aws-blue);
+    font-size: 0.8rem;
+  }
+
+  .tracks-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--aws-white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--aws-orange);
+  }
+
+  .info-card i {
+    color: var(--aws-orange);
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+  }
+
+  .info-card h4 {
+    color: var(--aws-navy);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card p {
+    color: var(--aws-dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .tracks-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .track-card.featured {
+      transform: none;
+    }
+
+    .track-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .track-footer {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .tracks-info {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .track-card {
+      padding: 1.5rem;
+    }
+
+    .workshop-item {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .workshop-item i {
+      align-self: flex-start;
+    }
+
+    .track-stats {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>
