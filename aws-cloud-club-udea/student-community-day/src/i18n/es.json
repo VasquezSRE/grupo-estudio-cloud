@@ -275,26 +275,31 @@
   },
   "location": {
     "badge": "Ubicación del Evento",
-    "title": "Encuéntranos en",
+    "title": "Encuéntranos en la",
     "titleHighlight": "UdeA",
     "venue": {
-      "building": "Universidad de Antioquia",
-      "room": "Auditorio Principal",
-      "address": "Calle 70 No. 52-21, Medellín, Colombia",
-      "parking": "Parqueadero gratuito disponible en el campus",
-      "transport": "Metro: Estación Universidad (5 min caminando)"
+      "name": "Universidad de Antioquia",
+      "room": "Auditorio Principal"
+    },
+    "address": {
+      "label": "Dirección",
+      "value": "Calle 70 No. 52-21, Medellín, Colombia"
+    },
+    "parking": {
+      "label": "Parqueadero",
+      "value": "Parqueadero gratuito disponible en el campus"
+    },
+    "transport": {
+      "label": "Transporte Público",
+      "value": "Metro: Estación Universidad (5 min caminando)"
     },
     "buttons": {
       "directions": "Obtener Direcciones",
       "register": "Registrarse Ahora"
     },
-    "mapInfo": {
-      "title": "Universidad de Antioquia",
-      "subtitle": "Auditorio Principal",
-      "date": "15 de Marzo, 2024 • 9:00 AM"
-    }
+    "date": "Septiembre, 2025 • 9:00 AM"
   },
-  "register": {
+  "registration": {
     "title": "¿Listo para Unirte?",
     "description": "¡No te pierdas esta increíble oportunidad de aprender, hacer networking y desarrollar tus habilidades en la nube. El registro es completamente gratuito, pero los cupos son limitados!",
     "benefits": {
@@ -305,40 +310,43 @@
       "swag": "Merchandising y recursos de AWS"
     },
     "form": {
-      "title": "Registrarse Ahora",
+      "title": "Regístrate Ahora",
       "subtitle": "Asegura tu lugar en el AWS Student Community Day",
       "fields": {
         "name": "Nombre Completo",
         "email": "Correo Electrónico",
         "university": "Universidad/Organización",
-        "track": "Track Preferido",
-        "experience": "Nivel de Experiencia"
+        "track": {
+          "label": "Track Preferido",
+          "placeholder": "Selecciona un track",
+          "options": {
+            "fundamentals": "Fundamentos de la Nube",
+            "devops": "DevOps y Automatización",
+            "aiml": "IA/ML y Datos"
+          }
+        },
+        "experience": {
+          "label": "Nivel de Experiencia",
+          "placeholder": "Selecciona tu nivel",
+          "options": {
+            "beginner": "Principiante",
+            "intermediate": "Intermedio",
+            "advanced": "Avanzado"
+          }
+        }
       },
-      "options": {
-        "selectTrack": "Selecciona un track",
-        "fundamentals": "Fundamentos de la Nube",
-        "devops": "DevOps y Automatización",
-        "aiml": "IA/ML y Datos",
-        "selectLevel": "Selecciona tu nivel",
-        "beginner": "Principiante",
-        "intermediate": "Intermedio",
-        "advanced": "Avanzado"
+      "terms": {
+        "text": "Acepto los",
+        "link": "Términos y Condiciones"
       },
-      "checkboxes": {
-        "terms": "Acepto los Términos y Condiciones",
-        "updates": "Suscribirme a actualizaciones del AWS Cloud Club"
-      },
-      "button": "Completar Registro",
-      "footer": "El registro cierra el 10 de marzo de 2024 o cuando se alcance la capacidad."
+      "newsletter": "Suscribirme a las actualizaciones del AWS Cloud Club",
+      "submit": "Completar Registro",
+      "footer": "El registro cierra el 10 de Septiembre de 2025 o cuando se alcance la capacidad máxima."
     }
   },
   "footer": {
-    "brand": {
-      "title": "AWS Cloud Club",
-      "subtitle": "Universidad de Antioquia",
-      "description": "Empoderando a los estudiantes para construir el futuro con tecnologías de la nube."
-    },
-    "links": {
+    "description": "Empoderando a los estudiantes para construir el futuro con tecnologías en la nube.",
+    "sections": {
       "event": {
         "title": "Evento",
         "about": "Acerca del SCD",
@@ -348,14 +356,14 @@
       },
       "community": {
         "title": "Comunidad",
-        "join": "Unirse al Club",
+        "join": "Únete al Club",
         "discord": "Discord",
         "newsletter": "Newsletter",
         "blog": "Blog"
       },
       "resources": {
         "title": "Recursos",
-        "freeTier": "AWS Free Tier",
+        "freeTier": "AWS Capa Gratuita",
         "certification": "Certificación",
         "documentation": "Documentación",
         "support": "Soporte"
@@ -363,17 +371,15 @@
       "contact": {
         "title": "Contacto",
         "info": "info@awscloudclub.com",
-        "sponsorship": "Patrocinio",
+        "sponsorship": "Patrocinios",
         "speakers": "Speakers"
       }
     },
-    "bottom": {
-      "copyright": "© 2024 AWS Cloud Club Universidad de Antioquia. Todos los derechos reservados.",
-      "legal": {
-        "privacy": "Política de Privacidad",
-        "terms": "Términos de Servicio",
-        "conduct": "Código de Conducta"
-      }
+    "copyright": "© 2024 AWS Cloud Club Universidad de Antioquia. Todos los derechos reservados.",
+    "legal": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "conduct": "Código de Conducta"
     }
   },
   "common": {
