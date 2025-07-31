@@ -3,6 +3,12 @@
 .env 
 /etl-codigo
 
+# Carpetas específicas a ignorar
+aws-cloud-club-udea/StudentCommunityDay/
+aws-cloud-club-udea/logos-aws-cloud-club/
+aws-cloud-club-udea/aws-cloud-club-astro/
+# aws-cloud-club-udea/student-community-day/
+
 # Node.js dependencies
 node_modules/
 npm-debug.log*

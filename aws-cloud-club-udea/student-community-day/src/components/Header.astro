@@ -1,0 +1,262 @@
+---
+// Header component for AWS Student Community Day
+---
+
+<header class="header">
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="nav-brand">
+          <a href="#home" class="brand-link">
+            <img src="/logo-blanco.png" alt="AWS Cloud Club" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-title">Student Community Day</span>
+              <span class="brand-subtitle">AWS Cloud Club UdeA</span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About SCD</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tracks" class="nav-link">Tracks</a>
+            </li>
+            <li class="nav-item">
+              <a href="#speakers" class="nav-link">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sponsors" class="nav-link">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#location" class="nav-link">Location</a>
+            </li>
+          </ul>
+          
+          <div class="nav-actions">
+            <a href="#register" class="btn btn-primary">
+              <i class="fas fa-ticket-alt"></i>
+              Register Now
+            </a>
+          </div>
+        </div>
+        
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(35, 47, 62, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .header.scrolled {
+    background: rgba(35, 47, 62, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--aws-white);
+  }
+
+  .brand-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--aws-white);
+    line-height: 1;
+  }
+
+  .brand-subtitle {
+    font-size: 0.8rem;
+    color: var(--aws-orange);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    color: var(--aws-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--aws-orange);
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--aws-orange);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    gap: 4px;
+  }
+
+  .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background: var(--aws-white);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .nav-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .nav-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--aws-navy);
+      flex-direction: column;
+      padding: 2rem;
+      gap: 1rem;
+      transform: translateY(-100vh);
+      transition: transform 0.3s ease;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu.active {
+      transform: translateY(0);
+    }
+
+    .nav-list {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .nav-link {
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
+    }
+
+    .nav-actions {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .brand-text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0.75rem 0;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+</style>
