@@ -9,7 +9,7 @@
     "register": "Registrarse"
   },
   "hero": {
-    "badge": "15 de Marzo, 2024 • Universidad de Antioquia",
+    "badge": "Septiembre, 2025 • Lugar por definir",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "¡Únete a nosotros para un día completo de aprendizaje, networking e innovación! Descubre las últimas tecnologías de AWS a través de talleres prácticos, charlas inspiradoras y conecta con otros entusiastas de la nube.",
@@ -25,7 +25,7 @@
     },
     "info": {
       "time": "9:00 AM - 6:00 PM",
-      "location": "Auditorio Principal, UdeA",
+      "location": "Lugar por definir",
       "audience": "Estudiantes y Profesionales Bienvenidos"
     },
     "cards": {
@@ -74,9 +74,9 @@
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Evento Gratuito",
-      "date": "15 de Marzo, 2024",
+      "date": "Septiembre, 2025",
       "time": "9:00 AM - 6:00 PM",
-      "venue": "Universidad de Antioquia",
+      "venue": "Lugar por definir",
       "capacity": "200+ Asistentes"
     },
     "highlights": {
@@ -263,9 +263,10 @@
       "title": "Universidad de Antioquia",
       "description": "Sede anfitriona y socio académico"
     },
-    "becomeSponsors": {
-      "title": "Tu Empresa Aquí",
-      "description": "Únete a nosotros para apoyar a la próxima generación de profesionales de la nube"
+    "placeholder": {
+      "text": "Tu Empresa Aquí",
+      "title": "Conviértete en Patrocinador",
+      "description": "Únete a nosotros para apoyar a la próxima generación de profesionales en la nube"
     },
     "cta": {
       "title": "¿Interesado en Patrocinar?",
@@ -275,15 +276,15 @@
   },
   "location": {
     "badge": "Ubicación del Evento",
-    "title": "Encuéntranos en la",
-    "titleHighlight": "UdeA",
+    "title": "Encuéntranos en ",
+    "titleHighlight": "por definir...",
     "venue": {
-      "name": "Universidad de Antioquia",
+      "name": "Por definir",
       "room": "Auditorio Principal"
     },
     "address": {
       "label": "Dirección",
-      "value": "Calle 70 No. 52-21, Medellín, Colombia"
+      "value": "Por definir"
     },
     "parking": {
       "label": "Parqueadero",
@@ -291,7 +292,7 @@
     },
     "transport": {
       "label": "Transporte Público",
-      "value": "Metro: Estación Universidad (5 min caminando)"
+      "value": "Por definir"
     },
     "buttons": {
       "directions": "Obtener Direcciones",

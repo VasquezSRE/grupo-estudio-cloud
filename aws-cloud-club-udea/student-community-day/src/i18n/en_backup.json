@@ -9,7 +9,7 @@
     "register": "Register Now"
   },
   "hero": {
-    "badge": "September, 2025 • Venue to be defined",
+    "badge": "September, 2025 • Venue for the event to be announced",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "Join us for a full day of learning, networking, and innovation! Discover the latest AWS technologies through hands-on workshops, inspiring talks, and connect with fellow cloud enthusiasts.",
@@ -25,7 +25,7 @@
     },
     "info": {
       "time": "9:00 AM - 6:00 PM",
-      "location": "Venue to be defined",
+      "location": "Auditorio Principal, UdeA",
       "audience": "Students & Professionals Welcome"
     },
     "cards": {
@@ -57,26 +57,12 @@
       "exploreTracks": "Explore Tracks",
       "meetSpeakers": "Meet Speakers"
     },
-    "card": {
-      "freeEvent": "Free Event",
-      "date": "Date",
-      "time": "Time",
-      "venue": "Venue",
-      "capacity": "Capacity",
-      "attendees": "Attendees",
-      "highlights": {
-        "tracks": "3 Learning Tracks",
-        "speakers": "Expert Speakers",
-        "labs": "Hands-on Labs",
-        "networking": "Networking"
-      }
-    },
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Free Event",
       "date": "September, 2025",
       "time": "9:00 AM - 6:00 PM",
-      "venue": "Venue to be defined",
+      "venue": "Universidad de Antioquia",
       "capacity": "200+ Attendees"
     },
     "highlights": {
@@ -151,7 +137,7 @@
       "title": "AI/ML & Data",
       "level": "Advanced Level",
       "badge": "Track 3",
-      "description": "Explore the cutting edge of AI and machine learning on AWS. Build intelligent applications and work with big data analytics tools.",
+      "description": "Explore the cutting-edge of AI and machine learning on AWS. Build intelligent applications and work with big data analytics tools.",
       "workshops": "Workshops & Topics",
       "items": {
         "sagemaker": {
@@ -160,25 +146,25 @@
         },
         "vision": {
           "title": "Computer Vision",
-          "description": "Rekognition APIs and image analysis"
+          "description": "Rekognition and image analysis APIs"
         },
         "nlp": {
           "title": "Natural Language Processing",
-          "description": "Text analysis and language understanding"
+          "description": "Comprehend, Translate, and text analytics"
         },
         "analytics": {
           "title": "Big Data Analytics",
-          "description": "Data lakes, ETL, and analytics services"
+          "description": "Redshift, Athena, and data lakes"
         }
       },
-      "duration": "6 hours",
+      "duration": "5 hours",
       "seats": "40 seats",
       "button": "Join Track"
     },
     "info": {
       "selection": {
         "title": "Track Selection",
-        "description": "You can attend sessions from multiple tracks during the day. Choose your main track during registration."
+        "description": "You can attend sessions from multiple tracks throughout the day. Choose your primary track during registration."
       },
       "bring": {
         "title": "What to Bring",
@@ -256,11 +242,9 @@
       "community": "Community Partners"
     },
     "aws": {
-      "title": "Amazon Web Services",
       "description": "Leading cloud platform providing the infrastructure for this event"
     },
     "udea": {
-      "title": "Universidad de Antioquia",
       "description": "Hosting venue and academic partner"
     },
     "placeholder": {
@@ -277,30 +261,25 @@
   "location": {
     "badge": "Event Location",
     "title": "Find Us at",
-    "titleHighlight": "to be defined...",
+    "titleHighlight": "UdeA",
     "venue": {
-      "name": "To be defined",
-      "room": "Main Auditorium"
-    },
-    "address": {
-      "label": "Address",
-      "value": "To be defined"
-    },
-    "parking": {
-      "label": "Parking",
-      "value": "Free parking available on campus"
-    },
-    "transport": {
-      "label": "Public Transport",
-      "value": "To be defined"
+      "building": "Universidad de Antioquia",
+      "room": "Auditorio Principal",
+      "address": "Calle 70 No. 52-21, Medellín, Colombia",
+      "parking": "Free parking available on campus",
+      "transport": "Metro: Universidad station (5 min walk)"
     },
     "buttons": {
       "directions": "Get Directions",
       "register": "Register Now"
     },
-    "date": "September, 2025 • 9:00 AM"
+    "mapInfo": {
+      "title": "Universidad de Antioquia",
+      "subtitle": "Auditorio Principal",
+      "date": "March 15, 2024 • 9:00 AM"
+    }
   },
-  "registration": {
+  "register": {
     "title": "Ready to Join Us?",
     "description": "Don't miss this incredible opportunity to learn, network, and grow your cloud skills. Registration is completely free, but seats are limited!",
     "benefits": {
@@ -317,37 +296,34 @@
         "name": "Full Name",
         "email": "Email Address",
         "university": "University/Organization",
-        "track": {
-          "label": "Preferred Track",
-          "placeholder": "Select a track",
-          "options": {
-            "fundamentals": "Cloud Fundamentals",
-            "devops": "DevOps & Automation",
-            "aiml": "AI/ML & Data"
-          }
-        },
-        "experience": {
-          "label": "Experience Level",
-          "placeholder": "Select your level",
-          "options": {
-            "beginner": "Beginner",
-            "intermediate": "Intermediate",
-            "advanced": "Advanced"
-          }
-        }
+        "track": "Preferred Track",
+        "experience": "Experience Level"
       },
-      "terms": {
-        "text": "I agree to the",
-        "link": "Terms and Conditions"
+      "options": {
+        "selectTrack": "Select a track",
+        "fundamentals": "Cloud Fundamentals",
+        "devops": "DevOps & Automation",
+        "aiml": "AI/ML & Data",
+        "selectLevel": "Select your level",
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
       },
-      "newsletter": "Subscribe to AWS Cloud Club updates",
-      "submit": "Complete Registration",
-      "footer": "Registration closes on September 10, 2025 or when capacity is reached."
+      "checkboxes": {
+        "terms": "I agree to the Terms and Conditions",
+        "updates": "Subscribe to AWS Cloud Club updates"
+      },
+      "button": "Complete Registration",
+      "footer": "Registration closes on March 10, 2024 or when capacity is reached."
     }
   },
   "footer": {
-    "description": "Empowering students to build the future with cloud technologies.",
-    "sections": {
+    "brand": {
+      "title": "AWS Cloud Club",
+      "subtitle": "Universidad de Antioquia",
+      "description": "Empowering students to build the future with cloud technologies."
+    },
+    "links": {
       "event": {
         "title": "Event",
         "about": "About SCD",
@@ -376,11 +352,13 @@
         "speakers": "Speakers"
       }
     },
-    "copyright": "© 2024 AWS Cloud Club Universidad de Antioquia. All rights reserved.",
-    "legal": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "conduct": "Code of Conduct"
+    "bottom": {
+      "copyright": "© 2024 AWS Cloud Club Universidad de Antioquia. All rights reserved.",
+      "legal": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "conduct": "Code of Conduct"
+      }
     }
   },
   "common": {
