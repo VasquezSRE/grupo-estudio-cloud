@@ -1,0 +1,35 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.section-dark {
+  background-color: var(--aws-navy);
+  color: var(--aws-white);
+}
+
+.section-dark .section-title {
+  color: var(--aws-white);
+}
+
+.section-light {
+  background-color: var(--aws-gray-light);
+}
+
+.section-gradient {
+  background: linear-gradient(135deg, var(--aws-blue) 0%, var(--aws-purple-light) 100%);
+  color: var(--aws-white);
+}
+
+.section-gradient .section-title {
+  color: var(--aws-white);
+}
+
+.section-gradient .section-title::after {
+  background-color: var(--aws-white);
+}
