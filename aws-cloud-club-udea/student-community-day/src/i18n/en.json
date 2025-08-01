@@ -9,7 +9,7 @@
     "register": "Register Now"
   },
   "hero": {
-    "badge": "September, 2025 • Venue to be defined",
+    "badge": "September, 2025 • Venue (to be defined)",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "Join us for a full day of learning, networking, and innovation! Discover the latest AWS technologies through hands-on workshops, inspiring talks, and connect with fellow cloud enthusiasts.",
@@ -25,7 +25,7 @@
     },
     "info": {
       "time": "9:00 AM - 6:00 PM",
-      "location": "Venue to be defined",
+      "location": "Venue (to be defined)",
       "audience": "Students & Professionals Welcome"
     },
     "cards": {
@@ -76,7 +76,7 @@
       "badge": "Free Event",
       "date": "September, 2025",
       "time": "9:00 AM - 6:00 PM",
-      "venue": "Venue to be defined",
+      "venue": "Venue (to be defined)",
       "capacity": "200+ Attendees"
     },
     "highlights": {
@@ -149,7 +149,7 @@
     },
     "track3": {
       "title": "AI/ML & Data",
-      "level": "Advanced Level",
+      "level": "Intermediate Level",
       "badge": "Track 3",
       "description": "Explore the cutting edge of AI and machine learning on AWS. Build intelligent applications and work with big data analytics tools.",
       "workshops": "Workshops & Topics",
@@ -196,10 +196,10 @@
     "titleHighlight": "Industry Leaders",
     "description": "Our speakers are AWS experts, industry professionals, and thought leaders who will share their knowledge and experience with you.",
     "speaker1": {
-      "name": "Carlos Rodriguez",
-      "title": "Senior Solutions Architect",
-      "company": "Amazon Web Services",
-      "bio": "Carlos has 8+ years of experience in cloud architecture and has helped hundreds of companies migrate to AWS. He specializes in serverless architectures and DevOps practices.",
+      "name": "Speaker TBA",
+      "title": "Solutions Architect",
+      "company": "AWS Partner",
+      "bio": "We'll soon announce our first expert speaker in cloud architecture and AWS best practices.",
       "topics": {
         "serverless": "Serverless",
         "devops": "DevOps",
@@ -207,10 +207,10 @@
       }
     },
     "speaker2": {
-      "name": "Maria Gonzalez",
-      "title": "Senior Data Scientist",
-      "company": "TechCorp",
-      "bio": "Maria is a machine learning expert with experience implementing AI solutions at scale using AWS services like SageMaker and Bedrock.",
+      "name": "Speaker TBA",
+      "title": "Data Specialist",
+      "company": "Tech Company",
+      "bio": "We'll soon announce our expert speaker in machine learning and data analytics with AWS.",
       "topics": {
         "ml": "Machine Learning",
         "ai": "Artificial Intelligence",
@@ -218,25 +218,14 @@
       }
     },
     "speaker3": {
-      "name": "David Kim",
-      "title": "Cloud Security Specialist",
-      "company": "SecureCloud Inc.",
-      "bio": "David focuses on cloud security and compliance. He has designed security frameworks for Fortune 500 organizations and is an AWS Security Specialty certified professional.",
+      "name": "Speaker TBA",
+      "title": "Security Specialist",
+      "company": "Security Firm",
+      "bio": "We'll soon announce our expert speaker in cloud security and AWS best practices.",
       "topics": {
         "security": "Security",
         "compliance": "Compliance",
         "governance": "Governance"
-      }
-    },
-    "speaker4": {
-      "name": "Ana Silva",
-      "title": "Principal DevOps Engineer",
-      "company": "CloudNative Solutions",
-      "bio": "Ana is an expert in containerization and orchestration. She leads digital transformation initiatives and has extensive experience with Kubernetes and AWS container services.",
-      "topics": {
-        "containers": "Containers",
-        "kubernetes": "Kubernetes",
-        "microservices": "Microservices"
       }
     },
     "cta": {
@@ -251,17 +240,23 @@
     "titleHighlight": "Amazing Partners",
     "description": "We're grateful to our sponsors who make this event possible and support the growth of the cloud computing community.",
     "tiers": {
-      "platinum": "Platinum Sponsor",
-      "gold": "Gold Sponsors",
+      "main": "Main Sponsor",
+      "academic": "Academic Partner",
       "community": "Community Partners"
     },
     "aws": {
-      "title": "Amazon Web Services",
       "description": "Leading cloud platform providing the infrastructure for this event"
     },
     "udea": {
-      "title": "Universidad de Antioquia",
-      "description": "Hosting venue and academic partner"
+      "description": "Academic partner"
+    },
+    "awsug": {
+      "name": "AWS User Group Medellín",
+      "description": "Local AWS professionals community"
+    },
+    "awsclub": {
+      "name": "AWS Cloud Club UdeA",
+      "description": "Student cloud technologies club"
     },
     "placeholder": {
       "text": "Your Company Here",
@@ -271,20 +266,20 @@
     "cta": {
       "title": "Interested in Sponsoring?",
       "description": "Help us make this event even better and reach more students",
-      "button": "Become a Sponsor"
+      "button": "awscloudclubudea@gmail.com"
     }
   },
   "location": {
     "badge": "Event Location",
     "title": "Find Us at",
-    "titleHighlight": "to be defined...",
+    "titleHighlight": "(to be defined)",
     "venue": {
-      "name": "To be defined",
+      "name": "(To be defined)",
       "room": "Main Auditorium"
     },
     "address": {
       "label": "Address",
-      "value": "To be defined"
+      "value": "(To be defined)"
     },
     "parking": {
       "label": "Parking",
@@ -292,7 +287,7 @@
     },
     "transport": {
       "label": "Public Transport",
-      "value": "To be defined"
+      "value": "(To be defined)"
     },
     "buttons": {
       "directions": "Get Directions",
@@ -358,25 +353,22 @@
       "community": {
         "title": "Community",
         "join": "Join Club",
-        "discord": "Discord",
-        "newsletter": "Newsletter",
-        "blog": "Blog"
+        "meetup": "Meetup",
+        "whatsapp": "WhatsApp",
+        "awsug": "AWS User Group Medellín"
       },
       "resources": {
         "title": "Resources",
         "freeTier": "AWS Free Tier",
-        "certification": "Certification",
-        "documentation": "Documentation",
-        "support": "Support"
+        "documentation": "AWS Documentation",
+        "certification": "Certification"
       },
       "contact": {
         "title": "Contact",
-        "info": "info@awscloudclub.com",
-        "sponsorship": "Sponsorship",
-        "speakers": "Speakers"
+        "info": "awscloudclubudea@gmail.com"
       }
     },
-    "copyright": "© 2024 AWS Cloud Club Universidad de Antioquia. All rights reserved.",
+    "copyright": "© 2025 AWS Cloud Club UdeA. All rights reserved.",
     "legal": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",

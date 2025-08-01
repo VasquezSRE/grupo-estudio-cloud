@@ -22,24 +22,41 @@ const lang = getCurrentLanguage(Astro.url);
     </div>
     
     <div class="sponsors-grid">
+      <!-- Main Sponsor -->
       <div class="sponsor-tier">
-        <h3>{t(lang, 'sponsors.tiers.platinum')}</h3>
-        <div class="sponsor-logos platinum">
-          <div class="sponsor-card">
-            <img src="/logo-amarillo.png" alt="AWS" />
+        <h3>{t(lang, 'sponsors.tiers.main')}</h3>
+        <div class="sponsor-logos main">
+          <div class="sponsor-card featured">
+            <img src="/AWS_logo.png" alt="Amazon Web Services" />
             <h4>Amazon Web Services</h4>
             <p>{t(lang, 'sponsors.aws.description')}</p>
           </div>
         </div>
       </div>
       
+      <!-- Academic Partner -->
       <div class="sponsor-tier">
-        <h3>{t(lang, 'sponsors.tiers.gold')}</h3>
-        <div class="sponsor-logos gold">
+        <h3>{t(lang, 'sponsors.tiers.academic')}</h3>
+        <div class="sponsor-logos academic">
           <div class="sponsor-card">
             <img src="/imagen-fuente-udea.jpg" alt="Universidad de Antioquia" />
             <h4>Universidad de Antioquia</h4>
             <p>{t(lang, 'sponsors.udea.description')}</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Community Partners -->
+      <div class="sponsor-tier">
+        <h3>{t(lang, 'sponsors.tiers.community')}</h3>
+        <div class="sponsor-logos community">
+          <div class="partner-item">
+            <i class="fab fa-aws"></i>
+            <span>{t(lang, 'sponsors.awsug.name')}</span>
+          </div>
+          <div class="partner-item">
+            <i class="fas fa-cloud"></i>
+            <span>{t(lang, 'sponsors.awsclub.name')}</span>
           </div>
           <div class="sponsor-card">
             <div class="sponsor-placeholder">
@@ -51,34 +68,12 @@ const lang = getCurrentLanguage(Astro.url);
           </div>
         </div>
       </div>
-      
-      <div class="sponsor-tier">
-        <h3>{t(lang, 'sponsors.tiers.community')}</h3>
-        <div class="sponsor-logos community">
-          <div class="partner-item">
-            <i class="fab fa-github"></i>
-            <span>GitHub Student Pack</span>
-          </div>
-          <div class="partner-item">
-            <i class="fab fa-docker"></i>
-            <span>Docker Community</span>
-          </div>
-          <div class="partner-item">
-            <i class="fas fa-cloud"></i>
-            <span>Cloud Native Foundation</span>
-          </div>
-          <div class="partner-item">
-            <i class="fab fa-dev"></i>
-            <span>Dev Community</span>
-          </div>
-        </div>
-      </div>
     </div>
     
     <div class="sponsor-cta">
       <h3>{t(lang, 'sponsors.cta.title')}</h3>
       <p>{t(lang, 'sponsors.cta.description')}</p>
-      <a href="mailto:sponsors@awscloudclub.com" class="btn btn-primary">
+      <a href="mailto:awscloudclubudea@gmail.com" class="btn btn-primary">
         <i class="fas fa-envelope"></i>
         {t(lang, 'sponsors.cta.button')}
       </a>
@@ -120,14 +115,23 @@ const lang = getCurrentLanguage(Astro.url);
     justify-items: center;
   }
 
-  .sponsor-logos.platinum {
+  .sponsor-logos.main {
     grid-template-columns: 1fr;
     max-width: 400px;
     margin: 0 auto;
   }
 
-  .sponsor-logos.gold {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .sponsor-logos.main .sponsor-card.featured {
+    border: 2px solid var(--aws-orange);
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 153, 0, 0.2);
+  }
+
+  .sponsor-logos.academic {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin: 0 auto;
   }
 
   .sponsor-logos.community {
@@ -233,14 +237,35 @@ const lang = getCurrentLanguage(Astro.url);
     margin-bottom: 2rem;
   }
 
+  .sponsor-cta .btn {
+    background: var(--aws-white);
+    color: var(--aws-blue);
+    border: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .sponsor-cta .btn:hover {
+    background: var(--aws-gray-light);
+    transform: translateY(-2px);
+  }
+
   /* Mobile Styles */
   @media (max-width: 768px) {
-    .sponsor-logos.gold {
+    .sponsor-logos.academic {
       grid-template-columns: 1fr;
     }
 
     .sponsor-logos.community {
       grid-template-columns: 1fr;
+    }
+
+    .sponsor-logos.main .sponsor-card.featured {
+      transform: none;
     }
   }
 

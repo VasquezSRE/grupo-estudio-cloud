@@ -25,19 +25,8 @@ const lang = getCurrentLanguage(Astro.url);
       <!-- Speaker 1 -->
       <div class="speaker-card">
         <div class="speaker-image">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Carlos Rodriguez" />
-          <div class="speaker-overlay">
-            <div class="social-links">
-              <a href="https://linkedin.com/in/carlos-rodriguez" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/carlos-rodriguez" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://twitter.com/carlos_dev" target="_blank" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
+          <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
           </div>
         </div>
         
@@ -61,19 +50,8 @@ const lang = getCurrentLanguage(Astro.url);
       <!-- Speaker 2 -->
       <div class="speaker-card">
         <div class="speaker-image">
-          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face" alt="Maria Gonzalez" />
-          <div class="speaker-overlay">
-            <div class="social-links">
-              <a href="https://linkedin.com/in/maria-gonzalez" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/maria-gonzalez" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://twitter.com/maria_ml" target="_blank" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
+          <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
           </div>
         </div>
         
@@ -97,19 +75,8 @@ const lang = getCurrentLanguage(Astro.url);
       <!-- Speaker 3 -->
       <div class="speaker-card">
         <div class="speaker-image">
-          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="David Kim" />
-          <div class="speaker-overlay">
-            <div class="social-links">
-              <a href="https://linkedin.com/in/david-kim" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/david-kim" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://twitter.com/david_cloud" target="_blank" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
+          <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
           </div>
         </div>
         
@@ -129,49 +96,13 @@ const lang = getCurrentLanguage(Astro.url);
           </div>
         </div>
       </div>
-      
-      <!-- Speaker 4 -->
-      <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Ana Silva" />
-          <div class="speaker-overlay">
-            <div class="social-links">
-              <a href="https://linkedin.com/in/ana-silva" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/ana-silva" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://twitter.com/ana_containers" target="_blank" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="speaker-info">
-          <h3>{t(lang, 'speakers.speaker4.name')}</h3>
-          <p class="speaker-title">{t(lang, 'speakers.speaker4.title')}</p>
-          <p class="speaker-company">{t(lang, 'speakers.speaker4.company')}</p>
-          
-          <p class="speaker-bio">
-            {t(lang, 'speakers.speaker4.bio')}
-          </p>
-          
-          <div class="speaker-topics">
-            <span class="topic-tag">{t(lang, 'speakers.speaker4.topics.containers')}</span>
-            <span class="topic-tag">{t(lang, 'speakers.speaker4.topics.kubernetes')}</span>
-            <span class="topic-tag">{t(lang, 'speakers.speaker4.topics.microservices')}</span>
-          </div>
-        </div>
-      </div>
     </div>
     
     <div class="speakers-cta">
       <h3>{t(lang, 'speakers.cta.title')}</h3>
       <p>{t(lang, 'speakers.cta.description')}</p>
-      <a href="mailto:speakers@awscloudclub.com" class="btn btn-primary">
-        <i class="fas fa-envelope"></i>
+      <a href="https://forms.gle/495kgm5WrKbmufgy6" target="_blank" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i>
         {t(lang, 'speakers.cta.button')}
       </a>
     </div>
@@ -216,6 +147,18 @@ const lang = getCurrentLanguage(Astro.url);
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+  }
+
+  .avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--aws-gray-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--aws-gray);
+    font-size: 3rem;
+    border: 3px dashed var(--aws-gray);
   }
 
   .speaker-card:hover .speaker-image img {
