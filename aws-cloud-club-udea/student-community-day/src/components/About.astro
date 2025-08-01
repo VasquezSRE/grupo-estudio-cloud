@@ -1,5 +1,7 @@
 ---
-// About component for AWS Student Community Day
+import { getCurrentLanguage, t } from '../i18n/utils';
+
+const lang = getCurrentLanguage(Astro.url);
 ---
 
 <section id="about" class="about">
@@ -8,19 +10,16 @@
       <div class="about-text">
         <div class="section-badge">
           <i class="fas fa-info-circle"></i>
-          <span>About the Event</span>
+          <span>{t(lang, 'about.badge')}</span>
         </div>
         
         <h2 class="section-title text-left">
-          What is a Student 
-          <span class="gradient-text">Community Day</span>?
+          {t(lang, 'about.title')}
+          <span class="gradient-text">{t(lang, 'about.titleHighlight')}</span>?
         </h2>
         
         <p class="about-description">
-          Student Community Days (SCDs) are one-day, student-led events designed to bring together 
-          cloud enthusiasts, developers, and tech professionals. These events feature multiple learning 
-          tracks, hands-on workshops, inspiring talks, and networking opportunities - all focused on 
-          AWS technologies and cloud computing innovation.
+          {t(lang, 'about.description')}
         </p>
         
         <div class="about-features">
@@ -29,8 +28,8 @@
               <i class="fas fa-graduation-cap"></i>
             </div>
             <div class="feature-content">
-              <h3>Learn by Doing</h3>
-              <p>Participate in hands-on workshops and labs designed to give you practical experience with AWS services.</p>
+              <h3>{t(lang, 'about.features.learn.title')}</h3>
+              <p>{t(lang, 'about.features.learn.description')}</p>
             </div>
           </div>
           
@@ -39,8 +38,8 @@
               <i class="fas fa-users"></i>
             </div>
             <div class="feature-content">
-              <h3>Network & Connect</h3>
-              <p>Meet like-minded students, professionals, and AWS experts. Build connections that last beyond the event.</p>
+              <h3>{t(lang, 'about.features.network.title')}</h3>
+              <p>{t(lang, 'about.features.network.description')}</p>
             </div>
           </div>
           
@@ -49,8 +48,8 @@
               <i class="fas fa-certificate"></i>
             </div>
             <div class="feature-content">
-              <h3>Earn Recognition</h3>
-              <p>Get certificates of participation and learn about AWS certification paths to advance your career.</p>
+              <h3>{t(lang, 'about.features.recognition.title')}</h3>
+              <p>{t(lang, 'about.features.recognition.description')}</p>
             </div>
           </div>
         </div>
@@ -58,11 +57,11 @@
         <div class="about-cta">
           <a href="#tracks" class="btn btn-primary">
             <i class="fas fa-arrow-right"></i>
-            Explore Tracks
+            {t(lang, 'about.buttons.exploreTracks')}
           </a>
           <a href="#speakers" class="btn btn-secondary">
             <i class="fas fa-microphone"></i>
-            Meet Speakers
+            {t(lang, 'about.buttons.meetSpeakers')}
           </a>
         </div>
       </div>
@@ -76,7 +75,7 @@
               </div>
               <div class="card-title">
                 <h4>Student Community Day</h4>
-                <span class="badge badge-primary">Free Event</span>
+                <span class="badge badge-primary">{t(lang, 'about.card.freeEvent')}</span>
               </div>
             </div>
             
@@ -84,7 +83,7 @@
               <div class="detail-item">
                 <i class="fas fa-calendar"></i>
                 <div>
-                  <strong>Date</strong>
+                  <strong>{t(lang, 'about.card.date')}</strong>
                   <span>Septiembre, 2025</span>
                 </div>
               </div>
@@ -92,7 +91,7 @@
               <div class="detail-item">
                 <i class="fas fa-clock"></i>
                 <div>
-                  <strong>Time</strong>
+                  <strong>{t(lang, 'about.card.time')}</strong>
                   <span>9:00 AM - 6:00 PM</span>
                 </div>
               </div>
@@ -100,16 +99,16 @@
               <div class="detail-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
-                  <strong>Venue</strong>
-                  <span>Universidad de Antioquia</span>
+                  <strong>{t(lang, 'about.card.venue')}</strong>
+                  <span>To be defined</span>
                 </div>
               </div>
               
               <div class="detail-item">
                 <i class="fas fa-users"></i>
                 <div>
-                  <strong>Capacity</strong>
-                  <span>200+ Attendees</span>
+                  <strong>{t(lang, 'about.card.capacity')}</strong>
+                  <span>200+ {t(lang, 'about.card.attendees')}</span>
                 </div>
               </div>
             </div>
@@ -117,19 +116,19 @@
             <div class="card-highlights">
               <div class="highlight-tag">
                 <i class="fas fa-check"></i>
-                <span>3 Learning Tracks</span>
+                <span>{t(lang, 'about.card.highlights.tracks')}</span>
               </div>
               <div class="highlight-tag">
                 <i class="fas fa-check"></i>
-                <span>Expert Speakers</span>
+                <span>{t(lang, 'about.card.highlights.speakers')}</span>
               </div>
               <div class="highlight-tag">
                 <i class="fas fa-check"></i>
-                <span>Hands-on Labs</span>
+                <span>{t(lang, 'about.card.highlights.labs')}</span>
               </div>
               <div class="highlight-tag">
                 <i class="fas fa-check"></i>
-                <span>Networking</span>
+                <span>{t(lang, 'about.card.highlights.networking')}</span>
               </div>
             </div>
           </div>

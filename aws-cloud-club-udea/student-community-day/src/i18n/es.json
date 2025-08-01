@@ -1,0 +1,386 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca del SCD",
+    "tracks": "Tracks",
+    "speakers": "Speakers",
+    "sponsors": "Patrocinadores",
+    "location": "Ubicación",
+    "register": "Registrarse"
+  },
+  "hero": {
+    "badge": "Septiembre, 2025 • Lugar (por definir)",
+    "title": "AWS Student",
+    "titleHighlight": "Community Day",
+    "description": "¡Únete a nosotros para un día completo de aprendizaje, networking e innovación! Descubre las últimas tecnologías de AWS a través de talleres prácticos, charlas inspiradoras y conecta con otros entusiastas de la nube.",
+    "stats": {
+      "tracks": "Tracks de Aprendizaje",
+      "speakers": "Speakers Expertos",
+      "attendees": "Asistentes",
+      "registration": "Registro"
+    },
+    "buttons": {
+      "register": "Registrarse Ahora",
+      "learnMore": "Conocer Más"
+    },
+    "info": {
+      "time": "9:00 AM - 6:00 PM",
+      "location": "Lugar (por definir)",
+      "audience": "Estudiantes y Profesionales Bienvenidos"
+    },
+    "cards": {
+      "cloud": "Computación en la Nube",
+      "labs": "Laboratorios Prácticos",
+      "networking": "Networking"
+    }
+  },
+  "about": {
+    "badge": "Acerca del Evento",
+    "title": "¿Qué es un Student",
+    "titleHighlight": "Community Day",
+    "description": "Los Student Community Days (SCDs) son eventos de un día liderados por estudiantes, diseñados para reunir a entusiastas de la nube, desarrolladores y profesionales de tecnología. Estos eventos incluyen múltiples tracks de aprendizaje, talleres prácticos, charlas inspiradoras y oportunidades de networking, todo enfocado en tecnologías AWS e innovación en computación en la nube.",
+    "features": {
+      "learn": {
+        "title": "Aprende Haciendo",
+        "description": "Participa en talleres prácticos y laboratorios diseñados para darte experiencia práctica con los servicios de AWS."
+      },
+      "network": {
+        "title": "Conecta y Haz Networking",
+        "description": "Conoce estudiantes, profesionales y expertos de AWS con ideas afines. Construye conexiones que perduren más allá del evento."
+      },
+      "recognition": {
+        "title": "Obtén Reconocimiento",
+        "description": "Recibe certificados de participación y aprende sobre las rutas de certificación de AWS para avanzar en tu carrera."
+      }
+    },
+    "buttons": {
+      "exploreTracks": "Explorar Tracks",
+      "meetSpeakers": "Conocer Speakers"
+    },
+    "card": {
+      "freeEvent": "Evento Gratuito",
+      "date": "Fecha",
+      "time": "Hora",
+      "venue": "Lugar",
+      "capacity": "Capacidad",
+      "attendees": "Asistentes",
+      "highlights": {
+        "tracks": "3 Tracks de Aprendizaje",
+        "speakers": "Speakers Expertos",
+        "labs": "Laboratorios Prácticos",
+        "networking": "Networking"
+      }
+    },
+    "eventDetails": {
+      "title": "Student Community Day",
+      "badge": "Evento Gratuito",
+      "date": "Septiembre, 2025",
+      "time": "9:00 AM - 6:00 PM",
+      "venue": "Lugar (por definir)",
+      "capacity": "200+ Asistentes"
+    },
+    "highlights": {
+      "tracks": "3 Tracks de Aprendizaje",
+      "speakers": "Speakers Expertos",
+      "labs": "Laboratorios Prácticos",
+      "networking": "Networking"
+    }
+  },
+  "tracks": {
+    "badge": "Tracks de Aprendizaje",
+    "title": "Elige Tu",
+    "titleHighlight": "Ruta de Aprendizaje",
+    "description": "Sumérgete en las tecnologías de AWS con nuestros tres tracks especializados. Cada track ofrece talleres prácticos, charlas de expertos y laboratorios prácticos diseñados para diferentes niveles de habilidad.",
+    "track1": {
+      "title": "Fundamentos de la Nube",
+      "level": "Nivel Principiante",
+      "badge": "Track 1",
+      "description": "¡Perfecto para principiantes! Aprende los conceptos básicos de la computación en la nube, los servicios principales de AWS y obtén experiencia práctica con herramientas fundamentales de AWS.",
+      "workshops": "Talleres y Temas",
+      "items": {
+        "intro": {
+          "title": "Introducción a AWS",
+          "description": "Descripción general de servicios principales y navegación en la consola de AWS"
+        },
+        "ec2": {
+          "title": "Laboratorio Práctico de EC2",
+          "description": "Lanza y configura tu primer servidor virtual"
+        },
+        "storage": {
+          "title": "Soluciones de Almacenamiento",
+          "description": "S3, EBS y mejores prácticas de gestión de datos"
+        },
+        "security": {
+          "title": "Conceptos Básicos de Seguridad",
+          "description": "IAM, grupos de seguridad y gestión de acceso"
+        }
+      },
+      "duration": "4 horas",
+      "seats": "60 cupos",
+      "button": "Unirse al Track"
+    },
+    "track2": {
+      "title": "DevOps y Automatización",
+      "level": "Nivel Intermedio",
+      "badge": "Track 2",
+      "description": "Sumérgete en las prácticas modernas de DevOps con AWS. Aprende CI/CD, infraestructura como código y herramientas de automatización para optimizar tu flujo de desarrollo.",
+      "workshops": "Talleres y Temas",
+      "items": {
+        "cicd": {
+          "title": "CI/CD con CodePipeline",
+          "description": "Construye pipelines de despliegue automatizados"
+        },
+        "iac": {
+          "title": "Infraestructura como Código",
+          "description": "Fundamentos de CloudFormation y CDK"
+        },
+        "containers": {
+          "title": "Containerización",
+          "description": "Docker, ECS y orquestación de contenedores"
+        },
+        "monitoring": {
+          "title": "Monitoreo y Logging",
+          "description": "CloudWatch, X-Ray y observabilidad"
+        }
+      },
+      "duration": "5 horas",
+      "seats": "50 cupos",
+      "button": "Unirse al Track"
+    },
+    "track3": {
+      "title": "IA/ML y Datos",
+      "level": "Nivel Intermedio",
+      "badge": "Track 3",
+      "description": "Explora la vanguardia de la IA y el machine learning en AWS. Construye aplicaciones inteligentes y trabaja con herramientas de análisis de big data.",
+      "workshops": "Talleres y Temas",
+      "items": {
+        "sagemaker": {
+          "title": "Taller de SageMaker",
+          "description": "Construye y despliega modelos de ML a escala"
+        },
+        "vision": {
+          "title": "Visión por Computadora",
+          "description": "APIs de Rekognition y análisis de imágenes"
+        },
+        "nlp": {
+          "title": "Procesamiento de Lenguaje Natural",
+          "description": "Comprehend, Translate y análisis de texto"
+        },
+        "analytics": {
+          "title": "Análisis de Big Data",
+          "description": "Redshift, Athena y data lakes"
+        }
+      },
+      "duration": "5 horas",
+      "seats": "40 cupos",
+      "button": "Unirse al Track"
+    },
+    "info": {
+      "selection": {
+        "title": "Selección de Track",
+        "description": "Puedes asistir a sesiones de múltiples tracks durante el día. Elige tu track principal durante el registro."
+      },
+      "bring": {
+        "title": "Qué Traer",
+        "description": "Trae tu laptop con AWS CLI instalado. Proporcionaremos créditos de AWS e instrucciones detalladas de configuración."
+      },
+      "certificates": {
+        "title": "Certificados",
+        "description": "Completa cualquier track para recibir un certificado de participación y recursos de aprendizaje de AWS."
+      }
+    }
+  },
+  "speakers": {
+    "badge": "Speakers Expertos",
+    "title": "Aprende de",
+    "titleHighlight": "Líderes de la Industria",
+    "description": "Nuestros speakers son expertos de AWS, profesionales de la industria y líderes de pensamiento que compartirán su conocimiento y experiencia contigo.",
+    "speaker1": {
+      "name": "Speaker por Confirmar",
+      "title": "Arquitecto de Soluciones",
+      "company": "AWS Partner",
+      "bio": "Próximamente anunciaremos nuestro primer speaker experto en arquitectura cloud y mejores prácticas de AWS.",
+      "topics": {
+        "serverless": "Serverless",
+        "devops": "DevOps",
+        "migration": "Migración"
+      }
+    },
+    "speaker2": {
+      "name": "Speaker por Confirmar",
+      "title": "Especialista en Datos",
+      "company": "Tech Company",
+      "bio": "Próximamente anunciaremos nuestro speaker experto en machine learning y análisis de datos con AWS.",
+      "topics": {
+        "ml": "Machine Learning",
+        "ai": "Inteligencia Artificial",
+        "data": "Análisis de Datos"
+      }
+    },
+    "speaker3": {
+      "name": "Speaker por Confirmar",
+      "title": "Especialista en Seguridad",
+      "company": "Security Firm",
+      "bio": "Próximamente anunciaremos nuestro speaker experto en seguridad cloud y mejores prácticas de AWS.",
+      "topics": {
+        "security": "Seguridad",
+        "compliance": "Cumplimiento",
+        "governance": "Gobernanza"
+      }
+    },
+    "cta": {
+      "title": "¿Quieres ser Speaker?",
+      "description": "Siempre estamos buscando speakers apasionados para compartir su conocimiento con nuestra comunidad.",
+      "button": "Aplicar como Speaker"
+    }
+  },
+  "sponsors": {
+    "badge": "Nuestros Patrocinadores",
+    "title": "Impulsado por",
+    "titleHighlight": "Socios Increíbles",
+    "description": "Estamos agradecidos con nuestros patrocinadores que hacen posible este evento y apoyan el crecimiento de la comunidad de computación en la nube.",
+    "tiers": {
+      "main": "Patrocinador Principal",
+      "academic": "Socio Académico",
+      "community": "Socios Comunitarios"
+    },
+    "aws": {
+      "description": "Plataforma líder en la nube que proporciona la infraestructura para este evento"
+    },
+    "udea": {
+      "description": "Socio académico"
+    },
+    "awsug": {
+      "name": "AWS User Group Medellín",
+      "description": "Comunidad local de profesionales AWS"
+    },
+    "awsclub": {
+      "name": "AWS Cloud Club UdeA",
+      "description": "Club estudiantil de tecnologías cloud"
+    },
+    "placeholder": {
+      "text": "Tu Empresa Aquí",
+      "title": "Conviértete en Patrocinador",
+      "description": "Únete a nosotros para apoyar a la próxima generación de profesionales en la nube"
+    },
+    "cta": {
+      "title": "¿Interesado en Patrocinar?",
+      "description": "Ayúdanos a hacer este evento aún mejor y llegar a más estudiantes",
+      "button": "awscloudclubudea@gmail.com"
+    }
+  },
+  "location": {
+    "badge": "Ubicación del Evento",
+    "title": "Encuéntranos en ",
+    "titleHighlight": "(por definir)",
+    "venue": {
+      "name": "(Por definir)",
+      "room": "Auditorio Principal"
+    },
+    "address": {
+      "label": "Dirección",
+      "value": "(Por definir)"
+    },
+    "parking": {
+      "label": "Parqueadero",
+      "value": "Parqueadero gratuito disponible en el campus"
+    },
+    "transport": {
+      "label": "Transporte Público",
+      "value": "(Por definir)"
+    },
+    "buttons": {
+      "directions": "Obtener Direcciones",
+      "register": "Registrarse Ahora"
+    },
+    "date": "Septiembre, 2025 • 9:00 AM"
+  },
+  "registration": {
+    "title": "¿Listo para Unirte?",
+    "description": "¡No te pierdas esta increíble oportunidad de aprender, hacer networking y desarrollar tus habilidades en la nube. El registro es completamente gratuito, pero los cupos son limitados!",
+    "benefits": {
+      "admission": "Admisión gratuita a todos los tracks y talleres",
+      "lunch": "Almuerzo y refrigerios incluidos",
+      "certificate": "Certificado de participación",
+      "networking": "Oportunidades de networking",
+      "swag": "Merchandising y recursos de AWS"
+    },
+    "form": {
+      "title": "Regístrate Ahora",
+      "subtitle": "Asegura tu lugar en el AWS Student Community Day",
+      "fields": {
+        "name": "Nombre Completo",
+        "email": "Correo Electrónico",
+        "university": "Universidad/Organización",
+        "track": {
+          "label": "Track Preferido",
+          "placeholder": "Selecciona un track",
+          "options": {
+            "fundamentals": "Fundamentos de la Nube",
+            "devops": "DevOps y Automatización",
+            "aiml": "IA/ML y Datos"
+          }
+        },
+        "experience": {
+          "label": "Nivel de Experiencia",
+          "placeholder": "Selecciona tu nivel",
+          "options": {
+            "beginner": "Principiante",
+            "intermediate": "Intermedio",
+            "advanced": "Avanzado"
+          }
+        }
+      },
+      "terms": {
+        "text": "Acepto los",
+        "link": "Términos y Condiciones"
+      },
+      "newsletter": "Suscribirme a las actualizaciones del AWS Cloud Club",
+      "submit": "Completar Registro",
+      "footer": "El registro cierra el 10 de Septiembre de 2025 o cuando se alcance la capacidad máxima."
+    }
+  },
+  "footer": {
+    "description": "Empoderando a los estudiantes para construir el futuro con tecnologías en la nube.",
+    "sections": {
+      "event": {
+        "title": "Evento",
+        "about": "Acerca del SCD",
+        "tracks": "Tracks",
+        "speakers": "Speakers",
+        "location": "Ubicación"
+      },
+      "community": {
+        "title": "Comunidad",
+        "join": "Únete",
+        "meetup": "Meetup",
+        "whatsapp": "WhatsApp",
+        "awsug": "AWS User Group Medellín"
+      },
+      "resources": {
+        "title": "Recursos",
+        "freeTier": "AWS Gratis",
+        "documentation": "Documentación",
+        "certification": "Certificación"
+      },
+      "contact": {
+        "title": "Contacto",
+        "info": "awscloudclubudea@gmail.com"
+      }
+    },
+    "copyright": "© 2025 AWS Cloud Club UdeA. Todos los derechos reservados.",
+    "legal": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "conduct": "Código de Conducta"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "menu": "Menú"
+  }
+}

@@ -1,5 +1,7 @@
 ---
-// Tracks component for AWS Student Community Day
+import { getCurrentLanguage, t } from '../i18n/utils';
+
+const lang = getCurrentLanguage(Astro.url);
 ---
 
 <section id="tracks" class="tracks">
@@ -7,16 +9,15 @@
     <div class="text-center">
       <div class="section-badge">
         <i class="fas fa-route"></i>
-        <span>Learning Tracks</span>
+        <span>{t(lang, 'tracks.badge')}</span>
       </div>
       
       <h2 class="section-title">
-        Choose Your <span class="gradient-text">Learning Path</span>
+        {t(lang, 'tracks.title')} <span class="gradient-text">{t(lang, 'tracks.titleHighlight')}</span>
       </h2>
       
       <p class="section-description">
-        Dive deep into AWS technologies with our three specialized tracks. Each track offers 
-        hands-on workshops, expert talks, and practical labs designed for different skill levels.
+        {t(lang, 'tracks.description')}
       </p>
     </div>
     
@@ -28,51 +29,50 @@
             <i class="fas fa-cloud"></i>
           </div>
           <div class="track-info">
-            <h3>Cloud Fundamentals</h3>
-            <span class="track-level">Beginner Level</span>
+            <h3>{t(lang, 'tracks.track1.title')}</h3>
+            <span class="track-level">{t(lang, 'tracks.track1.level')}</span>
           </div>
           <div class="track-badge">
-            <span class="badge badge-primary">Track 1</span>
+            <span class="badge badge-primary">{t(lang, 'tracks.track1.badge')}</span>
           </div>
         </div>
         
         <p class="track-description">
-          Perfect for beginners! Learn the basics of cloud computing, AWS core services, 
-          and get hands-on experience with fundamental AWS tools.
+          {t(lang, 'tracks.track1.description')}
         </p>
         
         <div class="track-workshops">
-          <h4>Workshops & Topics</h4>
+          <h4>{t(lang, 'tracks.track1.workshops')}</h4>
           <div class="workshop-list">
             <div class="workshop-item">
               <i class="fas fa-play-circle"></i>
               <div>
-                <strong>Introduction to AWS</strong>
-                <span>Core services overview and AWS console navigation</span>
+                <strong>{t(lang, 'tracks.track1.items.intro.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.intro.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-server"></i>
               <div>
-                <strong>EC2 Hands-on Lab</strong>
-                <span>Launch and configure your first virtual server</span>
+                <strong>{t(lang, 'tracks.track1.items.ec2.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.ec2.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-database"></i>
               <div>
-                <strong>Storage Solutions</strong>
-                <span>S3, EBS, and data management best practices</span>
+                <strong>{t(lang, 'tracks.track1.items.storage.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.storage.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-shield-alt"></i>
               <div>
-                <strong>Security Basics</strong>
-                <span>IAM, security groups, and access management</span>
+                <strong>{t(lang, 'tracks.track1.items.security.title')}</strong>
+                <span>{t(lang, 'tracks.track1.items.security.description')}</span>
               </div>
             </div>
           </div>
@@ -80,65 +80,64 @@
         
         <div class="track-footer">
           <div class="track-stats">
-            <span><i class="fas fa-clock"></i> 4 hours</span>
-            <span><i class="fas fa-users"></i> 60 seats</span>
+            <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track1.duration')}</span>
+            <span><i class="fas fa-users"></i> {t(lang, 'tracks.track1.seats')}</span>
           </div>
-          <a href="#register" class="btn btn-secondary">Join Track</a>
+          <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track1.button')}</a>
         </div>
       </div>
       
       <!-- Track 2: DevOps & Automation -->
-      <div class="track-card featured">
+      <div class="track-card">
         <div class="track-header">
           <div class="track-icon track-icon-purple">
             <i class="fas fa-cogs"></i>
           </div>
           <div class="track-info">
-            <h3>DevOps & Automation</h3>
-            <span class="track-level">Intermediate Level</span>
+            <h3>{t(lang, 'tracks.track2.title')}</h3>
+            <span class="track-level">{t(lang, 'tracks.track2.level')}</span>
           </div>
           <div class="track-badge">
-            <span class="badge badge-purple">Track 2</span>
+            <span class="badge badge-secondary">{t(lang, 'tracks.track2.badge')}</span>
           </div>
         </div>
         
         <p class="track-description">
-          Dive into modern DevOps practices with AWS. Learn CI/CD, infrastructure as code, 
-          and automation tools to streamline your development workflow.
+          {t(lang, 'tracks.track2.description')}
         </p>
         
         <div class="track-workshops">
-          <h4>Workshops & Topics</h4>
+          <h4>{t(lang, 'tracks.track2.workshops')}</h4>
           <div class="workshop-list">
             <div class="workshop-item">
               <i class="fas fa-code-branch"></i>
               <div>
-                <strong>CI/CD with CodePipeline</strong>
-                <span>Build automated deployment pipelines</span>
+                <strong>{t(lang, 'tracks.track2.items.cicd.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.cicd.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-layer-group"></i>
               <div>
-                <strong>Infrastructure as Code</strong>
-                <span>CloudFormation and CDK fundamentals</span>
+                <strong>{t(lang, 'tracks.track2.items.iac.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.iac.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fas fa-docker"></i>
+              <i class="fab fa-docker"></i>
               <div>
-                <strong>Containerization</strong>
-                <span>Docker, ECS, and container orchestration</span>
+                <strong>{t(lang, 'tracks.track2.items.containers.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.containers.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-chart-line"></i>
               <div>
-                <strong>Monitoring & Logging</strong>
-                <span>CloudWatch, X-Ray, and observability</span>
+                <strong>{t(lang, 'tracks.track2.items.monitoring.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.monitoring.description')}</span>
               </div>
             </div>
           </div>
@@ -146,10 +145,10 @@
         
         <div class="track-footer">
           <div class="track-stats">
-            <span><i class="fas fa-clock"></i> 5 hours</span>
-            <span><i class="fas fa-users"></i> 50 seats</span>
+            <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track2.duration')}</span>
+            <span><i class="fas fa-users"></i> {t(lang, 'tracks.track2.seats')}</span>
           </div>
-          <a href="#register" class="btn btn-primary">Join Track</a>
+          <a href="#register" class="btn btn-primary">{t(lang, 'tracks.track2.button')}</a>
         </div>
       </div>
       
@@ -160,51 +159,50 @@
             <i class="fas fa-brain"></i>
           </div>
           <div class="track-info">
-            <h3>AI/ML & Data</h3>
-            <span class="track-level">Advanced Level</span>
+            <h3>{t(lang, 'tracks.track3.title')}</h3>
+            <span class="track-level">{t(lang, 'tracks.track3.level')}</span>
           </div>
           <div class="track-badge">
-            <span class="badge badge-success">Track 3</span>
+            <span class="badge badge-success">{t(lang, 'tracks.track3.badge')}</span>
           </div>
         </div>
         
         <p class="track-description">
-          Explore the cutting-edge of AI and machine learning on AWS. Build intelligent 
-          applications and work with big data analytics tools.
+          {t(lang, 'tracks.track3.description')}
         </p>
         
         <div class="track-workshops">
-          <h4>Workshops & Topics</h4>
+          <h4>{t(lang, 'tracks.track3.workshops')}</h4>
           <div class="workshop-list">
             <div class="workshop-item">
               <i class="fas fa-robot"></i>
               <div>
-                <strong>SageMaker Workshop</strong>
-                <span>Build and deploy ML models at scale</span>
+                <strong>{t(lang, 'tracks.track3.items.sagemaker.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.sagemaker.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-eye"></i>
               <div>
-                <strong>Computer Vision</strong>
-                <span>Rekognition and image analysis APIs</span>
+                <strong>{t(lang, 'tracks.track3.items.vision.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.vision.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-comments"></i>
               <div>
-                <strong>Natural Language Processing</strong>
-                <span>Comprehend, Translate, and text analytics</span>
+                <strong>{t(lang, 'tracks.track3.items.nlp.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.nlp.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
               <i class="fas fa-chart-bar"></i>
               <div>
-                <strong>Big Data Analytics</strong>
-                <span>Redshift, Athena, and data lakes</span>
+                <strong>{t(lang, 'tracks.track3.items.analytics.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.analytics.description')}</span>
               </div>
             </div>
           </div>
@@ -212,36 +210,10 @@
         
         <div class="track-footer">
           <div class="track-stats">
-            <span><i class="fas fa-clock"></i> 5 hours</span>
-            <span><i class="fas fa-users"></i> 40 seats</span>
+            <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track3.duration')}</span>
+            <span><i class="fas fa-users"></i> {t(lang, 'tracks.track3.seats')}</span>
           </div>
-          <a href="#register" class="btn btn-secondary">Join Track</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="tracks-info">
-      <div class="info-card">
-        <i class="fas fa-info-circle"></i>
-        <div>
-          <h4>Track Selection</h4>
-          <p>You can attend sessions from multiple tracks throughout the day. Choose your primary track during registration.</p>
-        </div>
-      </div>
-      
-      <div class="info-card">
-        <i class="fas fa-laptop-code"></i>
-        <div>
-          <h4>What to Bring</h4>
-          <p>Bring your laptop with AWS CLI installed. We'll provide AWS credits and detailed setup instructions.</p>
-        </div>
-      </div>
-      
-      <div class="info-card">
-        <i class="fas fa-certificate"></i>
-        <div>
-          <h4>Certificates</h4>
-          <p>Complete any track to receive a certificate of participation and AWS learning resources.</p>
+          <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track3.button')}</a>
         </div>
       </div>
     </div>
@@ -254,53 +226,30 @@
     position: relative;
   }
 
-  .section-description {
-    font-size: 1.1rem;
-    color: var(--aws-dark);
-    max-width: 700px;
-    margin: 0 auto 4rem;
-    line-height: 1.6;
-  }
-
   .tracks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
   }
 
   .track-card {
     background: var(--aws-white);
     border-radius: 16px;
     padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--aws-gray-light);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 580px; /* Altura mínima para alinear botones */
   }
 
   .track-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  }
-
-  .track-card.featured {
-    border: 2px solid var(--aws-orange);
-    transform: scale(1.02);
-  }
-
-  .track-card.featured::before {
-    content: 'Most Popular';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--aws-orange);
-    color: var(--aws-white);
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border-bottom-left-radius: 8px;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
   }
 
   .track-header {
@@ -327,11 +276,11 @@
   }
 
   .track-icon-purple {
-    background: var(--gradient-accent);
+    background: var(--gradient-secondary);
   }
 
   .track-icon-green {
-    background: linear-gradient(135deg, var(--aws-green) 0%, var(--aws-teal) 100%);
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   }
 
   .track-info {
@@ -346,14 +295,8 @@
 
   .track-level {
     font-size: 0.9rem;
-    color: var(--aws-blue);
+    color: var(--aws-dark);
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .track-badge {
-    flex-shrink: 0;
   }
 
   .track-description {
@@ -363,20 +306,9 @@
   }
 
   .track-workshops h4 {
-    font-size: 1.1rem;
     color: var(--aws-navy);
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .track-workshops h4::before {
-    content: '';
-    width: 4px;
-    height: 20px;
-    background: var(--aws-orange);
-    border-radius: 2px;
+    font-size: 1.1rem;
   }
 
   .workshop-list {
@@ -395,7 +327,7 @@
   }
 
   .workshop-item:hover {
-    background: rgba(32, 116, 213, 0.05);
+    background: rgba(255, 153, 0, 0.1);
     transform: translateX(5px);
   }
 
@@ -429,6 +361,7 @@
     align-items: center;
     padding-top: 1.5rem;
     border-top: 1px solid var(--aws-gray-light);
+    margin-top: auto; /* Empuja el footer hacia abajo */
   }
 
   .track-stats {
@@ -440,51 +373,12 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
     color: var(--aws-dark);
+    font-size: 0.9rem;
   }
 
   .track-stats i {
     color: var(--aws-blue);
-    font-size: 0.8rem;
-  }
-
-  .tracks-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-
-  .info-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    background: var(--aws-white);
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid var(--aws-orange);
-  }
-
-  .info-card i {
-    color: var(--aws-orange);
-    font-size: 1.5rem;
-    margin-top: 0.25rem;
-    flex-shrink: 0;
-  }
-
-  .info-card h4 {
-    color: var(--aws-navy);
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .info-card p {
-    color: var(--aws-dark);
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0;
   }
 
   /* Mobile Styles */
@@ -498,46 +392,15 @@
       transform: none;
     }
 
-    .track-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-
     .track-footer {
       flex-direction: column;
       gap: 1rem;
-      align-items: flex-start;
+      align-items: stretch;
     }
 
     .btn {
       width: 100%;
       justify-content: center;
-    }
-
-    .tracks-info {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .track-card {
-      padding: 1.5rem;
-    }
-
-    .workshop-item {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .workshop-item i {
-      align-self: flex-start;
-    }
-
-    .track-stats {
-      flex-direction: column;
-      gap: 0.5rem;
     }
   }
 </style>
