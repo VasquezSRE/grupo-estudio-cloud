@@ -116,7 +116,7 @@
         }
       },
       "duration": "4 hours",
-      "seats": "60 seats",
+      "seats": "50 seats",
       "button": "Join Track"
     },
     "track2": {
@@ -172,7 +172,7 @@
         }
       },
       "duration": "6 hours",
-      "seats": "40 seats",
+      "seats": "50 seats",
       "button": "Join Track"
     },
     "info": {

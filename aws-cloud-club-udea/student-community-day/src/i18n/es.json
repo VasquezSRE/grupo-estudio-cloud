@@ -116,7 +116,7 @@
         }
       },
       "duration": "4 horas",
-      "seats": "60 cupos",
+      "seats": "50 cupos",
       "button": "Unirse al Track"
     },
     "track2": {
@@ -172,7 +172,7 @@
         }
       },
       "duration": "5 horas",
-      "seats": "40 cupos",
+      "seats": "50 cupos",
       "button": "Unirse al Track"
     },
     "info": {
