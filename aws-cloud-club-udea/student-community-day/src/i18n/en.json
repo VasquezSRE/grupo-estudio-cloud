@@ -9,7 +9,7 @@
     "register": "Register Now"
   },
   "hero": {
-    "badge": "September, 2025 • Venue (to be defined)",
+    "badge": "September 13, 2025 • EAFIT University",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "Join us for a full day of learning, networking, and innovation! Discover the latest AWS technologies through hands-on workshops, inspiring talks, and connect with fellow cloud enthusiasts.",
@@ -24,8 +24,8 @@
       "learnMore": "Learn More"
     },
     "info": {
-      "time": "9:00 AM - 6:00 PM",
-      "location": "Venue (to be defined)",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "EAFIT University",
       "audience": "Students & Professionals Welcome"
     },
     "cards": {
@@ -74,10 +74,10 @@
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Free Event",
-      "date": "September, 2025",
-      "time": "9:00 AM - 6:00 PM",
-      "venue": "Venue (to be defined)",
-      "capacity": "200+ Attendees"
+      "date": "September 13, 2025",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "EAFIT University",
+      "capacity": "150+ Attendees"
     },
     "highlights": {
       "tracks": "3 Learning Tracks",
@@ -272,14 +272,14 @@
   "location": {
     "badge": "Event Location",
     "title": "Find Us at",
-    "titleHighlight": "(to be defined)",
+    "titleHighlight": "EAFIT University",
     "venue": {
-      "name": "(To be defined)",
+      "name": "EAFIT University",
       "room": "Main Auditorium"
     },
     "address": {
       "label": "Address",
-      "value": "(To be defined)"
+      "value": "Carrera 49 #7 Sur-50, Medellín, Colombia"
     },
     "parking": {
       "label": "Parking",
@@ -287,13 +287,13 @@
     },
     "transport": {
       "label": "Public Transport",
-      "value": "(To be defined)"
+      "value": "Metro: Aguacatala Station (Line A)"
     },
     "buttons": {
       "directions": "Get Directions",
       "register": "Register Now"
     },
-    "date": "September, 2025 • 9:00 AM"
+    "date": "September 13, 2025 • 9:00 AM"
   },
   "registration": {
     "title": "Ready to Join Us?",

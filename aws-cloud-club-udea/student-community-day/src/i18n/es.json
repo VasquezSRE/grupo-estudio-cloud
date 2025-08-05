@@ -9,7 +9,7 @@
     "register": "Registrarse"
   },
   "hero": {
-    "badge": "Septiembre, 2025 • Lugar (por definir)",
+    "badge": "13 de Septiembre, 2025 • Universidad EAFIT",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "¡Únete a nosotros para un día completo de aprendizaje, networking e innovación! Descubre las últimas tecnologías de AWS a través de talleres prácticos, charlas inspiradoras y conecta con otros entusiastas de la nube.",
@@ -24,8 +24,8 @@
       "learnMore": "Conocer Más"
     },
     "info": {
-      "time": "9:00 AM - 6:00 PM",
-      "location": "Lugar (por definir)",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Universidad EAFIT",
       "audience": "Estudiantes y Profesionales Bienvenidos"
     },
     "cards": {
@@ -74,10 +74,10 @@
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Evento Gratuito",
-      "date": "Septiembre, 2025",
-      "time": "9:00 AM - 6:00 PM",
-      "venue": "Lugar (por definir)",
-      "capacity": "200+ Asistentes"
+      "date": "13 de Septiembre, 2025",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "Universidad EAFIT",
+      "capacity": "150+ Asistentes"
     },
     "highlights": {
       "tracks": "3 Tracks de Aprendizaje",
@@ -272,14 +272,14 @@
   "location": {
     "badge": "Ubicación del Evento",
     "title": "Encuéntranos en ",
-    "titleHighlight": "(por definir)",
+    "titleHighlight": "Universidad EAFIT",
     "venue": {
-      "name": "(Por definir)",
+      "name": "Universidad EAFIT",
       "room": "Auditorio Principal"
     },
     "address": {
       "label": "Dirección",
-      "value": "(Por definir)"
+      "value": "Carrera 49 #7 Sur-50, Medellín, Colombia"
     },
     "parking": {
       "label": "Parqueadero",
@@ -287,13 +287,13 @@
     },
     "transport": {
       "label": "Transporte Público",
-      "value": "(Por definir)"
+      "value": "Metro: Estación Aguacatala (Línea A)"
     },
     "buttons": {
       "directions": "Obtener Direcciones",
       "register": "Registrarse Ahora"
     },
-    "date": "Septiembre, 2025 • 9:00 AM"
+    "date": "13 de Septiembre, 2025 • 9:00 AM"
   },
   "registration": {
     "title": "¿Listo para Unirte?",
