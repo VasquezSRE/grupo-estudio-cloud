@@ -54,13 +54,13 @@ const lang = getCurrentLanguage(Astro.url);
         <div class="community-section">
           <h4 class="community-subtitle">AWS Cloud Clubs</h4>
           <div class="community-logos-clean aws-clubs">
-            <div class="community-logo-simple">
+            <div class="community-logo-simple" title="AWS Cloud Club UdeA">
               <img src="/aws-udea-negro.svg" alt="AWS Cloud Club UdeA" />
             </div>
-            <div class="community-logo-simple">
+            <div class="community-logo-simple" title="AWS Cloud Club EAN">
               <img src="/aws-ean-negro.svg" alt="AWS Cloud Club EAN" />
             </div>
-            <div class="community-logo-simple">
+            <div class="community-logo-simple" title="AWS Cloud Club IU Digital">
               <img src="/aws-iudigital-negro.svg" alt="AWS Cloud Club IU Digital" />
             </div>
           </div>
@@ -70,11 +70,11 @@ const lang = getCurrentLanguage(Astro.url);
         <div class="community-section">
           <h4 class="community-subtitle">AWS User Groups</h4>
           <div class="community-logos-clean user-groups">
-            <div class="community-logo-simple">
+            <div class="community-logo-simple" title="AWS Women Colombia User Group">
               <!-- <img src="/ug-col.svg" alt="AWS User Group Colombia" /> -->
               <img src="/ugw-fondo-claro.png" alt="AWS User Group Colombia" />
             </div>
-            <div class="community-logo-simple">
+            <div class="community-logo-simple" title="AWS User Group Medellín">
               <img src="/ug-med.svg" alt="AWS User Group Medellín" />
             </div>
           </div>
@@ -280,6 +280,37 @@ const lang = getCurrentLanguage(Astro.url);
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Tooltip styles */
+  .community-logo-simple[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--aws-navy);
+    color: var(--aws-white);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .community-logo-simple[title]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-bottom-color: var(--aws-navy);
+    z-index: 1001;
   }
 
   .community-logo-simple:hover {

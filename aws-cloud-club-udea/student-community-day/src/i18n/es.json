@@ -279,11 +279,11 @@
     },
     "address": {
       "label": "Dirección",
-      "value": "Carrera 49 #7 Sur-50, Medellín, Colombia"
+      "value": "Carrera 49 #7 Sur-50, El Poblado, Medellín, Antioquia"
     },
     "parking": {
       "label": "Parqueadero",
-      "value": "Parqueadero gratuito disponible en el campus"
+      "value": "Parqueadero pago disponible en el campus"
     },
     "transport": {
       "label": "Transporte Público",
@@ -361,7 +361,8 @@
         "title": "Recursos",
         "freeTier": "AWS Gratis",
         "documentation": "Documentación",
-        "certification": "Certificación"
+        "certification": "Certificación",
+        "skillBuilder": "AWS Skill Builder"
       },
       "contact": {
         "title": "Contacto",

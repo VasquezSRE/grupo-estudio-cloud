@@ -15,31 +15,17 @@ const lang = getCurrentLanguage(Astro.url);
           </div>
         </div>
         <p>{t(lang, 'footer.description')}</p>
-        
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/santiago-bedoya-diaz/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/web3foru/grupo-estudio-cloud" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/web3foru/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
       </div>
       
       <div class="footer-links">
         <div class="link-group">
-          <h4>{t(lang, 'footer.sections.event.title')}</h4>
-          <ul>
-            <li><a href="#about">{t(lang, 'footer.sections.event.about')}</a></li>
-            <li><a href="#tracks">{t(lang, 'footer.sections.event.tracks')}</a></li>
-            <li><a href="#speakers">{t(lang, 'footer.sections.event.speakers')}</a></li>
-            <li><a href="#location">{t(lang, 'footer.sections.event.location')}</a></li>
-          </ul>
-        </div>
-        
-        <div class="link-group">
           <h4>{t(lang, 'footer.sections.community.title')}</h4>
           <ul>
-            <li><a href="https://www.meetup.com/aws-cloud-club-at-universidad-de-antioquia/" target="_blank">{t(lang, 'footer.sections.community.meetup')}</a></li>
-            <li><a href="https://chat.whatsapp.com/Jsch6Cgts8gE4eDvTapsuH" target="_blank">{t(lang, 'footer.sections.community.whatsapp')}</a></li>
-            <li><a href="https://linktr.ee/awsugmed" target="_blank">{t(lang, 'footer.sections.community.awsug')}</a></li>
+            <li><a href="https://www.meetup.com/aws-cloud-club-at-universidad-de-antioquia/" target="_blank">AWS Cloud Club UdeA</a></li>
+            <li><a href="https://www.meetup.com/aws-cloud-club-at-ean-university/" target="_blank">AWS Cloud Club EAN</a></li>
+            <li><a href="https://www.meetup.com/aws-cloud-club-at-iu-digital/" target="_blank">AWS Cloud Club IU Digital</a></li>
+            <li><a href="https://www.meetup.com/awsugmed/" target="_blank">AWS User Group Medellín</a></li>
+            <li><a href="https://www.meetup.com/es/aws-women-colombia-user-group/" target="_blank">AWS Women Colombia</a></li>
           </ul>
         </div>
         
@@ -49,6 +35,7 @@ const lang = getCurrentLanguage(Astro.url);
             <li><a href="https://aws.amazon.com/free/" target="_blank">{t(lang, 'footer.sections.resources.freeTier')}</a></li>
             <li><a href="https://docs.aws.amazon.com/" target="_blank">{t(lang, 'footer.sections.resources.documentation')}</a></li>
             <li><a href="https://aws.amazon.com/certification/" target="_blank">{t(lang, 'footer.sections.resources.certification')}</a></li>
+            <li><a href="https://skillbuilder.aws/" target="_blank">{t(lang, 'footer.sections.resources.skillBuilder')}</a></li>
           </ul>
         </div>
         
@@ -125,31 +112,9 @@ const lang = getCurrentLanguage(Astro.url);
     margin-bottom: 1rem;
   }
 
-  .social-links {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .social-links a {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--aws-white);
-    transition: all 0.3s ease;
-  }
-
-  .social-links a:hover {
-    background: var(--aws-orange);
-    transform: translateY(-2px);
-  }
-
   .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
