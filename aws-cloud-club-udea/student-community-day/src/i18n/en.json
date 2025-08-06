@@ -9,7 +9,7 @@
     "register": "Register Now"
   },
   "hero": {
-    "badge": "September, 2025 • Venue (to be defined)",
+    "badge": "September 13, 2025 • EAFIT University",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "Join us for a full day of learning, networking, and innovation! Discover the latest AWS technologies through hands-on workshops, inspiring talks, and connect with fellow cloud enthusiasts.",
@@ -24,8 +24,8 @@
       "learnMore": "Learn More"
     },
     "info": {
-      "time": "9:00 AM - 6:00 PM",
-      "location": "Venue (to be defined)",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "EAFIT University",
       "audience": "Students & Professionals Welcome"
     },
     "cards": {
@@ -74,10 +74,10 @@
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Free Event",
-      "date": "September, 2025",
-      "time": "9:00 AM - 6:00 PM",
-      "venue": "Venue (to be defined)",
-      "capacity": "200+ Attendees"
+      "date": "September 13, 2025",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "EAFIT University",
+      "capacity": "150+ Attendees"
     },
     "highlights": {
       "tracks": "3 Learning Tracks",
@@ -92,7 +92,7 @@
     "titleHighlight": "Learning Path",
     "description": "Dive deep into AWS technologies with our three specialized tracks. Each track offers hands-on workshops, expert talks, and practical labs designed for different skill levels.",
     "track1": {
-      "title": "Cloud Fundamentals",
+      "title": "AWS Foundations",
       "level": "Beginner Level",
       "badge": "Track 1",
       "description": "Perfect for beginners! Learn the basics of cloud computing, AWS core services, and get hands-on experience with fundamental AWS tools.",
@@ -116,31 +116,31 @@
         }
       },
       "duration": "4 hours",
-      "seats": "60 seats",
+      "seats": "50 seats",
       "button": "Join Track"
     },
     "track2": {
-      "title": "DevOps & Automation",
-      "level": "Intermediate Level",
+      "title": "Soft Skills, Hard Impact",
+      "level": "Career Development",
       "badge": "Track 2",
-      "description": "Dive into modern DevOps practices with AWS. Learn CI/CD, infrastructure as code, and automation tools to streamline your development workflow.",
+      "description": "Boost your career prospects in cloud computing! Learn how to build compelling resumes, create professional profiles, navigate job searches, and ace technical interviews for cloud roles.",
       "workshops": "Workshops & Topics",
       "items": {
-        "cicd": {
-          "title": "CI/CD with CodePipeline",
-          "description": "Build automated deployment pipelines"
+        "resume": {
+          "title": "Resume Building for Cloud Roles",
+          "description": "Craft compelling resumes that highlight your cloud skills and projects"
         },
-        "iac": {
-          "title": "Infrastructure as Code",
-          "description": "CloudFormation and CDK fundamentals"
+        "profiles": {
+          "title": "Professional Profile Development",
+          "description": "Build strong LinkedIn and GitHub profiles that attract recruiters"
         },
-        "containers": {
-          "title": "Containerization",
-          "description": "Docker, ECS, and container orchestration"
+        "jobsearch": {
+          "title": "Job Search Strategies",
+          "description": "Navigate job boards, networking, and application processes effectively"
         },
-        "monitoring": {
-          "title": "Monitoring & Logging",
-          "description": "CloudWatch, X-Ray, and observability"
+        "interviews": {
+          "title": "Technical Interview Preparation",
+          "description": "Master cloud-focused interviews and certification guidance"
         }
       },
       "duration": "5 hours",
@@ -148,31 +148,31 @@
       "button": "Join Track"
     },
     "track3": {
-      "title": "AI/ML & Data",
-      "level": "Intermediate Level",
+      "title": "AWS: Intermediate to Advanced",
+      "level": "Intermediate to Advanced Level",
       "badge": "Track 3",
-      "description": "Explore the cutting edge of AI and machine learning on AWS. Build intelligent applications and work with big data analytics tools.",
+      "description": "Take your AWS skills to the next level! Explore advanced cloud architectures, best practices, and cutting-edge AWS services for experienced practitioners.",
       "workshops": "Workshops & Topics",
       "items": {
-        "sagemaker": {
-          "title": "SageMaker Workshop",
-          "description": "Build and deploy ML models at scale"
+        "architecture": {
+          "title": "Advanced Cloud Architecture",
+          "description": "Design scalable, resilient, and cost-effective solutions"
         },
-        "vision": {
-          "title": "Computer Vision",
-          "description": "Rekognition APIs and image analysis"
+        "security": {
+          "title": "Advanced Security & Compliance",
+          "description": "Implement enterprise-grade security and governance"
         },
-        "nlp": {
-          "title": "Natural Language Processing",
-          "description": "Text analysis and language understanding"
+        "optimization": {
+          "title": "Performance & Cost Optimization",
+          "description": "Advanced techniques for efficiency and cost management"
         },
-        "analytics": {
-          "title": "Big Data Analytics",
-          "description": "Data lakes, ETL, and analytics services"
+        "emerging": {
+          "title": "Emerging AWS Technologies",
+          "description": "Latest AWS services and industry trends"
         }
       },
       "duration": "6 hours",
-      "seats": "40 seats",
+      "seats": "50 seats",
       "button": "Join Track"
     },
     "info": {
@@ -272,28 +272,28 @@
   "location": {
     "badge": "Event Location",
     "title": "Find Us at",
-    "titleHighlight": "(to be defined)",
+    "titleHighlight": "EAFIT University",
     "venue": {
-      "name": "(To be defined)",
+      "name": "EAFIT University",
       "room": "Main Auditorium"
     },
     "address": {
       "label": "Address",
-      "value": "(To be defined)"
+      "value": "Carrera 49 #7 Sur-50, El Poblado, Medellín, Antioquia"
     },
     "parking": {
       "label": "Parking",
-      "value": "Free parking available on campus"
+      "value": "Paid parking available on campus"
     },
     "transport": {
       "label": "Public Transport",
-      "value": "(To be defined)"
+      "value": "Metro: Aguacatala Station (Line A)"
     },
     "buttons": {
       "directions": "Get Directions",
       "register": "Register Now"
     },
-    "date": "September, 2025 • 9:00 AM"
+    "date": "September 13, 2025 • 9:00 AM"
   },
   "registration": {
     "title": "Ready to Join Us?",
@@ -316,9 +316,9 @@
           "label": "Preferred Track",
           "placeholder": "Select a track",
           "options": {
-            "fundamentals": "Cloud Fundamentals",
-            "devops": "DevOps & Automation",
-            "aiml": "AI/ML & Data"
+            "foundations": "AWS Foundations",
+            "softskills": "Soft Skills, Hard Impact",
+            "advanced": "AWS: Intermediate to Advanced"
           }
         },
         "experience": {
@@ -361,7 +361,8 @@
         "title": "Resources",
         "freeTier": "AWS Free Tier",
         "documentation": "AWS Documentation",
-        "certification": "Certification"
+        "certification": "Certification",
+        "skillBuilder": "AWS Skill Builder"
       },
       "contact": {
         "title": "Contact",

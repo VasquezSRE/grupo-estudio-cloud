@@ -9,7 +9,7 @@
     "register": "Registrarse"
   },
   "hero": {
-    "badge": "Septiembre, 2025 • Lugar (por definir)",
+    "badge": "13 de Septiembre, 2025 • Universidad EAFIT",
     "title": "AWS Student",
     "titleHighlight": "Community Day",
     "description": "¡Únete a nosotros para un día completo de aprendizaje, networking e innovación! Descubre las últimas tecnologías de AWS a través de talleres prácticos, charlas inspiradoras y conecta con otros entusiastas de la nube.",
@@ -24,8 +24,8 @@
       "learnMore": "Conocer Más"
     },
     "info": {
-      "time": "9:00 AM - 6:00 PM",
-      "location": "Lugar (por definir)",
+      "time": "9:00 AM - 5:00 PM",
+      "location": "Universidad EAFIT",
       "audience": "Estudiantes y Profesionales Bienvenidos"
     },
     "cards": {
@@ -74,10 +74,10 @@
     "eventDetails": {
       "title": "Student Community Day",
       "badge": "Evento Gratuito",
-      "date": "Septiembre, 2025",
-      "time": "9:00 AM - 6:00 PM",
-      "venue": "Lugar (por definir)",
-      "capacity": "200+ Asistentes"
+      "date": "13 de Septiembre, 2025",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "Universidad EAFIT",
+      "capacity": "150+ Asistentes"
     },
     "highlights": {
       "tracks": "3 Tracks de Aprendizaje",
@@ -92,7 +92,7 @@
     "titleHighlight": "Ruta de Aprendizaje",
     "description": "Sumérgete en las tecnologías de AWS con nuestros tres tracks especializados. Cada track ofrece talleres prácticos, charlas de expertos y laboratorios prácticos diseñados para diferentes niveles de habilidad.",
     "track1": {
-      "title": "Fundamentos de la Nube",
+      "title": "Fundamentos de AWS",
       "level": "Nivel Principiante",
       "badge": "Track 1",
       "description": "¡Perfecto para principiantes! Aprende los conceptos básicos de la computación en la nube, los servicios principales de AWS y obtén experiencia práctica con herramientas fundamentales de AWS.",
@@ -116,31 +116,31 @@
         }
       },
       "duration": "4 horas",
-      "seats": "60 cupos",
+      "seats": "50 cupos",
       "button": "Unirse al Track"
     },
     "track2": {
-      "title": "DevOps y Automatización",
-      "level": "Nivel Intermedio",
+      "title": "Habilidades Blandas, Impacto Real",
+      "level": "Desarrollo Profesional",
       "badge": "Track 2",
-      "description": "Sumérgete en las prácticas modernas de DevOps con AWS. Aprende CI/CD, infraestructura como código y herramientas de automatización para optimizar tu flujo de desarrollo.",
+      "description": "¡Impulsa tus perspectivas profesionales en computación en la nube! Aprende a construir hojas de vida atractivas, crear perfiles profesionales, navegar búsquedas laborales y destacar en entrevistas técnicas para roles cloud.",
       "workshops": "Talleres y Temas",
       "items": {
-        "cicd": {
-          "title": "CI/CD con CodePipeline",
-          "description": "Construye pipelines de despliegue automatizados"
+        "resume": {
+          "title": "Construcción de Hojas de Vida para Roles Cloud",
+          "description": "Crea hojas de vida atractivas que destaquen tus habilidades y proyectos cloud"
         },
-        "iac": {
-          "title": "Infraestructura como Código",
-          "description": "Fundamentos de CloudFormation y CDK"
+        "profiles": {
+          "title": "Desarrollo de Perfiles Profesionales",
+          "description": "Construye perfiles sólidos en LinkedIn y GitHub que atraigan reclutadores"
         },
-        "containers": {
-          "title": "Containerización",
-          "description": "Docker, ECS y orquestación de contenedores"
+        "jobsearch": {
+          "title": "Estrategias de Búsqueda Laboral",
+          "description": "Navega portales de empleo, networking y procesos de aplicación efectivamente"
         },
-        "monitoring": {
-          "title": "Monitoreo y Logging",
-          "description": "CloudWatch, X-Ray y observabilidad"
+        "interviews": {
+          "title": "Preparación para Entrevistas Técnicas",
+          "description": "Domina entrevistas enfocadas en cloud y orientación sobre certificaciones"
         }
       },
       "duration": "5 horas",
@@ -148,31 +148,31 @@
       "button": "Unirse al Track"
     },
     "track3": {
-      "title": "IA/ML y Datos",
-      "level": "Nivel Intermedio",
+      "title": "AWS: Intermedio a Avanzado",
+      "level": "Nivel Intermedio a Avanzado",
       "badge": "Track 3",
-      "description": "Explora la vanguardia de la IA y el machine learning en AWS. Construye aplicaciones inteligentes y trabaja con herramientas de análisis de big data.",
+      "description": "¡Lleva tus habilidades de AWS al siguiente nivel! Explora arquitecturas cloud avanzadas, mejores prácticas y servicios AWS de vanguardia para profesionales experimentados.",
       "workshops": "Talleres y Temas",
       "items": {
-        "sagemaker": {
-          "title": "Taller de SageMaker",
-          "description": "Construye y despliega modelos de ML a escala"
+        "architecture": {
+          "title": "Arquitectura Cloud Avanzada",
+          "description": "Diseña soluciones escalables, resilientes y costo-efectivas"
         },
-        "vision": {
-          "title": "Visión por Computadora",
-          "description": "APIs de Rekognition y análisis de imágenes"
+        "security": {
+          "title": "Seguridad y Cumplimiento Avanzado",
+          "description": "Implementa seguridad y gobernanza de nivel empresarial"
         },
-        "nlp": {
-          "title": "Procesamiento de Lenguaje Natural",
-          "description": "Comprehend, Translate y análisis de texto"
+        "optimization": {
+          "title": "Optimización de Rendimiento y Costos",
+          "description": "Técnicas avanzadas para eficiencia y gestión de costos"
         },
-        "analytics": {
-          "title": "Análisis de Big Data",
-          "description": "Redshift, Athena y data lakes"
+        "emerging": {
+          "title": "Tecnologías AWS Emergentes",
+          "description": "Últimos servicios de AWS y tendencias de la industria"
         }
       },
       "duration": "5 horas",
-      "seats": "40 cupos",
+      "seats": "50 cupos",
       "button": "Unirse al Track"
     },
     "info": {
@@ -272,28 +272,28 @@
   "location": {
     "badge": "Ubicación del Evento",
     "title": "Encuéntranos en ",
-    "titleHighlight": "(por definir)",
+    "titleHighlight": "Universidad EAFIT",
     "venue": {
-      "name": "(Por definir)",
+      "name": "Universidad EAFIT",
       "room": "Auditorio Principal"
     },
     "address": {
       "label": "Dirección",
-      "value": "(Por definir)"
+      "value": "Carrera 49 #7 Sur-50, El Poblado, Medellín, Antioquia"
     },
     "parking": {
       "label": "Parqueadero",
-      "value": "Parqueadero gratuito disponible en el campus"
+      "value": "Parqueadero pago disponible en el campus"
     },
     "transport": {
       "label": "Transporte Público",
-      "value": "(Por definir)"
+      "value": "Metro: Estación Aguacatala (Línea A)"
     },
     "buttons": {
       "directions": "Obtener Direcciones",
       "register": "Registrarse Ahora"
     },
-    "date": "Septiembre, 2025 • 9:00 AM"
+    "date": "13 de Septiembre, 2025 • 9:00 AM"
   },
   "registration": {
     "title": "¿Listo para Unirte?",
@@ -316,9 +316,9 @@
           "label": "Track Preferido",
           "placeholder": "Selecciona un track",
           "options": {
-            "fundamentals": "Fundamentos de la Nube",
-            "devops": "DevOps y Automatización",
-            "aiml": "IA/ML y Datos"
+            "foundations": "Fundamentos de AWS",
+            "softskills": "Habilidades Blandas, Impacto Real",
+            "advanced": "AWS: Intermedio a Avanzado"
           }
         },
         "experience": {
@@ -361,7 +361,8 @@
         "title": "Recursos",
         "freeTier": "AWS Gratis",
         "documentation": "Documentación",
-        "certification": "Certificación"
+        "certification": "Certificación",
+        "skillBuilder": "AWS Skill Builder"
       },
       "contact": {
         "title": "Contacto",

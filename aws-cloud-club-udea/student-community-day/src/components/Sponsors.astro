@@ -35,7 +35,7 @@ const lang = getCurrentLanguage(Astro.url);
       </div>
       
       <!-- Academic Partner -->
-      <div class="sponsor-tier">
+      <!-- <div class="sponsor-tier">
         <h3>{t(lang, 'sponsors.tiers.academic')}</h3>
         <div class="sponsor-logos academic">
           <div class="sponsor-card">
@@ -44,27 +44,39 @@ const lang = getCurrentLanguage(Astro.url);
             <p>{t(lang, 'sponsors.udea.description')}</p>
           </div>
         </div>
-      </div>
+      </div> -->
       
       <!-- Community Partners -->
       <div class="sponsor-tier">
         <h3>{t(lang, 'sponsors.tiers.community')}</h3>
-        <div class="sponsor-logos community">
-          <div class="partner-item">
-            <i class="fab fa-aws"></i>
-            <span>{t(lang, 'sponsors.awsug.name')}</span>
-          </div>
-          <div class="partner-item">
-            <i class="fas fa-cloud"></i>
-            <span>{t(lang, 'sponsors.awsclub.name')}</span>
-          </div>
-          <div class="sponsor-card">
-            <div class="sponsor-placeholder">
-              <i class="fas fa-building"></i>
-              <span>{t(lang, 'sponsors.placeholder.text')}</span>
+        
+        <!-- AWS Cloud Clubs Section -->
+        <div class="community-section">
+          <h4 class="community-subtitle">AWS Cloud Clubs</h4>
+          <div class="community-logos-clean aws-clubs">
+            <div class="community-logo-simple" title="AWS Cloud Club UdeA">
+              <img src="/aws-udea-negro.svg" alt="AWS Cloud Club UdeA" />
             </div>
-            <h4>{t(lang, 'sponsors.placeholder.title')}</h4>
-            <p>{t(lang, 'sponsors.placeholder.description')}</p>
+            <div class="community-logo-simple" title="AWS Cloud Club EAN">
+              <img src="/aws-ean-negro.svg" alt="AWS Cloud Club EAN" />
+            </div>
+            <div class="community-logo-simple" title="AWS Cloud Club IU Digital">
+              <img src="/aws-iudigital-negro.svg" alt="AWS Cloud Club IU Digital" />
+            </div>
+          </div>
+        </div>
+
+        <!-- AWS User Groups Section -->
+        <div class="community-section">
+          <h4 class="community-subtitle">AWS User Groups</h4>
+          <div class="community-logos-clean user-groups">
+            <div class="community-logo-simple" title="AWS Women Colombia User Group">
+              <!-- <img src="/ug-col.svg" alt="AWS User Group Colombia" /> -->
+              <img src="/ugw-fondo-claro.png" alt="AWS User Group Colombia" />
+            </div>
+            <div class="community-logo-simple" title="AWS User Group Medellín">
+              <img src="/ug-med.svg" alt="AWS User Group Medellín" />
+            </div>
           </div>
         </div>
       </div>
@@ -215,6 +227,180 @@ const lang = getCurrentLanguage(Astro.url);
   .partner-item span {
     font-weight: 600;
     color: var(--aws-navy);
+  }
+
+  /* Community Partners Styles - Clean Version */
+  .community-section {
+    margin-bottom: 3rem;
+  }
+
+  .community-subtitle {
+    text-align: center;
+    color: var(--aws-blue);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .community-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--aws-orange), var(--aws-blue));
+    border-radius: 2px;
+  }
+
+  .community-logos-clean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+  }
+
+  .community-logos-clean.aws-clubs {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+  }
+
+  .community-logos-clean.user-groups {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  .community-logo-simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Tooltip styles */
+  .community-logo-simple[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--aws-navy);
+    color: var(--aws-white);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .community-logo-simple[title]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-bottom-color: var(--aws-navy);
+    z-index: 1001;
+  }
+
+  .community-logo-simple:hover {
+    transform: scale(1.15);
+  }
+
+  .community-logo-simple img {
+    max-width: 400px;
+    max-height: 160px;
+    /* max-width: 500px;
+    max-height: 260px; */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  /* Specific styling for User Groups logos - make them even larger */
+  .community-logos-clean.user-groups .community-logo-simple img {
+    max-width: 450px;
+    max-height: 180px;
+    /* max-width: 500px;
+    max-height: 260px; */
+  }
+
+  /* Responsive adjustments for clean community logos */
+  @media (max-width: 1024px) {
+    .community-logos-clean {
+      gap: 2rem;
+    }
+
+    .community-logo-simple img {
+      max-width: 350px;
+      max-height: 140px;
+    }
+
+    .community-logos-clean.user-groups .community-logo-simple img {
+      max-width: 400px;
+      max-height: 160px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .community-logos-clean {
+      gap: 1.5rem;
+      flex-direction: column;
+    }
+
+    .community-logos-clean.aws-clubs {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .community-logo-simple img {
+      max-width: 300px;
+      max-height: 120px;
+    }
+
+    .community-logos-clean.user-groups .community-logo-simple img {
+      max-width: 350px;
+      max-height: 140px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .community-section {
+      margin-bottom: 2rem;
+    }
+
+    .community-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .community-logos-clean {
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .community-logos-clean.aws-clubs {
+      flex-direction: column;
+    }
+
+    .community-logo-simple img {
+      max-width: 280px;
+      max-height: 110px;
+    }
+
+    .community-logos-clean.user-groups .community-logo-simple img {
+      max-width: 320px;
+      max-height: 130px;
+    }
   }
 
   .sponsor-cta {

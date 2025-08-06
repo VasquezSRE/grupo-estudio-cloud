@@ -52,7 +52,7 @@ const lang = getCurrentLanguage(Astro.url);
         </div>
         
         <div class="location-actions">
-          <a href="https://maps.google.com/?q=Universidad+de+Antioquia+Medellin" target="_blank" class="btn btn-primary">
+          <a href="https://www.google.com/maps/dir//Universidad+EAFIT,+Carrera+49+%237+Sur-50,+El+Poblado,+Medell%C3%ADn,+Antioquia,+Colombia" target="_blank" class="btn btn-primary">
             <i class="fas fa-directions"></i>
             {t(lang, 'location.buttons.directions')}
           </a>
@@ -65,7 +65,16 @@ const lang = getCurrentLanguage(Astro.url);
       
       <div class="location-map">
         <div id="map" class="map-container">
-          <!-- Map will be loaded here -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0234567890123!2d-75.5812345!3d6.1975432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682f3b5b5b5b5%3A0x1234567890abcdef!2sUniversidad%20EAFIT!5e0!3m2!1sen!2sco!4v1234567890123!5m2!1sen!2sco&q=Carrera+49+%237+Sur-50,+El+Poblado,+Medell%C3%ADn,+Antioquia"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Universidad EAFIT Location">
+          </iframe>
         </div>
       </div>
     </div>
@@ -134,15 +143,18 @@ const lang = getCurrentLanguage(Astro.url);
     overflow: hidden;
     position: relative;
     background: var(--aws-gray-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
 
-  .map-container::before {
-    content: 'Interactive map will load here';
-    color: var(--aws-gray);
-    font-size: 1.1rem;
+  .map-container iframe {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .map-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
   }
 
   /* Mobile Styles */

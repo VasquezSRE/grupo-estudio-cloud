@@ -83,7 +83,8 @@ const lang = getCurrentLanguage(Astro.url);
             <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track1.duration')}</span>
             <span><i class="fas fa-users"></i> {t(lang, 'tracks.track1.seats')}</span>
           </div>
-          <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track1.button')}</a>
+          <!-- TODO: Uncomment when track registration system is ready -->
+          <!-- <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track1.button')}</a> -->
         </div>
       </div>
       
@@ -91,7 +92,7 @@ const lang = getCurrentLanguage(Astro.url);
       <div class="track-card">
         <div class="track-header">
           <div class="track-icon track-icon-purple">
-            <i class="fas fa-cogs"></i>
+            <i class="fas fa-briefcase"></i>
           </div>
           <div class="track-info">
             <h3>{t(lang, 'tracks.track2.title')}</h3>
@@ -110,34 +111,34 @@ const lang = getCurrentLanguage(Astro.url);
           <h4>{t(lang, 'tracks.track2.workshops')}</h4>
           <div class="workshop-list">
             <div class="workshop-item">
-              <i class="fas fa-code-branch"></i>
+              <i class="fas fa-file-alt"></i>
               <div>
-                <strong>{t(lang, 'tracks.track2.items.cicd.title')}</strong>
-                <span>{t(lang, 'tracks.track2.items.cicd.description')}</span>
+                <strong>{t(lang, 'tracks.track2.items.resume.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.resume.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fas fa-layer-group"></i>
+              <i class="fab fa-linkedin"></i>
               <div>
-                <strong>{t(lang, 'tracks.track2.items.iac.title')}</strong>
-                <span>{t(lang, 'tracks.track2.items.iac.description')}</span>
+                <strong>{t(lang, 'tracks.track2.items.profiles.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.profiles.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fab fa-docker"></i>
+              <i class="fas fa-search"></i>
               <div>
-                <strong>{t(lang, 'tracks.track2.items.containers.title')}</strong>
-                <span>{t(lang, 'tracks.track2.items.containers.description')}</span>
+                <strong>{t(lang, 'tracks.track2.items.jobsearch.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.jobsearch.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fas fa-chart-line"></i>
+              <i class="fas fa-handshake"></i>
               <div>
-                <strong>{t(lang, 'tracks.track2.items.monitoring.title')}</strong>
-                <span>{t(lang, 'tracks.track2.items.monitoring.description')}</span>
+                <strong>{t(lang, 'tracks.track2.items.interviews.title')}</strong>
+                <span>{t(lang, 'tracks.track2.items.interviews.description')}</span>
               </div>
             </div>
           </div>
@@ -148,7 +149,8 @@ const lang = getCurrentLanguage(Astro.url);
             <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track2.duration')}</span>
             <span><i class="fas fa-users"></i> {t(lang, 'tracks.track2.seats')}</span>
           </div>
-          <a href="#register" class="btn btn-primary">{t(lang, 'tracks.track2.button')}</a>
+          <!-- TODO: Uncomment when track registration system is ready -->
+          <!-- <a href="#register" class="btn btn-primary">{t(lang, 'tracks.track2.button')}</a> -->
         </div>
       </div>
       
@@ -156,7 +158,7 @@ const lang = getCurrentLanguage(Astro.url);
       <div class="track-card">
         <div class="track-header">
           <div class="track-icon track-icon-green">
-            <i class="fas fa-brain"></i>
+            <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="track-info">
             <h3>{t(lang, 'tracks.track3.title')}</h3>
@@ -175,34 +177,34 @@ const lang = getCurrentLanguage(Astro.url);
           <h4>{t(lang, 'tracks.track3.workshops')}</h4>
           <div class="workshop-list">
             <div class="workshop-item">
-              <i class="fas fa-robot"></i>
+              <i class="fas fa-sitemap"></i>
               <div>
-                <strong>{t(lang, 'tracks.track3.items.sagemaker.title')}</strong>
-                <span>{t(lang, 'tracks.track3.items.sagemaker.description')}</span>
+                <strong>{t(lang, 'tracks.track3.items.architecture.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.architecture.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fas fa-eye"></i>
+              <i class="fas fa-shield-alt"></i>
               <div>
-                <strong>{t(lang, 'tracks.track3.items.vision.title')}</strong>
-                <span>{t(lang, 'tracks.track3.items.vision.description')}</span>
+                <strong>{t(lang, 'tracks.track3.items.security.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.security.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fas fa-comments"></i>
+              <i class="fas fa-tachometer-alt"></i>
               <div>
-                <strong>{t(lang, 'tracks.track3.items.nlp.title')}</strong>
-                <span>{t(lang, 'tracks.track3.items.nlp.description')}</span>
+                <strong>{t(lang, 'tracks.track3.items.optimization.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.optimization.description')}</span>
               </div>
             </div>
             
             <div class="workshop-item">
-              <i class="fas fa-chart-bar"></i>
+              <i class="fas fa-rocket"></i>
               <div>
-                <strong>{t(lang, 'tracks.track3.items.analytics.title')}</strong>
-                <span>{t(lang, 'tracks.track3.items.analytics.description')}</span>
+                <strong>{t(lang, 'tracks.track3.items.emerging.title')}</strong>
+                <span>{t(lang, 'tracks.track3.items.emerging.description')}</span>
               </div>
             </div>
           </div>
@@ -213,7 +215,8 @@ const lang = getCurrentLanguage(Astro.url);
             <span><i class="fas fa-clock"></i> {t(lang, 'tracks.track3.duration')}</span>
             <span><i class="fas fa-users"></i> {t(lang, 'tracks.track3.seats')}</span>
           </div>
-          <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track3.button')}</a>
+          <!-- TODO: Uncomment when track registration system is ready -->
+          <!-- <a href="#register" class="btn btn-secondary">{t(lang, 'tracks.track3.button')}</a> -->
         </div>
       </div>
     </div>
@@ -228,15 +231,18 @@ const lang = getCurrentLanguage(Astro.url);
 
   .tracks-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* Forzar 3 columnas iguales */
+    gap: 1.5rem;
     margin-top: 4rem;
+    max-width: 1300px; /* Ancho total optimizado */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .track-card {
     background: var(--aws-white);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 2rem; /* Padding balanceado */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--aws-gray-light);
     transition: all 0.3s ease;
@@ -257,6 +263,7 @@ const lang = getCurrentLanguage(Astro.url);
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    min-height: 80px; /* Altura mínima consistente */
   }
 
   .track-icon {
@@ -269,6 +276,7 @@ const lang = getCurrentLanguage(Astro.url);
     font-size: 1.5rem;
     color: var(--aws-white);
     flex-shrink: 0;
+    margin-top: 0.2rem; /* Alineación visual con el texto */
   }
 
   .track-icon-blue {
@@ -285,18 +293,91 @@ const lang = getCurrentLanguage(Astro.url);
 
   .track-info {
     flex: 1;
+    min-width: 0; /* Permite que el texto se ajuste */
   }
 
   .track-info h3 {
-    font-size: 1.4rem;
+    font-size: 1.25rem; /* Tamaño optimizado para 3 columnas */
     color: var(--aws-navy);
     margin-bottom: 0.5rem;
+    line-height: 1.2; /* Líneas más compactas */
+    word-wrap: break-word;
+    hyphens: none;
+    font-weight: 700;
+    min-height: 60px; /* Altura mínima para alineación */
+    display: flex;
+    align-items: center; /* Centrado vertical */
   }
 
   .track-level {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--aws-dark);
     font-weight: 600;
+    white-space: nowrap; /* Evita que se rompa en múltiples líneas */
+  }
+
+  .track-badge {
+    flex-shrink: 0;
+    align-self: flex-start; /* Se alinea al inicio */
+    margin-top: 0.2rem; /* Alineación visual */
+  }
+
+  /* Responsive adjustments for track headers */
+  @media (max-width: 768px) {
+    .track-header {
+      min-height: 70px;
+      gap: 0.8rem;
+    }
+
+    .track-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 1.3rem;
+    }
+
+    .track-info h3 {
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }
+
+    .track-level {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .track-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: auto;
+      gap: 1rem;
+    }
+
+    .track-info {
+      order: 2;
+    }
+
+    .track-badge {
+      order: 1;
+      align-self: center;
+      margin-top: 0;
+    }
+
+    .track-icon {
+      order: 0;
+      margin-top: 0;
+    }
+
+    .track-info h3 {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .track-level {
+      text-align: center;
+      white-space: normal; /* Permite wrap en móvil */
+    }
   }
 
   .track-description {
@@ -381,11 +462,75 @@ const lang = getCurrentLanguage(Astro.url);
     color: var(--aws-blue);
   }
 
-  /* Mobile Styles */
+  /* Badge Styles */
+  .badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .badge-primary {
+    background: var(--aws-blue);
+    color: var(--aws-white);
+  }
+
+  .badge-secondary {
+    background: var(--aws-orange);
+    color: var(--aws-white);
+  }
+
+  .badge-success {
+    background: #10b981;
+    color: var(--aws-white);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .tracks-grid {
+      max-width: 1100px;
+      gap: 1.2rem;
+    }
+
+    .track-card {
+      padding: 1.8rem;
+    }
+
+    .track-info h3 {
+      font-size: 1.15rem;
+      min-height: 55px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .tracks-grid {
+      max-width: 950px;
+      gap: 1rem;
+    }
+
+    .track-card {
+      padding: 1.6rem;
+    }
+
+    .track-info h3 {
+      font-size: 1.1rem;
+      min-height: 50px;
+    }
+  }
+
   @media (max-width: 768px) {
     .tracks-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Solo en móvil cambia a 1 columna */
       gap: 1.5rem;
+      max-width: 500px;
+    }
+
+    .track-card {
+      padding: 2rem;
     }
 
     .track-card.featured {
@@ -401,6 +546,27 @@ const lang = getCurrentLanguage(Astro.url);
     .btn {
       width: 100%;
       justify-content: center;
+    }
+
+    .track-info h3 {
+      font-size: 1.3rem;
+      line-height: 1.25;
+      min-height: auto; /* Sin altura mínima en móvil */
+      display: block; /* Vuelve a display normal */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tracks-grid {
+      max-width: 100%;
+    }
+
+    .track-card {
+      padding: 1.5rem;
+    }
+
+    .track-info h3 {
+      font-size: 1.2rem;
     }
   }
 </style>
