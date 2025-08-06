@@ -1,0 +1,168 @@
+---
+import { getCurrentLanguage, getAlternateLanguage, getLanguageName, getLocalizedPath } from '../i18n/utils';
+
+const currentLang = getCurrentLanguage(Astro.url);
+const alternateLang = getAlternateLanguage(currentLang);
+const currentPath = Astro.url.pathname.replace(/^\/(es\/)?/, '/');
+const alternateUrl = getLocalizedPath(currentPath, alternateLang);
+---
+
+<div class="language-selector">
+  <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
+    <i class="fas fa-globe"></i>
+    <span class="current-lang">{getLanguageName(currentLang)}</span>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  
+  <div class="lang-dropdown" id="lang-dropdown">
+    <a href={currentLang === 'en' ? currentPath : currentPath} class={`lang-option ${currentLang === 'en' ? 'active' : ''}`}>
+      <span class="flag">🇺🇸</span>
+      <span>English</span>
+    </a>
+    <a href={alternateUrl} class={`lang-option ${currentLang === 'es' ? 'active' : ''}`}>
+      <span class="flag">🇪🇸</span>
+      <span>Español</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .language-selector {
+    position: relative;
+    display: inline-block;
+  }
+
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--aws-white);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--aws-orange);
+  }
+
+  .lang-toggle i:first-child {
+    color: var(--aws-orange);
+  }
+
+  .lang-toggle i:last-child {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+  }
+
+  .lang-toggle.active i:last-child {
+    transform: rotate(180deg);
+  }
+
+  .current-lang {
+    font-weight: 500;
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--aws-white);
+    border: 1px solid var(--aws-gray-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  .lang-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: var(--aws-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--aws-gray-light);
+  }
+
+  .lang-option:last-child {
+    border-bottom: none;
+  }
+
+  .lang-option:hover {
+    background: var(--aws-gray-light);
+    color: var(--aws-blue);
+  }
+
+  .lang-option.active {
+    background: var(--aws-blue);
+    color: var(--aws-white);
+  }
+
+  .lang-option.active:hover {
+    background: var(--aws-blue);
+    color: var(--aws-white);
+  }
+
+  .flag {
+    font-size: 1.2rem;
+  }
+
+  .lang-option span:last-child {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .lang-dropdown {
+      right: -1rem;
+      left: -1rem;
+      min-width: auto;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const langToggle = document.getElementById('lang-toggle');
+    const langDropdown = document.getElementById('lang-dropdown');
+    
+    if (langToggle && langDropdown) {
+      langToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        langToggle.classList.toggle('active');
+        langDropdown.classList.toggle('show');
+      });
+      
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function() {
+        langToggle.classList.remove('active');
+        langDropdown.classList.remove('show');
+      });
+      
+      // Prevent dropdown from closing when clicking inside
+      langDropdown.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    }
+  });
+</script>

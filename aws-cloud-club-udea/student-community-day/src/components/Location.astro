@@ -1,0 +1,185 @@
+---
+import { getCurrentLanguage, t } from '../i18n/utils';
+
+const lang = getCurrentLanguage(Astro.url);
+---
+
+<section id="location" class="location">
+  <div class="container">
+    <div class="location-content">
+      <div class="location-info">
+        <div class="section-badge">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>{t(lang, 'location.badge')}</span>
+        </div>
+        
+        <h2 class="section-title text-left">
+          {t(lang, 'location.title')} <span class="gradient-text">{t(lang, 'location.titleHighlight')}</span>
+        </h2>
+        
+        <div class="venue-details">
+          <div class="venue-item">
+            <i class="fas fa-building"></i>
+            <div>
+              <strong>{t(lang, 'location.venue.name')}</strong>
+              <span>{t(lang, 'location.venue.room')}</span>
+            </div>
+          </div>
+          
+          <div class="venue-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>{t(lang, 'location.address.label')}</strong>
+              <span>{t(lang, 'location.address.value')}</span>
+            </div>
+          </div>
+          
+          <div class="venue-item">
+            <i class="fas fa-parking"></i>
+            <div>
+              <strong>{t(lang, 'location.parking.label')}</strong>
+              <span>{t(lang, 'location.parking.value')}</span>
+            </div>
+          </div>
+          
+          <div class="venue-item">
+            <i class="fas fa-bus"></i>
+            <div>
+              <strong>{t(lang, 'location.transport.label')}</strong>
+              <span>{t(lang, 'location.transport.value')}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-actions">
+          <a href="https://www.google.com/maps/dir//Universidad+EAFIT,+Carrera+49+%237+Sur-50,+El+Poblado,+Medell%C3%ADn,+Antioquia,+Colombia" target="_blank" class="btn btn-primary">
+            <i class="fas fa-directions"></i>
+            {t(lang, 'location.buttons.directions')}
+          </a>
+          <a href="#register" class="btn btn-secondary">
+            <i class="fas fa-ticket-alt"></i>
+            {t(lang, 'location.buttons.register')}
+          </a>
+        </div>
+      </div>
+      
+      <div class="location-map">
+        <div id="map" class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0234567890123!2d-75.5812345!3d6.1975432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682f3b5b5b5b5%3A0x1234567890abcdef!2sUniversidad%20EAFIT!5e0!3m2!1sen!2sco!4v1234567890123!5m2!1sen!2sco&q=Carrera+49+%237+Sur-50,+El+Poblado,+Medell%C3%ADn,+Antioquia"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Universidad EAFIT Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .location {
+    background: var(--aws-white);
+  }
+
+  .location-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .venue-details {
+    margin-bottom: 3rem;
+  }
+
+  .venue-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--aws-gray-light);
+    border-radius: 8px;
+    border-left: 4px solid var(--aws-orange);
+  }
+
+  .venue-item i {
+    color: var(--aws-blue);
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .venue-item div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .venue-item strong {
+    color: var(--aws-navy);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .venue-item span {
+    color: var(--aws-dark);
+    font-size: 0.9rem;
+  }
+
+  .location-actions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background: var(--aws-gray-light);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .map-container iframe {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .map-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .location-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .location-actions {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .venue-item {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  }
+</style>

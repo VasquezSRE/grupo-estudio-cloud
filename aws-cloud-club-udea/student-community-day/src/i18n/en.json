@@ -1,0 +1,387 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About SCD",
+    "tracks": "Tracks",
+    "speakers": "Speakers",
+    "sponsors": "Sponsors",
+    "location": "Location",
+    "register": "Register Now"
+  },
+  "hero": {
+    "badge": "September 13, 2025 • EAFIT University",
+    "title": "AWS Student",
+    "titleHighlight": "Community Day",
+    "description": "Join us for a full day of learning, networking, and innovation! Discover the latest AWS technologies through hands-on workshops, inspiring talks, and connect with fellow cloud enthusiasts.",
+    "stats": {
+      "tracks": "Learning Tracks",
+      "speakers": "Expert Speakers",
+      "attendees": "Attendees",
+      "registration": "Registration"
+    },
+    "buttons": {
+      "register": "Register Now",
+      "learnMore": "Learn More"
+    },
+    "info": {
+      "time": "9:00 AM - 5:00 PM",
+      "location": "EAFIT University",
+      "audience": "Students & Professionals Welcome"
+    },
+    "cards": {
+      "cloud": "Cloud Computing",
+      "labs": "Hands-on Labs",
+      "networking": "Networking"
+    }
+  },
+  "about": {
+    "badge": "About the Event",
+    "title": "What is a Student",
+    "titleHighlight": "Community Day",
+    "description": "Student Community Days (SCDs) are one-day, student-led events designed to bring together cloud enthusiasts, developers, and tech professionals. These events feature multiple learning tracks, hands-on workshops, inspiring talks, and networking opportunities - all focused on AWS technologies and cloud computing innovation.",
+    "features": {
+      "learn": {
+        "title": "Learn by Doing",
+        "description": "Participate in hands-on workshops and labs designed to give you practical experience with AWS services."
+      },
+      "network": {
+        "title": "Network & Connect",
+        "description": "Meet like-minded students, professionals, and AWS experts. Build connections that last beyond the event."
+      },
+      "recognition": {
+        "title": "Earn Recognition",
+        "description": "Get certificates of participation and learn about AWS certification paths to advance your career."
+      }
+    },
+    "buttons": {
+      "exploreTracks": "Explore Tracks",
+      "meetSpeakers": "Meet Speakers"
+    },
+    "card": {
+      "freeEvent": "Free Event",
+      "date": "Date",
+      "time": "Time",
+      "venue": "Venue",
+      "capacity": "Capacity",
+      "attendees": "Attendees",
+      "highlights": {
+        "tracks": "3 Learning Tracks",
+        "speakers": "Expert Speakers",
+        "labs": "Hands-on Labs",
+        "networking": "Networking"
+      }
+    },
+    "eventDetails": {
+      "title": "Student Community Day",
+      "badge": "Free Event",
+      "date": "September 13, 2025",
+      "time": "9:00 AM - 5:00 PM",
+      "venue": "EAFIT University",
+      "capacity": "150+ Attendees"
+    },
+    "highlights": {
+      "tracks": "3 Learning Tracks",
+      "speakers": "Expert Speakers",
+      "labs": "Hands-on Labs",
+      "networking": "Networking"
+    }
+  },
+  "tracks": {
+    "badge": "Learning Tracks",
+    "title": "Choose Your",
+    "titleHighlight": "Learning Path",
+    "description": "Dive deep into AWS technologies with our three specialized tracks. Each track offers hands-on workshops, expert talks, and practical labs designed for different skill levels.",
+    "track1": {
+      "title": "AWS Foundations",
+      "level": "Beginner Level",
+      "badge": "Track 1",
+      "description": "Perfect for beginners! Learn the basics of cloud computing, AWS core services, and get hands-on experience with fundamental AWS tools.",
+      "workshops": "Workshops & Topics",
+      "items": {
+        "intro": {
+          "title": "Introduction to AWS",
+          "description": "Core services overview and AWS console navigation"
+        },
+        "ec2": {
+          "title": "EC2 Hands-on Lab",
+          "description": "Launch and configure your first virtual server"
+        },
+        "storage": {
+          "title": "Storage Solutions",
+          "description": "S3, EBS, and data management best practices"
+        },
+        "security": {
+          "title": "Security Basics",
+          "description": "IAM, security groups, and access management"
+        }
+      },
+      "duration": "4 hours",
+      "seats": "50 seats",
+      "button": "Join Track"
+    },
+    "track2": {
+      "title": "Soft Skills, Hard Impact",
+      "level": "Career Development",
+      "badge": "Track 2",
+      "description": "Boost your career prospects in cloud computing! Learn how to build compelling resumes, create professional profiles, navigate job searches, and ace technical interviews for cloud roles.",
+      "workshops": "Workshops & Topics",
+      "items": {
+        "resume": {
+          "title": "Resume Building for Cloud Roles",
+          "description": "Craft compelling resumes that highlight your cloud skills and projects"
+        },
+        "profiles": {
+          "title": "Professional Profile Development",
+          "description": "Build strong LinkedIn and GitHub profiles that attract recruiters"
+        },
+        "jobsearch": {
+          "title": "Job Search Strategies",
+          "description": "Navigate job boards, networking, and application processes effectively"
+        },
+        "interviews": {
+          "title": "Technical Interview Preparation",
+          "description": "Master cloud-focused interviews and certification guidance"
+        }
+      },
+      "duration": "5 hours",
+      "seats": "50 seats",
+      "button": "Join Track"
+    },
+    "track3": {
+      "title": "AWS: Intermediate to Advanced",
+      "level": "Intermediate to Advanced Level",
+      "badge": "Track 3",
+      "description": "Take your AWS skills to the next level! Explore advanced cloud architectures, best practices, and cutting-edge AWS services for experienced practitioners.",
+      "workshops": "Workshops & Topics",
+      "items": {
+        "architecture": {
+          "title": "Advanced Cloud Architecture",
+          "description": "Design scalable, resilient, and cost-effective solutions"
+        },
+        "security": {
+          "title": "Advanced Security & Compliance",
+          "description": "Implement enterprise-grade security and governance"
+        },
+        "optimization": {
+          "title": "Performance & Cost Optimization",
+          "description": "Advanced techniques for efficiency and cost management"
+        },
+        "emerging": {
+          "title": "Emerging AWS Technologies",
+          "description": "Latest AWS services and industry trends"
+        }
+      },
+      "duration": "6 hours",
+      "seats": "50 seats",
+      "button": "Join Track"
+    },
+    "info": {
+      "selection": {
+        "title": "Track Selection",
+        "description": "You can attend sessions from multiple tracks during the day. Choose your main track during registration."
+      },
+      "bring": {
+        "title": "What to Bring",
+        "description": "Bring your laptop with AWS CLI installed. We'll provide AWS credits and detailed setup instructions."
+      },
+      "certificates": {
+        "title": "Certificates",
+        "description": "Complete any track to receive a certificate of participation and AWS learning resources."
+      }
+    }
+  },
+  "speakers": {
+    "badge": "Expert Speakers",
+    "title": "Learn from",
+    "titleHighlight": "Industry Leaders",
+    "description": "Our speakers are AWS experts, industry professionals, and thought leaders who will share their knowledge and experience with you.",
+    "speaker1": {
+      "name": "Speaker TBA",
+      "title": "Solutions Architect",
+      "company": "AWS Partner",
+      "bio": "We'll soon announce our first expert speaker in cloud architecture and AWS best practices.",
+      "topics": {
+        "serverless": "Serverless",
+        "devops": "DevOps",
+        "migration": "Migration"
+      }
+    },
+    "speaker2": {
+      "name": "Speaker TBA",
+      "title": "Data Specialist",
+      "company": "Tech Company",
+      "bio": "We'll soon announce our expert speaker in machine learning and data analytics with AWS.",
+      "topics": {
+        "ml": "Machine Learning",
+        "ai": "Artificial Intelligence",
+        "data": "Data Analytics"
+      }
+    },
+    "speaker3": {
+      "name": "Speaker TBA",
+      "title": "Security Specialist",
+      "company": "Security Firm",
+      "bio": "We'll soon announce our expert speaker in cloud security and AWS best practices.",
+      "topics": {
+        "security": "Security",
+        "compliance": "Compliance",
+        "governance": "Governance"
+      }
+    },
+    "cta": {
+      "title": "Want to be a Speaker?",
+      "description": "We're always looking for passionate speakers to share their knowledge with our community.",
+      "button": "Apply to Speak"
+    }
+  },
+  "sponsors": {
+    "badge": "Our Sponsors",
+    "title": "Powered by",
+    "titleHighlight": "Amazing Partners",
+    "description": "We're grateful to our sponsors who make this event possible and support the growth of the cloud computing community.",
+    "tiers": {
+      "main": "Main Sponsor",
+      "academic": "Academic Partner",
+      "community": "Community Partners"
+    },
+    "aws": {
+      "description": "Leading cloud platform providing the infrastructure for this event"
+    },
+    "udea": {
+      "description": "Academic partner"
+    },
+    "awsug": {
+      "name": "AWS User Group Medellín",
+      "description": "Local AWS professionals community"
+    },
+    "awsclub": {
+      "name": "AWS Cloud Club UdeA",
+      "description": "Student cloud technologies club"
+    },
+    "placeholder": {
+      "text": "Your Company Here",
+      "title": "Become a Sponsor",
+      "description": "Join us in supporting the next generation of cloud professionals"
+    },
+    "cta": {
+      "title": "Interested in Sponsoring?",
+      "description": "Help us make this event even better and reach more students",
+      "button": "awscloudclubudea@gmail.com"
+    }
+  },
+  "location": {
+    "badge": "Event Location",
+    "title": "Find Us at",
+    "titleHighlight": "EAFIT University",
+    "venue": {
+      "name": "EAFIT University",
+      "room": "Main Auditorium"
+    },
+    "address": {
+      "label": "Address",
+      "value": "Carrera 49 #7 Sur-50, El Poblado, Medellín, Antioquia"
+    },
+    "parking": {
+      "label": "Parking",
+      "value": "Paid parking available on campus"
+    },
+    "transport": {
+      "label": "Public Transport",
+      "value": "Metro: Aguacatala Station (Line A)"
+    },
+    "buttons": {
+      "directions": "Get Directions",
+      "register": "Register Now"
+    },
+    "date": "September 13, 2025 • 9:00 AM"
+  },
+  "registration": {
+    "title": "Ready to Join Us?",
+    "description": "Don't miss this incredible opportunity to learn, network, and grow your cloud skills. Registration is completely free, but seats are limited!",
+    "benefits": {
+      "admission": "Free admission to all tracks and workshops",
+      "lunch": "Lunch and refreshments included",
+      "certificate": "Certificate of participation",
+      "networking": "Networking opportunities",
+      "swag": "AWS swag and resources"
+    },
+    "form": {
+      "title": "Register Now",
+      "subtitle": "Secure your spot at AWS Student Community Day",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "university": "University/Organization",
+        "track": {
+          "label": "Preferred Track",
+          "placeholder": "Select a track",
+          "options": {
+            "foundations": "AWS Foundations",
+            "softskills": "Soft Skills, Hard Impact",
+            "advanced": "AWS: Intermediate to Advanced"
+          }
+        },
+        "experience": {
+          "label": "Experience Level",
+          "placeholder": "Select your level",
+          "options": {
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced"
+          }
+        }
+      },
+      "terms": {
+        "text": "I agree to the",
+        "link": "Terms and Conditions"
+      },
+      "newsletter": "Subscribe to AWS Cloud Club updates",
+      "submit": "Complete Registration",
+      "footer": "Registration closes on September 10, 2025 or when capacity is reached."
+    }
+  },
+  "footer": {
+    "description": "Empowering students to build the future with cloud technologies.",
+    "sections": {
+      "event": {
+        "title": "Event",
+        "about": "About SCD",
+        "tracks": "Tracks",
+        "speakers": "Speakers",
+        "location": "Location"
+      },
+      "community": {
+        "title": "Community",
+        "join": "Join Club",
+        "meetup": "Meetup",
+        "whatsapp": "WhatsApp",
+        "awsug": "AWS User Group Medellín"
+      },
+      "resources": {
+        "title": "Resources",
+        "freeTier": "AWS Free Tier",
+        "documentation": "AWS Documentation",
+        "certification": "Certification",
+        "skillBuilder": "AWS Skill Builder"
+      },
+      "contact": {
+        "title": "Contact",
+        "info": "awscloudclubudea@gmail.com"
+      }
+    },
+    "copyright": "© 2025 AWS Cloud Club UdeA. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "conduct": "Code of Conduct"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "open": "Open",
+    "menu": "Menu"
+  }
+}
