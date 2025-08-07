@@ -63,9 +63,7 @@ const lang = getCurrentLanguage(Astro.url);
             <div class="community-logo-simple" title="AWS Cloud Club IU Digital">
               <img src="/aws-iudigital-negro.svg" alt="AWS Cloud Club IU Digital" />
             </div>
-            <div class="community-logo-simple" title="AWS Cloud Club UD">
-              <img src="/aws-ud.svg" alt="AWS Cloud Club UD" />
-            </div>          </div>
+          </div>
         </div>
 
         <!-- AWS User Groups Section -->
@@ -286,51 +284,33 @@ const lang = getCurrentLanguage(Astro.url);
     cursor: pointer;
   }
 
-  /* Tooltip styles - Solución robusta y completamente opaca */
-  .community-logo-simple {
-    position: relative;
-    z-index: 1;
-  }
-
-  .community-logo-simple[title]:hover {
-    z-index: 999999;
-  }
-
+  /* Tooltip styles */
   .community-logo-simple[title]:hover::after {
     content: attr(title);
     position: absolute;
-    bottom: -50px;
+    bottom: -45px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--aws-navy) !important;
-    color: var(--aws-white) !important;
-    padding: 10px 14px;
-    border-radius: 8px;
+    background: var(--aws-navy);
+    color: var(--aws-white);
+    padding: 8px 12px;
+    border-radius: 6px;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 500;
     white-space: nowrap;
-    z-index: 999999 !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9) !important;
-    opacity: 1 !important;
-    pointer-events: none;
-    min-width: max-content;
-    text-align: center;
-    border: 2px solid var(--aws-white);
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    isolation: isolate;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .community-logo-simple[title]:hover::before {
     content: '';
     position: absolute;
-    bottom: -40px;
+    bottom: -37px;
     left: 50%;
     transform: translateX(-50%);
-    border: 8px solid transparent;
+    border: 6px solid transparent;
     border-bottom-color: var(--aws-navy);
-    z-index: 999998 !important;
-    pointer-events: none;
+    z-index: 1001;
   }
 
   .community-logo-simple:hover {
@@ -390,27 +370,7 @@ const lang = getCurrentLanguage(Astro.url);
     .community-logos-clean.user-groups .community-logo-simple img {
       max-width: 350px;
       max-height: 140px;
-    /* Tooltips responsive para tablets - Mejorados */
-    .community-logo-simple[title]:hover::after {
-      bottom: -55px !important;
-      padding: 12px 16px !important;
-      font-size: 0.9rem !important;
-      z-index: 999999 !important;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9) !important;
-      max-width: 250px;
-      white-space: normal;
-      text-align: center;
-      line-height: 1.3;
-      background: var(--aws-navy) !important;
-      color: var(--aws-white) !important;
-      border: 2px solid var(--aws-white) !important;
-      opacity: 1 !important;
     }
-
-    .community-logo-simple[title]:hover::before {
-      bottom: -43px !important;
-      z-index: 999998 !important;
-      border-bottom-color: var(--aws-navy) !important;
   }
 
   @media (max-width: 480px) {
@@ -440,34 +400,6 @@ const lang = getCurrentLanguage(Astro.url);
     .community-logos-clean.user-groups .community-logo-simple img {
       max-width: 320px;
       max-height: 130px;
-    }
-
-    /* Tooltips responsive para móviles - Mejorados */
-    .community-logo-simple[title]:hover::after {
-      bottom: -65px !important;
-      padding: 10px 14px !important;
-      font-size: 0.8rem !important;
-      z-index: 999999 !important;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9) !important;
-      max-width: 200px;
-      white-space: normal;
-      text-align: center;
-      line-height: 1.4;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 8px;
-      background: var(--aws-navy) !important;
-      color: var(--aws-white) !important;
-      border: 2px solid var(--aws-white) !important;
-      opacity: 1 !important;
-    }
-
-    .community-logo-simple[title]:hover::before {
-      bottom: -51px !important;
-      z-index: 999998 !important;
-      left: 50%;
-      transform: translateX(-50%);
-      border-bottom-color: var(--aws-navy) !important;
     }
   }
 
@@ -541,6 +473,7 @@ const lang = getCurrentLanguage(Astro.url);
       line-height: 1.4;
       max-width: 100%;
     }
+    }
   }
 
   @media (max-width: 480px) {
@@ -573,6 +506,7 @@ const lang = getCurrentLanguage(Astro.url);
       white-space: normal;
       max-width: 100%;
       box-sizing: border-box;
+    }
     }
   }
 </style>
