@@ -473,6 +473,7 @@ const lang = getCurrentLanguage(Astro.url);
       line-height: 1.4;
       max-width: 100%;
     }
+    }
   }
 
   @media (max-width: 480px) {
@@ -505,6 +506,7 @@ const lang = getCurrentLanguage(Astro.url);
       white-space: normal;
       max-width: 100%;
       box-sizing: border-box;
+    }
     }
   }
 </style>
