@@ -1,0 +1,139 @@
+# .github/workflows/deploy-to-s3.yml
+name: Deploy to S3 + CloudFront
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'aws-cloud-club-udea/students-community-day/**'
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - 'aws-cloud-club-udea/students-community-day/**'
+
+env:
+  # Configuraciones globales
+  AWS_REGION: us-east-1
+  SOURCE_DIR: aws-cloud-club-udea/students-community-day
+  S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
+  CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+
+jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      has-changes: ${{ steps.changes.outputs.frontend }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check for changes in students-community-day directory
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            frontend:
+              - 'aws-cloud-club-udea/students-community-day/**'
+
+  build-and-deploy:
+    needs: check-changes
+    if: needs.check-changes.outputs.has-changes == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: '${{ env.SOURCE_DIR }}/package-lock.json'
+
+      - name: Install dependencies
+        run: |
+          cd "${{ env.SOURCE_DIR }}"
+          npm ci
+
+      - name: Build Astro project
+        run: |
+          cd "${{ env.SOURCE_DIR }}"
+          npm run build
+        env:
+          NODE_ENV: production
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync to S3
+        run: |
+          cd "${{ env.SOURCE_DIR }}"
+          
+          echo "📁 Deploying Astro build from: dist/"
+          
+          # Sincronizar archivos estáticos con cache largo (1 año)
+          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
+            --delete \
+            --cache-control "public, max-age=31536000, immutable" \
+            --exclude "*.html" \
+            --exclude "_astro/*" \
+            --include "_astro/*.css" \
+            --include "_astro/*.js" \
+            --include "_astro/*.woff*" \
+            --include "_astro/*.svg" \
+            --include "_astro/*.png" \
+            --include "_astro/*.jpg" \
+            --include "_astro/*.webp"
+          
+          # Archivos HTML con cache corto
+          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
+            --delete \
+            --cache-control "public, max-age=0, must-revalidate" \
+            --include "*.html"
+          
+          # Assets de Astro con cache intermedio
+          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
+            --delete \
+            --cache-control "public, max-age=86400" \
+            --include "_astro/*.json" \
+            --include "favicon.ico"
+
+      - name: Create CloudFront invalidation
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
+
+      - name: Get CloudFront URL
+        run: |
+          CLOUDFRONT_URL=$(aws cloudfront get-distribution --id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} --query 'Distribution.DomainName' --output text)
+          echo "🚀 Deployment successful!"
+          echo "📁 Source directory: ${{ env.SOURCE_DIR }}"
+          echo "🌐 CloudFront URL: https://$CLOUDFRONT_URL"
+
+  # Job opcional para notificación
+  notify:
+    needs: [check-changes, build-and-deploy]
+    if: always() && needs.check-changes.outputs.has-changes == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Notify deployment status
+        run: |
+          if [ "${{ needs.build-and-deploy.result }}" == "success" ]; then
+            echo "✅ Deployment completed successfully"
+          else
+            echo "❌ Deployment failed"
+            exit 1
+          fi
