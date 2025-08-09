@@ -7,13 +7,13 @@ on:
       - main
       - master
     paths:
-      - 'aws-cloud-club-udea/students-community-day/**'
+      - 'aws-cloud-club-udea/student-community-day/**'
       - '.github/workflows/deploy-students-community.yml'
 
 env:
   # Configuraciones globales
   AWS_REGION: us-east-1
-  SOURCE_DIR: aws-cloud-club-udea/students-community-day
+  SOURCE_DIR: aws-cloud-club-udea/student-community-day
   S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
   CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
