@@ -8,12 +8,14 @@ on:
       - master
     paths:
       - 'aws-cloud-club-udea/students-community-day/**'
+      - '.github/workflows/deploy-students-community.yml'
   pull_request:
     branches:
       - main
       - master
     paths:
       - 'aws-cloud-club-udea/students-community-day/**'
+      - '.github/workflows/deploy-students-community.yml'
 
 env:
   # Configuraciones globales
@@ -26,7 +28,7 @@ jobs:
   check-changes:
     runs-on: ubuntu-latest
     outputs:
-      has-changes: ${{ steps.changes.outputs.frontend }}
+      has-changes: ${{ steps.changes.outputs.frontend == 'true' || steps.changes.outputs.workflow == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -40,6 +42,8 @@ jobs:
           filters: |
             frontend:
               - 'aws-cloud-club-udea/students-community-day/**'
+            workflow:
+              - '.github/workflows/deploy-students-community.yml'
 
   build-and-deploy:
     needs: check-changes
