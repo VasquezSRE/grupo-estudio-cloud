@@ -28,7 +28,7 @@ jobs:
   check-changes:
     runs-on: ubuntu-latest
     outputs:
-      has-changes: ${{ steps.changes.outputs.frontend == 'true' || steps.changes.outputs.workflow == 'true'
+      has-changes: ${{ steps.changes.outputs.frontend == 'true' || steps.changes.outputs.workflow == 'true' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
