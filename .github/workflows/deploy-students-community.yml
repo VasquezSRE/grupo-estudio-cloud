@@ -1,15 +1,8 @@
-# .github/workflows/deploy-to-s3.yml
-name: Deploy to S3 + CloudFront
+# .github/workflows/deploy-students-community.yml
+name: Deploy Students Community Day
 
 on:
   push:
-    branches:
-      - main
-      - master
-    paths:
-      - 'aws-cloud-club-udea/students-community-day/**'
-      - '.github/workflows/deploy-students-community.yml'
-  pull_request:
     branches:
       - main
       - master
@@ -25,51 +18,71 @@ env:
   CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
 jobs:
-  check-changes:
-    runs-on: ubuntu-latest
-    outputs:
-      has-changes: ${{ steps.changes.outputs.frontend == 'true' || steps.changes.outputs.workflow == 'true' }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Check for changes in students-community-day directory
-        uses: dorny/paths-filter@v2
-        id: changes
-        with:
-          filters: |
-            frontend:
-              - 'aws-cloud-club-udea/students-community-day/**'
-            workflow:
-              - '.github/workflows/deploy-students-community.yml'
-
-  build-and-deploy:
-    needs: check-changes
-    if: needs.check-changes.outputs.has-changes == 'true'
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Check project structure
+        run: |
+          echo "🔍 Checking project structure..."
+          if [ ! -d "${{ env.SOURCE_DIR }}" ]; then
+            echo "❌ Directory ${{ env.SOURCE_DIR }} not found"
+            exit 1
+          fi
+          
+          echo "✅ Project directory found"
+          echo "📁 Contents:"
+          ls -la "${{ env.SOURCE_DIR }}"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: '${{ env.SOURCE_DIR }}/package-lock.json'
+          # Remover cache para evitar errores
 
       - name: Install dependencies
         run: |
           cd "${{ env.SOURCE_DIR }}"
-          npm ci
+          
+          echo "📦 Installing Astro dependencies..."
+          
+          if [ -f "package-lock.json" ]; then
+            echo "🔒 Using npm ci (with package-lock.json)..."
+            npm ci
+          elif [ -f "yarn.lock" ]; then
+            echo "🧶 Using yarn (with yarn.lock)..."
+            yarn install --frozen-lockfile
+          elif [ -f "package.json" ]; then
+            echo "📦 Using npm install (package.json only)..."
+            npm install
+          else
+            echo "❌ No package.json found!"
+            exit 1
+          fi
+          
+          echo "✅ Dependencies installed successfully"
 
       - name: Build Astro project
         run: |
           cd "${{ env.SOURCE_DIR }}"
-          npm run build
+          echo "🏗️ Building Astro project..."
+          
+          # Verificar que el script build existe
+          if npm run | grep -q "build"; then
+            npm run build
+          else
+            echo "❌ No build script found in package.json"
+            echo "Available scripts:"
+            npm run
+            exit 1
+          fi
+          
+          echo "✅ Build completed"
+          echo "📁 Build output:"
+          ls -la dist/
         env:
           NODE_ENV: production
 
@@ -80,64 +93,137 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Sync to S3
+      - name: Deploy to S3 with optimized caching
         run: |
           cd "${{ env.SOURCE_DIR }}"
           
-          echo "📁 Deploying Astro build from: dist/"
+          echo "🚀 Starting S3 deployment..."
+          echo "📁 Deploying from: dist/"
+          echo "🪣 Target bucket: ${{ env.S3_BUCKET }}"
           
-          # Sincronizar archivos estáticos con cache largo (1 año)
-          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
-            --delete \
-            --cache-control "public, max-age=31536000, immutable" \
-            --exclude "*.html" \
-            --exclude "_astro/*" \
-            --include "_astro/*.css" \
-            --include "_astro/*.js" \
-            --include "_astro/*.woff*" \
-            --include "_astro/*.svg" \
-            --include "_astro/*.png" \
-            --include "_astro/*.jpg" \
-            --include "_astro/*.webp"
-          
-          # Archivos HTML con cache corto
+          # 1. HTML files - No cache (always fresh)
+          echo "📄 Uploading HTML files..."
           aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
             --delete \
             --cache-control "public, max-age=0, must-revalidate" \
+            --exclude "*" \
             --include "*.html"
           
-          # Assets de Astro con cache intermedio
+          # 2. Astro assets - Long cache (1 year)
+          echo "🎨 Uploading Astro static assets..."
           aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
-            --delete \
+            --cache-control "public, max-age=31536000, immutable" \
+            --exclude "*" \
+            --include "_astro/*.css" \
+            --include "_astro/*.js" \
+            --include "_astro/*.mjs"
+          
+          # 3. Fonts - Long cache
+          echo "🔤 Uploading fonts..."
+          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
+            --cache-control "public, max-age=31536000, immutable" \
+            --exclude "*" \
+            --include "*.woff" \
+            --include "*.woff2" \
+            --include "*.ttf" \
+            --include "*.otf"
+          
+          # 4. Images - Long cache
+          echo "📸 Uploading images..."
+          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
+            --cache-control "public, max-age=31536000" \
+            --exclude "*" \
+            --include "*.svg" \
+            --include "*.png" \
+            --include "*.jpg" \
+            --include "*.jpeg" \
+            --include "*.webp" \
+            --include "*.gif" \
+            --include "*.ico"
+          
+          # 5. Other files - Medium cache
+          echo "📋 Uploading other files..."
+          aws s3 sync dist/ s3://${{ env.S3_BUCKET }} \
             --cache-control "public, max-age=86400" \
-            --include "_astro/*.json" \
-            --include "favicon.ico"
+            --exclude "*" \
+            --include "*.json" \
+            --include "*.xml" \
+            --include "*.txt" \
+            --include "*.pdf"
+          
+          echo "✅ All files deployed to S3 successfully!"
 
-      - name: Create CloudFront invalidation
+      - name: Invalidate CloudFront
         run: |
-          aws cloudfront create-invalidation \
+          echo "🔄 Creating CloudFront invalidation..."
+          
+          INVALIDATION_ID=$(aws cloudfront create-invalidation \
             --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
+            --paths "/*" \
+            --query 'Invalidation.Id' \
+            --output text)
+          
+          echo "⏳ Invalidation ID: $INVALIDATION_ID"
+          echo "🌐 CloudFront will update in a few minutes"
 
-      - name: Get CloudFront URL
+      - name: Deployment Summary
         run: |
-          CLOUDFRONT_URL=$(aws cloudfront get-distribution --id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} --query 'Distribution.DomainName' --output text)
-          echo "🚀 Deployment successful!"
-          echo "📁 Source directory: ${{ env.SOURCE_DIR }}"
-          echo "🌐 CloudFront URL: https://$CLOUDFRONT_URL"
+          CLOUDFRONT_URL=$(aws cloudfront get-distribution \
+            --id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --query 'Distribution.DomainName' \
+            --output text)
+          
+          echo ""
+          echo "🎉 Students Community Day deployment completed!"
+          echo ""
+          echo "📊 Deployment Summary:"
+          echo "├── 🚀 Framework: Astro"
+          echo "├── 📁 Source: ${{ env.SOURCE_DIR }}"
+          echo "├── 🪣 S3 Bucket: ${{ env.S3_BUCKET }}"
+          echo "├── 🔗 CloudFront: ${{ env.CLOUDFRONT_DISTRIBUTION_ID }}"
+          echo "└── 🌐 Live URL: https://$CLOUDFRONT_URL"
+          echo ""
+          echo "Your site is now live! 🚀"
 
-  # Job opcional para notificación
-  notify:
-    needs: [check-changes, build-and-deploy]
-    if: always() && needs.check-changes.outputs.has-changes == 'true'
+  # Verificación opcional
+  verify:
+    needs: deploy
     runs-on: ubuntu-latest
+    if: success()
     
     steps:
-      - name: Notify deployment status
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Test deployment
         run: |
-          if [ "${{ needs.build-and-deploy.result }}" == "success" ]; then
-            echo "✅ Deployment completed successfully"
-          else
-            echo "❌ Deployment failed"
-            exit 1
-          fi
+          echo "⏳ Waiting 30 seconds for CloudFront..."
+          sleep 30
+          
+          CLOUDFRONT_URL=$(aws cloudfront get-distribution \
+            --id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --query 'Distribution.DomainName' \
+            --output text)
+          
+          echo "🔍 Testing: https://$CLOUDFRONT_URL"
+          
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://$CLOUDFRONT_URL" || echo "000")
+          
+          case $HTTP_STATUS in
+            200)
+              echo "✅ Site is live and responding perfectly!"
+              ;;
+            403|404)
+              echo "⚠️ Site returned $HTTP_STATUS - CloudFront may still be updating"
+              ;;
+            000)
+              echo "⚠️ Could not connect - CloudFront may still be updating"
+              ;;
+            *)
+              echo "⚠️ Site returned HTTP $HTTP_STATUS"
+              ;;
+          esac
